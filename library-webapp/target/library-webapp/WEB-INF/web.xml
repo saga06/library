@@ -4,7 +4,17 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <display-name>Library</display-name>
 
+
+  <!-- Listener Spring -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:/bootstrapContext.xml</param-value>
+  </context-param>
   <!-- Filter Struts -->
   <filter>
     <filter-name>struts2</filter-name>

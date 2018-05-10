@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -40,7 +41,7 @@
     </ul>
 </div>
 
-test struts
+<s:a action="projet_list">Liste des projets</s:a>
 
 <%@ include file="_include/footer.jsp" %>
 </body>

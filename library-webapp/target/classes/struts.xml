@@ -5,12 +5,33 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
-    <package name="defautl" extends="struts-default">
-        <!-- Action by default -->
+    <package name="default" extends="struts-default">
         <default-action-ref name="index" />
-        <!-- Action "index" -->
+
+        <!-- Results globaux -->
+        <global-results>
+            <result name="error">/jsp/error.jsp</result>
+        </global-results>
+
         <action name="index">
             <result>/jsp/index.jsp</result>
+        </action>
+
+        <action name="projet_list"
+                class="com.library.oc.library.webapp.action.GestionProjetAction"
+                method="doList">
+            <result>/jsp/projet/list.jsp</result>
+        </action>
+        <action name="projet_detail"
+                class="com.library.oc.library.webapp.action.GestionProjetAction"
+                method="doDetail">
+            <result>/jsp/projet/detail.jsp</result>
+        </action>
+
+        <action name="utilisateur_detail"
+                class="com.library.oc.library.webapp.action.GestionUtilisateurAction"
+                method="doDetail">
+            <result>/jsp/utilisateur/detail.jsp</result>
         </action>
     </package>
 </struts>

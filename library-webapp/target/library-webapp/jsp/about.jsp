@@ -35,7 +35,7 @@
     <ul>
         <li>Application : Bibliothèque OC</li>
         <li>Version : 1.0-SNAPSHOT</li>
-        <li>Date du build : 09-05-2018</li>
+        <li>Date du build : 10-05-2018</li>
 
     </ul>
 </div>

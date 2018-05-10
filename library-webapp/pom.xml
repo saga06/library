@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+    <!-- =============================================================== -->
+    <!-- Informations du projet -->
+    <!-- =============================================================== -->
+    <!-- ===== Projet Parent Maven ===== -->
   <parent>
     <artifactId>library</artifactId>
     <groupId>com.library.oc</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.library.oc</groupId>
   <artifactId>library-webapp</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>library-webapp Maven Webapp</name>
@@ -49,11 +51,25 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+    </dependency>
     <!-- Framework Apache Struts -->
     <dependency>
       <groupId>org.apache.struts</groupId>
       <artifactId>struts2-core</artifactId>
     </dependency>
+      <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+      <dependency>
+          <groupId>javax.validation</groupId>
+          <artifactId>validation-api</artifactId>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+      <dependency>
+          <groupId>javax.inject</groupId>
+          <artifactId>javax.inject</artifactId>
+      </dependency>
   </dependencies>
 
 
@@ -105,7 +121,7 @@
                             <include>jsp/_include/header.jsp</include>
                             <include>jsp/_include/footer.jsp</include>
                             <include>jsp/about.jsp</include>
-                            <include>index.jsp</include>
+                            <include>jsp/index.jsp</include>
                         </includes>
                     </resource>
                 </webResources>

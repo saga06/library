@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,7 +14,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>${application.name} - A propos</title>
+    <title>Bibliothèque OC - A propos</title>
     <!-- Bootstrap -->
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -33,14 +34,14 @@
 
 <div class="container" id="main-content">
     <ul>
-        <li>Application : ${application.name}</li>
-        <li>Version : ${project.version}</li>
-        <li>Date du build : ${timestamp}</li>
+        <li>Application : Bibliothèque OC</li>
+        <li>Version : 1.0-SNAPSHOT</li>
+        <li>Date du build : 10-05-2018</li>
 
     </ul>
 </div>
 
-test struts
+<s:a action="projet_list">Liste des projets</s:a>
 
 <%@ include file="_include/footer.jsp" %>
 </body>

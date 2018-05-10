@@ -1,1 +1,14 @@
-com\library\oc\model\App.class
+com\library\oc\library\model\exception\NotFoundException.class
+com\library\oc\library\model\exception\TechnicalException.class
+com\library\oc\library\model\exception\FunctionalException.class
+com\library\oc\library\model\bean\utilisateur\Utilisateur.class
+com\library\oc\library\model\bean\ticket\Ticket.class
+com\library\oc\library\model\bean\projet\Version.class
+com\library\oc\library\model\bean\ticket\Evolution.class
+com\library\oc\library\model\bean\ticket\BugNiveau.class
+com\library\oc\library\model\bean\ticket\Commentaire.class
+com\library\oc\library\model\bean\ticket\Bug.class
+com\library\oc\library\model\bean\ticket\HistoriqueStatut.class
+com\library\oc\library\model\bean\ticket\TicketStatut.class
+com\library\oc\library\model\bean\projet\Projet.class
+com\library\oc\library\model\App.class
