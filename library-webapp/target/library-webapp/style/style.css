@@ -1,0 +1,13 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: lightgray;
+    left: 0;
+    right: 0;
+    height: 5%;
+}
+
+#main-content  {
+    margin-top: 70px;
+
+}
