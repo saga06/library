@@ -5,11 +5,13 @@
   Time: 03:20
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../_include/head.jsp"%>
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
     <h2>Liste des projets</h2>
+    <s:a action="projet_new">Créer un nouveau projet</s:a>
     <ul>
        <s:iterator value="listProjet">
            <li>

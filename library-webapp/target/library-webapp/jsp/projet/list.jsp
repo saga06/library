@@ -10,6 +10,7 @@
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
     <h2>Liste des projets</h2>
+    <s:a action="projet_new">Créer un nouveau projet</s:a>
     <ul>
        <s:iterator value="listProjet">
            <li>

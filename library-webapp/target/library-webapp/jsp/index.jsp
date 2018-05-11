@@ -14,7 +14,7 @@
     <ul>
         <li>Application : Bibliothèque OC</li>
         <li>Version : 1.0-SNAPSHOT</li>
-        <li>Date du build : 10-05-2018</li>
+        <li>Date du build : 11-05-2018</li>
     </ul>
     <s:a action="projet_list">
         <s:text name="nav.listBook" />

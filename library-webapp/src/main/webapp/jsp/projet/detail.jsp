@@ -10,6 +10,7 @@
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
+    <s:actionmessage />
     <h2>Détail du projet</h2>
     <ul>
         <li>ID : <s:property value="projet.id" /></li>
