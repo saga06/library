@@ -1,5 +1,7 @@
 package com.library.oc.library.webapp.action;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -56,12 +58,12 @@ public class GestionProjetAction extends ActionSupport {
      */
     public String doDetail() {
         if (id == null) {
-            this.addActionError("Vous devez indiquer un id de projet");
+            this.addActionError(getText("error.book.missing.id"));
         } else {
             try {
                 projet = WebappHelper.getManagerFactory().getProjetManager().getProjet(id);
             } catch (NotFoundException pE) {
-                this.addActionError("Projet non trouvé. ID = " + id);
+                this.addActionError(getText("error.book.notfound", Collections.singletonList(id)));
             }
         }
 

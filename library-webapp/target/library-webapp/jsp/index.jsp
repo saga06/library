@@ -6,43 +6,20 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="s" uri="/struts-tags" %>
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bibliothèque OC - A propos</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous" />
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-          crossorigin="anonymous" />
-    <link rel="stylesheet" href="../style/style.css" />
-</head>
-
-
+<%@ include file="_include/head.jsp"%>
 <body>
-
 <%@ include file="_include/header.jsp" %>
-
 <div class="container" id="main-content">
+    <h2><s:text name="home.welcome" /></h2>
     <ul>
         <li>Application : Bibliothèque OC</li>
         <li>Version : 1.0-SNAPSHOT</li>
         <li>Date du build : 10-05-2018</li>
-
     </ul>
+    <s:a action="projet_list">
+        <s:text name="nav.listBook" />
+    </s:a>
 </div>
-
-<s:a action="projet_list">Liste des projets</s:a>
-
 <%@ include file="_include/footer.jsp" %>
 </body>
 </html>
