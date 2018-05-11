@@ -5,6 +5,7 @@
   Time: 03:20
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../_include/head.jsp"%>
 <body>
 <%@ include file="../_include/header.jsp" %>

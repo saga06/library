@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -21,7 +23,19 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="..">Accueil</a></li>
                 <li><a href="../jsp/about.jsp">A propos</a></li>
+                <s:if test="#session.user">
+                    Utilisateur connecté :
+                    <s:property value="#session.user.prenom" />
+                    <s:property value="#session.user.nom" />
+
+                    <s:a action="logout">Déconnexion</s:a>
+                </s:if>
+                <s:else>
+                    <s:a action="login">Connexion</s:a>
+                </s:else>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
+<s:actionerror/>
+<s:actionmessage/>
