@@ -14,6 +14,7 @@
         <s:param name="request_locale">fr</s:param>
         [Français]
     </s:a>
+    <s:debug/>
     <div class="container">
         <p>
             Bibliothèque OC - version 1.0-SNAPSHOT

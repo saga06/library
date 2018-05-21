@@ -10,8 +10,8 @@
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
-    <h2>Liste des projets</h2>
-    <s:a action="projet_new">Créer un nouveau projet</s:a>
+    <h2>Liste des ouvrages</h2>
+    <s:a action="projet_new">Ajouter un nouveau livre</s:a>
     <ul>
        <s:iterator value="listProjet">
            <li>
@@ -20,7 +20,7 @@
                    <s:property value="nom"/>
                </s:a>
 
-               - Responsable :
+               - Auteur :
                <s:a action="utilisateur_detail">
                    <s:param name="id" value="responsable.id"/>
                    <s:property value="responsable.prenom" /> <s:property value="responsable.nom" />

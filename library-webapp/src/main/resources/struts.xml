@@ -5,13 +5,34 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
-    <package name="default" extends="struts-default">
-        <default-action-ref name="index" />
+    <!-- ==== Package de configuration de base ==== -->
+    <!-- abstract => n'a pas vocation à contenir des actions, seulement de la configuration -->
+    <package name="base" abstract="true" extends="struts-default">
+        <interceptors>
+            <interceptor name="auth" class="com.library.oc.library.webapp.interceptor.AuthInterceptor" />
+
+            <interceptor-stack name="authenticatedStack">
+                <interceptor-ref name="auth"/>
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+        </interceptors>
 
         <!-- Results globaux -->
         <global-results>
             <result name="error">/jsp/error.jsp</result>
+            <!-- L'interceptor qui gère les sessions retourne un error-forbidden dans le cas ou aucune session
+            n'existe. Comme il n'est pas lié dans une action, on le déclare dans le results globaux
+            Il renvoit un code d'erreur 403 (accès interdit) -->
+            <result name="error-forbidden" type="httpheader">
+                <param name="error">403</param>
+            </result>
         </global-results>
+    </package>
+
+
+    <!-- ===== Package pour les actions publiques ====== -->
+    <package name="public" extends="base">
+        <default-action-ref name="index" />
 
         <action name="index">
             <result>/jsp/index.jsp</result>
@@ -39,21 +60,10 @@
 
             <result>/jsp/utilisateur/detail.jsp</result>
         </action>
-        
-        <action name="projet_new"
-                class="com.library.oc.library.webapp.action.GestionProjetAction"
-                method="doCreate">
 
-            <interceptor-ref name="store">
-                <param name="operationMode">STORE</param>
-            </interceptor-ref>
-            <interceptor-ref name="defaultStack" />
-
-            <result name="input">/jsp/projet/new.jsp</result>
-            <result name="success" type="redirectAction">
-                <param name="actionName">projet_detail</param>
-                <param name="id">${projet.id}</param>
-            </result>
+        <!-- Action de démonstration pour l'AJAX -->
+        <action name="demo_ajax" class="com.library.oc.library.webapp.action.DemoAjaxAction">
+            <result name="success">/jsp/demo/ajax.jsp</result>
         </action>
 
         <!-- Actions Login/Logout -->
@@ -64,5 +74,42 @@
         <action name="logout" class="com.library.oc.library.webapp.action.LoginAction" method="doLogout">
             <result type="redirectAction">index</result>
         </action>
+    </package>
+
+    <!-- ===== Package pour les actions AJAX ===== -->
+    <package name="ajax" extends="base, json-default">
+        <!-- Action renvoyant la liste des Projets -->
+        <action name="demo_ajax_getListProjet"
+                class="com.library.oc.library.webapp.action.DemoAjaxAction"
+                method="doAjaxGetListProjet">
+            <result name="success" type="json">
+                <param name="root">listProjet</param>
+            </result>
+        </action>
+    </package>
+    
+    <!-- Création d'interceptor pour rendre privée une partie du site -->
+    <package name="private" extends="base">
+
+        
+        <default-interceptor-ref name="authenticatedStack" />
+
+        <!-- Actions permettant d'ajouter un livre -->
+        <action name="projet_new"
+                class="com.library.oc.library.webapp.action.GestionProjetAction"
+                method="doCreate">
+
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="authenticatedStack" />
+
+            <result name="input">/jsp/projet/new.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">projet_detail</param>
+                <param name="id">${projet.id}</param>
+            </result>
+        </action>
+
     </package>
 </struts>

@@ -88,7 +88,7 @@ public abstract class Ticket {
             .append(vSEP).append("titre=\"").append(titre).append('"')
             .append(vSEP).append("date=").append(date)
             .append(vSEP).append("description=\"").append(description).append('"')
-            .append(vSEP).append("projet=").append(projet)
+            .append(vSEP).append("ouvrage=").append(projet)
             .append(vSEP).append("statut=").append(statut)
             .append("}");
         return vStB.toString();

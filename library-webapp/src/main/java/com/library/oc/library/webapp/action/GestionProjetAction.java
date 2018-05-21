@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 
+import com.library.oc.library.business.contract.ManagerFactory;
 import com.library.oc.library.model.bean.projet.Projet;
 import com.library.oc.library.model.bean.utilisateur.Utilisateur;
 import com.library.oc.library.model.exception.FunctionalException;
@@ -13,6 +14,8 @@ import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.model.exception.TechnicalException;
 import com.library.oc.library.webapp.WebappHelper;
 import com.opensymphony.xwork2.ActionSupport;
+
+import javax.inject.Inject;
 
 
 /**
@@ -29,6 +32,9 @@ public class GestionProjetAction extends ActionSupport {
     private List<Projet> listProjet;
     private Projet projet;
     private List<Utilisateur> listUtilisateur;
+
+    @Inject
+    private ManagerFactory managerFactory;
 
 
     // ==================== Getters/Setters ====================
@@ -55,7 +61,7 @@ public class GestionProjetAction extends ActionSupport {
      * @return success
      */
     public String doList() {
-        listProjet = WebappHelper.getManagerFactory().getProjetManager().getListProjet();
+        listProjet = managerFactory.getProjetManager().getListProjet();
         return ActionSupport.SUCCESS;
     }
 
@@ -69,7 +75,7 @@ public class GestionProjetAction extends ActionSupport {
             this.addActionError(getText("error.book.missing.id"));
         } else {
             try {
-                projet = WebappHelper.getManagerFactory().getProjetManager().getProjet(id);
+                projet = managerFactory.getProjetManager().getProjet(id);
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.book.notfound", Collections.singletonList(id)));
             }
@@ -97,7 +103,7 @@ public class GestionProjetAction extends ActionSupport {
             } else {
                 try {
                     Utilisateur vResponsable
-                            = WebappHelper.getManagerFactory().getUtilisateurManager()
+                            = managerFactory.getUtilisateurManager()
                             .getUtilisateur(this.projet.getResponsable().getId());
                     this.projet.setResponsable(vResponsable);
                 } catch (NotFoundException pEx) {
@@ -110,7 +116,7 @@ public class GestionProjetAction extends ActionSupport {
             // Si pas d'erreur, ajout du projet...
             if (!this.hasErrors()) {
                 try {
-                    WebappHelper.getManagerFactory().getProjetManager().insertProjet(this.projet);
+                    managerFactory.getProjetManager().insertProjet(this.projet);
                     // Si ajout avec succès -> Result "success"
                     vResult = ActionSupport.SUCCESS;
                     this.addActionMessage("Projet ajouté avec succès");
@@ -130,7 +136,7 @@ public class GestionProjetAction extends ActionSupport {
 
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
-            this.listUtilisateur = WebappHelper.getManagerFactory().getUtilisateurManager().getListUtilisateur();
+            this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();
         }
 
         return vResult;

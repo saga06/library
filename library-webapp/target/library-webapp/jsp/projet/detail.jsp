@@ -17,7 +17,7 @@
         <li>Nom : <s:property value="projet.nom" /></li>
         <li>Date création : <s:date name="projet.dateCreation" /></li>
         <li>
-            Responsable :
+            Auteur :
             <s:a action="utilisateur_detail">
                 <s:param name="id" value="projet.responsable.id" />
                 <s:property value="projet.responsable.prenom"/> <s:property value="projet.responsable.nom"/>

@@ -79,6 +79,16 @@
           <artifactId>servlet-api</artifactId>
           <version>2.5</version>
       </dependency>
+      <!-- Déclarer Spring comme fabrique d'objet Struts -->
+      <dependency>
+          <groupId>org.apache.struts</groupId>
+          <artifactId>struts2-spring-plugin</artifactId>
+      </dependency>
+      <!-- Plugin struts pour interpréter le format json -->
+      <dependency>
+          <groupId>org.apache.struts</groupId>
+          <artifactId>struts2-json-plugin</artifactId>
+      </dependency>
 
   </dependencies>
 

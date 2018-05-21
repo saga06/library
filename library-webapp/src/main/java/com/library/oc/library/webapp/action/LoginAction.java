@@ -1,5 +1,6 @@
 package com.library.oc.library.webapp.action;
 
+import com.library.oc.library.business.contract.ManagerFactory;
 import com.library.oc.library.model.bean.utilisateur.Utilisateur;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.webapp.WebappHelper;
@@ -8,6 +9,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.SessionAware;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
@@ -25,6 +27,9 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
     // ----- Eléments Struts
     private Map<String,Object> session;
     private HttpServletRequest servletRequest;
+
+    @Inject
+    private ManagerFactory managerFactory;
 
 
     // ==================== Getters/Setters ====================
@@ -52,7 +57,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
         if (!StringUtils.isAllEmpty(login, password)) {
             try {
                 Utilisateur vUtilisateur
-                        = WebappHelper.getManagerFactory().getUtilisateurManager()
+                        = managerFactory.getUtilisateurManager()
                         .getUtilisateur(login, password);
 
                 // Ajout de l'utilisateur en session
@@ -88,4 +93,5 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
     public void setServletRequest(HttpServletRequest pRequest) {
         this.servletRequest = pRequest;
     }
+
 }

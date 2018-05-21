@@ -35,7 +35,7 @@ public class ProjetManagerImpl extends AbstractManager implements ProjetManager 
                 = this.listProjet.stream()
                 .filter(p -> p.getId().equals(pId))
                 .findFirst()
-                .orElseThrow(() -> new NotFoundException("Projet non trouvé : ID=" + pId));
+                .orElseThrow(() -> new NotFoundException("Ouvrage non trouvé : ID=" + pId));
         return vProjet;
     }
 
@@ -54,7 +54,7 @@ public class ProjetManagerImpl extends AbstractManager implements ProjetManager 
     private void initListProjet() {
         for (int vId = 0; vId < 9; vId++) {
             Projet vProjet = new Projet(vId);
-            vProjet.setNom("Projet n°" + vId);
+            vProjet.setNom("Ouvrage n°" + vId);
             vProjet.setCloture(false);
             vProjet.setDateCreation(new Date());
             try {
@@ -71,12 +71,12 @@ public class ProjetManagerImpl extends AbstractManager implements ProjetManager 
     @Override
     public void insertProjet(Projet pProjet) throws FunctionalException {
         if (pProjet == null) {
-            throw new FunctionalException("L'objet Projet ne doit pas être null !");
+            throw new FunctionalException("L'objet Ouvrage ne doit pas être null !");
         }
 
         Set<ConstraintViolation<Projet>> vViolations = getConstraintValidator().validate(pProjet);
         if (!vViolations.isEmpty()) {
-            throw new FunctionalException("L'objet Projet est invalide",
+            throw new FunctionalException("L'objet Ouvrage est invalide",
                     new ConstraintViolationException(vViolations));
         }
 

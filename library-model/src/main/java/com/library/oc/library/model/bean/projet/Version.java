@@ -50,7 +50,7 @@ public class Version {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("projet=").append(projet)
+                .append("ouvrage=").append(projet)
                 .append(vSEP).append("numero=\"").append(numero).append('"')
                 .append("}");
         return vStB.toString();

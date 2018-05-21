@@ -8,9 +8,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- Prise en compte des annotations -->
     <context:annotation-config/>
     <context:component-scan base-package="com.library.oc.library"/>
 
-    <!-- Inclusion d'autres fichiers de contexte Spring -->
+    <!-- Inclusion d'un autre fichier de contexte Spring spécique au webapp -->
     <import resource="classpath:/webapp/webappContext.xml" />
 </beans>
