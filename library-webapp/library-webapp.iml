@@ -16,6 +16,7 @@
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+          <root url="file://$MODULE_DIR$/target/classes/com" relative="/com" />
         </webroots>
       </configuration>
       <facet type="Struts2" name="Struts 2">

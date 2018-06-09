@@ -2,7 +2,7 @@ package com.library.oc.library.model.bean.ticket;
 
 import java.util.Date;
 
-import com.library.oc.library.model.bean.projet.Projet;
+import com.library.oc.library.model.bean.book.Book;
 
 
 /**
@@ -17,7 +17,7 @@ public abstract class Ticket {
     private String titre;
     private Date date;
     private String description;
-    private Projet projet;
+    private Book book;
     private TicketStatut statut;
 
 
@@ -64,11 +64,11 @@ public abstract class Ticket {
     public void setDescription(String pDescription) {
         description = pDescription;
     }
-    public Projet getProjet() {
-        return projet;
+    public Book getBook() {
+        return book;
     }
-    public void setProjet(Projet pProjet) {
-        projet = pProjet;
+    public void setBook(Book pBook) {
+        book = pBook;
     }
     public TicketStatut getStatut() {
         return statut;
@@ -88,7 +88,7 @@ public abstract class Ticket {
             .append(vSEP).append("titre=\"").append(titre).append('"')
             .append(vSEP).append("date=").append(date)
             .append(vSEP).append("description=\"").append(description).append('"')
-            .append(vSEP).append("ouvrage=").append(projet)
+            .append(vSEP).append("ouvrage=").append(book)
             .append(vSEP).append("statut=").append(statut)
             .append("}");
         return vStB.toString();

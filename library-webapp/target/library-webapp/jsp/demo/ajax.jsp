@@ -21,29 +21,29 @@
 
 
 <h3>Liste des Ouvrages</h3>
-<ul id="listProjet">
+<ul id="listBook">
     <li><em>à charger...</em></li>
 </ul>
-<button onclick="reloadListProjet()">Recharger</button>
+<button onclick="reloadListBook()">Recharger</button>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
-    function reloadListProjet() {
+    function reloadListBook() {
         // URL de l'action AJAX
-        var url = "<s:url action="demo_ajax_getListProjet"/>";
+        var url = "<s:url action="demo_ajax_getListBook"/>";
 
         // Action AJAX en POST
         jQuery.post(
             url,
             function (data) {
-                var $listProjet = jQuery("#listProjet");
-                $listProjet.empty();
+                var $listBook = jQuery("#listBook");
+                $listBook.empty();
                 jQuery.each(data, function (key, val) {
-                    $listProjet.append(
+                    $listBook.append(
                         jQuery("<li>")
                             .append(val.nom)
                             .append(" - Auteur : ")
-                            .append(val.responsable.prenom)
+                            .append(val.author.prenom)
                     );
                 });
             })

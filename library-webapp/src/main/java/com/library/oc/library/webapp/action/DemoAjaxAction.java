@@ -6,7 +6,7 @@ package com.library.oc.library.webapp.action;
 
         import com.opensymphony.xwork2.ActionSupport;
         import com.library.oc.library.business.contract.ManagerFactory;
-        import com.library.oc.library.model.bean.projet.Projet;
+        import com.library.oc.library.model.bean.book.Book;
 
 
 /**
@@ -19,12 +19,12 @@ public class DemoAjaxAction extends ActionSupport {
     private ManagerFactory managerFactory;
 
     // ----- Eléments en sortie
-    private List<Projet> listProjet;
+    private List<Book> listBook;
 
 
     // ==================== Getters/Setters ====================
-    public List<Projet> getListProjet() {
-        return listProjet;
+    public List<Book> getListBook() {
+        return listBook;
     }
 
 
@@ -35,11 +35,11 @@ public class DemoAjaxAction extends ActionSupport {
 
 
     /**
-     * Action "AJAX" renvoyant la liste des projets
+     * Action "AJAX" renvoyant la liste des books
      * @return success
      */
-    public String doAjaxGetListProjet() {
-        listProjet = managerFactory.getProjetManager().getListProjet();
+    public String doAjaxGetListBook() {
+        listBook = managerFactory.getBookManager().getListBook();
         return ActionSupport.SUCCESS;
     }
 }

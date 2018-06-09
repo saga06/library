@@ -3,7 +3,7 @@ package com.library.oc.library.model.bean.ticket;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.library.oc.library.model.bean.projet.Version;
+import com.library.oc.library.model.bean.book.Version;
 
 
 /**

@@ -16,7 +16,7 @@
         <li>Version : ${project.version}</li>
         <li>Date du build : ${timestamp}</li>
     </ul>
-    <s:a action="projet_list">
+    <s:a action="book_list">
         <s:text name="nav.listBook" />
     </s:a>
 </div>

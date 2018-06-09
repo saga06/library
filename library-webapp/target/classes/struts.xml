@@ -38,15 +38,15 @@
             <result>/jsp/index.jsp</result>
         </action>
 
-        <action name="projet_list"
-                class="com.library.oc.library.webapp.action.GestionProjetAction"
+        <action name="book_list"
+                class="com.library.oc.library.webapp.action.GestionBookAction"
                 method="doList">
-            <result>/jsp/projet/list.jsp</result>
+            <result>/jsp/book/list.jsp</result>
         </action>
-        <action name="projet_detail"
-                class="com.library.oc.library.webapp.action.GestionProjetAction"
+        <action name="book_detail"
+                class="com.library.oc.library.webapp.action.GestionBookAction"
                 method="doDetail">
-            <result>/jsp/projet/detail.jsp</result>
+            <result>/jsp/book/detail.jsp</result>
         </action>
 
         <action name="utilisateur_detail"
@@ -79,11 +79,11 @@
     <!-- ===== Package pour les actions AJAX ===== -->
     <package name="ajax" extends="base, json-default">
         <!-- Action renvoyant la liste des Projets -->
-        <action name="demo_ajax_getListProjet"
+        <action name="demo_ajax_getListBook"
                 class="com.library.oc.library.webapp.action.DemoAjaxAction"
-                method="doAjaxGetListProjet">
+                method="doAjaxGetListBook">
             <result name="success" type="json">
-                <param name="root">listProjet</param>
+                <param name="root">listBook</param>
             </result>
         </action>
     </package>
@@ -95,8 +95,8 @@
         <default-interceptor-ref name="authenticatedStack" />
 
         <!-- Actions permettant d'ajouter un livre -->
-        <action name="projet_new"
-                class="com.library.oc.library.webapp.action.GestionProjetAction"
+        <action name="book_new"
+                class="com.library.oc.library.webapp.action.GestionBookAction"
                 method="doCreate">
 
             <interceptor-ref name="store">
@@ -104,10 +104,10 @@
             </interceptor-ref>
             <interceptor-ref name="authenticatedStack" />
 
-            <result name="input">/jsp/projet/new.jsp</result>
+            <result name="input">/jsp/book/new.jsp</result>
             <result name="success" type="redirectAction">
-                <param name="actionName">projet_detail</param>
-                <param name="id">${projet.id}</param>
+                <param name="actionName">book_detail</param>
+                <param name="id">${book.id}</param>
             </result>
         </action>
 
