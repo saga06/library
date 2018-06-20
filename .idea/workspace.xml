@@ -768,12 +768,12 @@
       <workItem from="1528760749761" duration="5184000" />
       <workItem from="1528824792048" duration="1967000" />
       <workItem from="1529308256149" duration="197000" />
-      <workItem from="1529425945848" duration="8860000" />
+      <workItem from="1529425945848" duration="9457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95477000" />
+    <option name="totallyTimeSpent" value="96074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -806,7 +806,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.59275055" visible="true" weight="0.42905027" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59275055" weight="0.42905027" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32960895" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.5745665" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19509594" />
