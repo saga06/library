@@ -12,6 +12,7 @@ import com.library.oc.library.business.contract.manager.UtilisateurManager;
 /**
  * Implémentation de la {@link ManagerFactory}.
  */
+//Bean pouvant être injecté grâce à @Named
 @Named("managerFactory")
 public class ManagerFactoryImpl implements ManagerFactory {
 

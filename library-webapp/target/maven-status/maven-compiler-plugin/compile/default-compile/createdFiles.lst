@@ -1,3 +1,6 @@
+com\library\oc\library\webapp\action\GestionBookAction.class
 com\library\oc\library\webapp\action\GestionUtilisateurAction.class
-com\library\oc\library\webapp\action\GestionProjetAction.class
+com\library\oc\library\webapp\interceptor\AuthInterceptor.class
+com\library\oc\library\webapp\action\DemoAjaxAction.class
 com\library\oc\library\webapp\WebappHelper.class
+com\library\oc\library\webapp\action\LoginAction.class

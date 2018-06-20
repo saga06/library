@@ -1,7 +1,7 @@
 C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\impl\ManagerFactoryImpl.java
-C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\impl\manager\ProjetManagerImpl.java
+C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\contract\manager\BookManager.java
 C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\impl\manager\AbstractManager.java
-C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\contract\manager\ProjetManager.java
+C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\impl\manager\BookManagerImpl.java
 C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\App.java
 C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\contract\manager\UtilisateurManager.java
 C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\contract\ManagerFactory.java

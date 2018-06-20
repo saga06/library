@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans>
+        <!-- Chargement du fichier properties contenant
+            la configuration de la datasource vers DB_LIBRARY  -->
+        <bean id="dataSourceLibraryConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+            <property name="location" value="file:${application.home}/conf/db-library.properties"/>
+        </bean>
+
+        <!-- Création de la datasource "dataSourceLibrary" -->
+        <bean id="dataSourceLibrary"
+              class="org.apache.commons.dbcp2.BasicDataSourceFactory"
+              factory-method="createDataSource"
+              destroy-method="close">
+            <constructor-arg ref="dataSourceLibraryConfiguration"/>
+        </bean>
+    </beans>
+</beans>

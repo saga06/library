@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="projet4@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="projet4">
+      <ObjectId>50317</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12401</ObjectId>
+    </database>
+    <database id="4" parent="1" name="projet3">
+      <ObjectId>41172</ObjectId>
+    </database>
+    <database id="5" parent="1" name="ledbyher">
+      <ObjectId>41650</ObjectId>
+    </database>
+    <role id="6" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="8" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-06-19.19:32:11.069</IntrospectionTimestamp>
+      <IntrospectionStateNumber>2239</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="9" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="information_schema">
+      <ObjectId>12113</ObjectId>
+    </schema>
+    <sequence id="14" parent="8" name="author_author_id_seq">
+      <ObjectId>51240</ObjectId>
+      <StateNumber>2239</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="15" parent="8" name="book_book_id_seq">
+      <ObjectId>51264</ObjectId>
+      <StateNumber>2239</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="16" parent="8" name="borrow_borrow_id_seq">
+      <ObjectId>51292</ObjectId>
+      <StateNumber>2239</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="17" parent="8" name="editor_editor_id_seq">
+      <ObjectId>51256</ObjectId>
+      <StateNumber>2239</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="18" parent="8" name="theme_theme_id_seq">
+      <ObjectId>51248</ObjectId>
+      <StateNumber>2239</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="19" parent="8" name="users_user_id_seq">
+      <ObjectId>51281</ObjectId>
+      <StateNumber>2239</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="20" parent="8" name="author">
+      <ObjectId>51242</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="21" parent="8" name="book">
+      <ObjectId>51266</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="22" parent="8" name="book_author">
+      <ObjectId>51275</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="23" parent="8" name="book_theme">
+      <ObjectId>51272</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="24" parent="8" name="borrow">
+      <ObjectId>51294</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="25" parent="8" name="config">
+      <ObjectId>51278</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="26" parent="8" name="editor">
+      <ObjectId>51258</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="27" parent="8" name="theme">
+      <ObjectId>51250</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <table id="28" parent="8" name="users">
+      <ObjectId>51283</ObjectId>
+      <StateNumber>2239</StateNumber>
+    </table>
+    <column id="29" parent="20" name="author_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>nextval(&apos;author_author_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>author_author_id_seq</SequenceName>
+    </column>
+    <column id="30" parent="20" name="author_name">
+      <Position>2</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="31" parent="20" name="author_pk">
+      <ObjectId>51246</ObjectId>
+      <ColNames>author_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="32" parent="20" name="author_pk">
+      <ObjectId>51247</ObjectId>
+      <ColNames>author_id</ColNames>
+      <UnderlyingIndexName>author_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="21" name="book_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>nextval(&apos;book_book_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>book_book_id_seq</SequenceName>
+    </column>
+    <column id="34" parent="21" name="book_number_of_copies">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="35" parent="21" name="book_title">
+      <Position>3</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="21" name="editor_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="37" parent="21" name="book_pk">
+      <ObjectId>51270</ObjectId>
+      <ColNames>book_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="38" parent="21" name="book_pk">
+      <ObjectId>51271</ObjectId>
+      <ColNames>book_id</ColNames>
+      <UnderlyingIndexName>book_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="39" parent="21" name="editor_book_fk">
+      <ObjectId>51311</ObjectId>
+      <ColNames>editor_id</ColNames>
+      <RefTableId>51258</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>editor</RefTableName>
+      <RefKeyName>editor_pk</RefKeyName>
+      <RefColNames>editor_id</RefColNames>
+    </foreign-key>
+    <column id="40" parent="22" name="author_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="41" parent="22" name="book_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="42" parent="22" name="author_book_author_fk">
+      <ObjectId>51301</ObjectId>
+      <ColNames>author_id</ColNames>
+      <RefTableId>51242</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>author</RefTableName>
+      <RefKeyName>author_pk</RefKeyName>
+      <RefColNames>author_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="43" parent="22" name="book_book_author_fk">
+      <ObjectId>51321</ObjectId>
+      <ColNames>book_id</ColNames>
+      <RefTableId>51266</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>book</RefTableName>
+      <RefKeyName>book_pk</RefKeyName>
+      <RefColNames>book_id</RefColNames>
+    </foreign-key>
+    <column id="44" parent="23" name="book_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="45" parent="23" name="theme_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="46" parent="23" name="book_book_theme_fk">
+      <ObjectId>51326</ObjectId>
+      <ColNames>book_id</ColNames>
+      <RefTableId>51266</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>book</RefTableName>
+      <RefKeyName>book_pk</RefKeyName>
+      <RefColNames>book_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="47" parent="23" name="theme_book_theme_fk">
+      <ObjectId>51306</ObjectId>
+      <ColNames>theme_id</ColNames>
+      <RefTableId>51250</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>theme</RefTableName>
+      <RefKeyName>theme_pk</RefKeyName>
+      <RefColNames>theme_id</RefColNames>
+    </foreign-key>
+    <column id="48" parent="24" name="borrow_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>nextval(&apos;borrow_borrow_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>borrow_borrow_id_seq</SequenceName>
+    </column>
+    <column id="49" parent="24" name="borrow_date_start">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="50" parent="24" name="borrow_date_end">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="51" parent="24" name="borrow_already_extended">
+      <Position>4</Position>
+      <Comment>We want to know is the borrower already extented the duration of his loan once or not</Comment>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="52" parent="24" name="user_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="53" parent="24" name="book_id">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="54" parent="24" name="borrow_pk">
+      <ObjectId>51299</ObjectId>
+      <ColNames>borrow_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="24" name="borrow_pk">
+      <ObjectId>51300</ObjectId>
+      <ColNames>borrow_id</ColNames>
+      <UnderlyingIndexName>borrow_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="56" parent="24" name="users_borrow_fk">
+      <ObjectId>51331</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>51283</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pk</RefKeyName>
+      <RefColNames>user_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="57" parent="24" name="book_borrow_fk">
+      <ObjectId>51316</ObjectId>
+      <ColNames>book_id</ColNames>
+      <RefTableId>51266</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>book</RefTableName>
+      <RefKeyName>book_pk</RefKeyName>
+      <RefColNames>book_id</RefColNames>
+    </foreign-key>
+    <column id="58" parent="25" name="config_url">
+      <Position>1</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="25" name="config_pass_admin">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="60" parent="25" name="config_smtp">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="61" parent="25" name="config_url_webservice">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="62" parent="25" name="config_id_admin">
+      <Position>5</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="63" parent="26" name="editor_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>nextval(&apos;editor_editor_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>editor_editor_id_seq</SequenceName>
+    </column>
+    <column id="64" parent="26" name="editor_name">
+      <Position>2</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="65" parent="26" name="editor_pk">
+      <ObjectId>51262</ObjectId>
+      <ColNames>editor_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="26" name="editor_pk">
+      <ObjectId>51263</ObjectId>
+      <ColNames>editor_id</ColNames>
+      <UnderlyingIndexName>editor_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="67" parent="27" name="theme_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>nextval(&apos;theme_theme_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>theme_theme_id_seq</SequenceName>
+    </column>
+    <column id="68" parent="27" name="theme_name">
+      <Position>2</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="69" parent="27" name="theme_pk">
+      <ObjectId>51254</ObjectId>
+      <ColNames>theme_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="27" name="theme_pk">
+      <ObjectId>51255</ObjectId>
+      <ColNames>theme_id</ColNames>
+      <UnderlyingIndexName>theme_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="28" name="user_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <DefaultExpression>nextval(&apos;users_user_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>users_user_id_seq</SequenceName>
+    </column>
+    <column id="72" parent="28" name="user_surname">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="73" parent="28" name="user_lastname">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="74" parent="28" name="user_email">
+      <Position>4</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="28" name="user_pass">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2239</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="76" parent="28" name="users_pk">
+      <ObjectId>51290</ObjectId>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="28" name="users_pk">
+      <ObjectId>51291</ObjectId>
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>users_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
