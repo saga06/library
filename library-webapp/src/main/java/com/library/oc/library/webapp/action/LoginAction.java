@@ -1,7 +1,7 @@
 package com.library.oc.library.webapp.action;
 
 import com.library.oc.library.business.contract.ManagerFactory;
-import com.library.oc.library.model.bean.utilisateur.Utilisateur;
+import com.library.oc.library.model.bean.author.Author;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.webapp.WebappHelper;
 import com.opensymphony.xwork2.ActionSupport;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
- * Action de gestion de la connexion/déconnexion d'un utilisateur
+ * Action de gestion de la connexion/déconnexion d'un author
  */
 public class LoginAction extends ActionSupport implements SessionAware, ServletRequestAware {
 
@@ -49,19 +49,19 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
     // ==================== Méthodes ====================
     /**
-     * Action permettant la connexion d'un utilisateur
+     * Action permettant la connexion d'un author
      * @return input / success
      */
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
             try {
-                Utilisateur vUtilisateur
-                        = managerFactory.getUtilisateurManager()
-                        .getUtilisateur(login, password);
+                Author vAuthor
+                        = managerFactory.getAuthorManager()
+                        .getAuthor(login, password);
 
-                // Ajout de l'utilisateur en session
-                this.session.put("user", vUtilisateur);
+                // Ajout de l'author en session
+                this.session.put("user", vAuthor);
 
                 vResult = ActionSupport.SUCCESS;
             } catch (NotFoundException pEx) {
@@ -73,11 +73,11 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
 
     /**
-     * Action de déconnexion d'un utilisateur
+     * Action de déconnexion d'un author
      * @return success
      */
     public String doLogout() {
-        // Suppression de l'utilisateur en session
+        // Suppression de l'author en session
         this.servletRequest.getSession().invalidate();
 
         return ActionSupport.SUCCESS;

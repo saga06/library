@@ -21,7 +21,7 @@
                </s:a>
 
                - Auteur :
-               <s:a action="utilisateur_detail">
+               <s:a action="author_detail">
                    <s:param name="id" value="author.id"/>
                    <s:property value="author.prenom" /> <s:property value="author.nom" />
                </s:a>

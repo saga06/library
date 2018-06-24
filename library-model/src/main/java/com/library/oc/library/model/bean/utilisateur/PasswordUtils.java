@@ -1,4 +1,4 @@
-package com.library.oc.library.model.bean.utilisateur;
+package com.library.oc.library.model.bean.author;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;

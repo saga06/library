@@ -24,7 +24,7 @@
                 <li class="active"><a href="..">Accueil</a></li>
                 <li><a href="../jsp/about.jsp">A propos</a></li>
                 <s:if test="#session.user">
-                    Utilisateur connecté :
+                    Author connecté :
                     <s:property value="#session.user.prenom" />
                     <s:property value="#session.user.nom" />
 

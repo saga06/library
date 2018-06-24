@@ -18,7 +18,7 @@
     <s:form action="book_new">
         <s:textfield name="book.nom" label="Nom" requiredLabel="true" />
         <s:select name="book.author.id" label="Author"
-                  list="listUtilisateur" listKey="id" listValue="prenom"
+                  list="listAuthor" listKey="id" listValue="prenom"
                   emptyOption="true"
                   requiredLabel="true" />
 

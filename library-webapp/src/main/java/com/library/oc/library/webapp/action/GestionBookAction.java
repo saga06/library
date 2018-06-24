@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.library.oc.library.business.contract.ManagerFactory;
 import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.library.model.bean.utilisateur.Utilisateur;
+import com.library.oc.library.model.bean.author.Author;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.model.exception.TechnicalException;
@@ -31,7 +31,7 @@ public class GestionBookAction extends ActionSupport {
     // ----- Eléments en sortie
     private List<Book> listBook;
     private Book book;
-    private List<Utilisateur> listUtilisateur;
+    private List<Author> listAuthor;
 
     @Inject
     private ManagerFactory managerFactory;
@@ -52,8 +52,8 @@ public class GestionBookAction extends ActionSupport {
     }
     public void setBook(Book pBook) {book=pBook;}
 
-    public List<Utilisateur> getListUtilisateur() {
-        return listUtilisateur;
+    public List<Author> getListAuthor() {
+        return listAuthor;
     }
     // ==================== Méthodes ====================
     /**
@@ -102,9 +102,9 @@ public class GestionBookAction extends ActionSupport {
                 this.addFieldError("book.author.id", "ne doit pas être vide");
             } else {
                 try {
-                    Utilisateur vAuthor
-                            = managerFactory.getUtilisateurManager()
-                            .getUtilisateur(this.book.getAuthor().getId());
+                    Author vAuthor
+                            = managerFactory.getAuthorManager()
+                            .getAuthor(this.book.getAuthor().getId());
                     this.book.setAuthor(vAuthor);
                 } catch (NotFoundException pEx) {
                     this.addFieldError("book.author.id", pEx.getMessage());
@@ -136,7 +136,7 @@ public class GestionBookAction extends ActionSupport {
 
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
-            this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();
+            this.listAuthor = managerFactory.getAuthorManager().getListAuthor();
         }
 
         return vResult;

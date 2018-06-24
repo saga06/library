@@ -1,4 +1,4 @@
-package com.library.oc.library.model.bean.utilisateur;
+package com.library.oc.library.model.bean.author;
 
 public class ProtectUserPassword {
     public static void main(String[] args)

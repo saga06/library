@@ -4,7 +4,7 @@ import java.util.Date;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.library.oc.library.model.bean.utilisateur.Utilisateur;
+import com.library.oc.library.model.bean.author.Author;
 
 
 /**
@@ -27,7 +27,7 @@ public class Book {
     private Boolean cloture;
 
     @NotNull
-    private Utilisateur author;
+    private Author author;
 
 
     // ==================== Constructeurs ====================
@@ -72,10 +72,10 @@ public class Book {
     public void setCloture(Boolean pCloture) {
         cloture = pCloture;
     }
-    public Utilisateur getAuthor() {
+    public Author getAuthor() {
         return author;
     }
-    public void setAuthor(Utilisateur pAuthor) {
+    public void setAuthor(Author pAuthor) {
         author = pAuthor;
     }
 

@@ -18,7 +18,7 @@
         <li>Date création : <s:date name="book.dateCreation" /></li>
         <li>
             Auteur :
-            <s:a action="utilisateur_detail">
+            <s:a action="author_detail">
                 <s:param name="id" value="book.author.id" />
                 <s:property value="book.author.prenom"/> <s:property value="book.author.nom"/>
             </s:a>

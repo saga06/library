@@ -11,7 +11,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 
 import com.library.oc.library.business.contract.manager.BookManager;
-import com.library.oc.library.business.contract.manager.UtilisateurManager;
+import com.library.oc.library.business.contract.manager.AuthorManager;
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.library.model.bean.book.Version;
 import com.library.oc.library.model.exception.FunctionalException;
@@ -22,7 +22,7 @@ import com.library.oc.library.model.exception.NotFoundException;
 public class BookManagerImpl extends AbstractManager implements BookManager {
 
     @Inject
-    private UtilisateurManager utilisateurManager;
+    private AuthorManager authorManager;
 
     // Je stocke les books en mémoire car je n'ai pas codé de persistance
     private final List<Book> listBook = new ArrayList<>();
@@ -58,7 +58,7 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
             vBook.setCloture(false);
             vBook.setDateCreation(new Date());
             try {
-                vBook.setAuthor(utilisateurManager.getUtilisateur(vId % 4));
+                vBook.setAuthor(authorManager.getAuthor(vId % 4));
             } catch (NotFoundException vEx) {
                 vBook.setAuthor(null);
             }

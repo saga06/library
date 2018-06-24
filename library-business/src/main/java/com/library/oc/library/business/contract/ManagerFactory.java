@@ -1,7 +1,7 @@
 package com.library.oc.library.business.contract;
 
 import com.library.oc.library.business.contract.manager.BookManager;
-import com.library.oc.library.business.contract.manager.UtilisateurManager;
+import com.library.oc.library.business.contract.manager.AuthorManager;
 
 
 /**
@@ -11,5 +11,5 @@ public interface ManagerFactory {
 
     BookManager getBookManager();
 
-    UtilisateurManager getUtilisateurManager();
+    AuthorManager getAuthorManager();
 }
