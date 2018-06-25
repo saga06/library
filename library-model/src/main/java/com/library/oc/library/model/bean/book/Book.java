@@ -4,13 +4,13 @@ import java.util.Date;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.library.oc.library.model.bean.author.Author;
+import com.library.oc.library.model.bean.user.User;
 
 
 /**
  * Objet métier représentant un Book
  *
- * @author lgu
+ * @author sga
  */
 public class Book {
 
@@ -27,7 +27,7 @@ public class Book {
     private Boolean cloture;
 
     @NotNull
-    private Author author;
+    private User user;
 
 
     // ==================== Constructeurs ====================
@@ -72,11 +72,11 @@ public class Book {
     public void setCloture(Boolean pCloture) {
         cloture = pCloture;
     }
-    public Author getAuthor() {
-        return author;
+    public User getUser() {
+        return user;
     }
-    public void setAuthor(Author pAuthor) {
-        author = pAuthor;
+    public void setUser(User pUser) {
+        user = pUser;
     }
 
 

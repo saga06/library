@@ -17,8 +17,8 @@
     <h2>Formulaire d'inscription</h2>
     <s:form action="book_new">
         <s:textfield name="book.nom" label="Nom" requiredLabel="true" />
-        <s:select name="book.author.id" label="Author"
-                  list="listAuthor" listKey="id" listValue="prenom"
+        <s:select name="book.user.id" label="User"
+                  list="listUser" listKey="id" listValue="prenom"
                   emptyOption="true"
                   requiredLabel="true" />
 

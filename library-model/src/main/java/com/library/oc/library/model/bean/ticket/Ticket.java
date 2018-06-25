@@ -8,7 +8,7 @@ import com.library.oc.library.model.bean.book.Book;
 /**
  * Bean représentant un Ticket.
  *
- * @author lgu
+ * @user sga
  */
 public abstract class Ticket {
 

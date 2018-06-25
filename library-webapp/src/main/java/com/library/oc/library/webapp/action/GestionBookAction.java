@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.library.oc.library.business.contract.ManagerFactory;
 import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.library.model.bean.author.Author;
+import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.model.exception.TechnicalException;
@@ -31,7 +31,7 @@ public class GestionBookAction extends ActionSupport {
     // ----- Eléments en sortie
     private List<Book> listBook;
     private Book book;
-    private List<Author> listAuthor;
+    private List<User> listUser;
 
     @Inject
     private ManagerFactory managerFactory;
@@ -52,8 +52,8 @@ public class GestionBookAction extends ActionSupport {
     }
     public void setBook(Book pBook) {book=pBook;}
 
-    public List<Author> getListAuthor() {
-        return listAuthor;
+    public List<User> getListUser() {
+        return listUser;
     }
     // ==================== Méthodes ====================
     /**
@@ -96,18 +96,18 @@ public class GestionBookAction extends ActionSupport {
 
         // ===== Validation de l'ajout de book (book != null)
         if (this.book != null) {
-            // Récupération du author
-            if (this.book.getAuthor() == null
-                    || this.book.getAuthor().getId() == null) {
-                this.addFieldError("book.author.id", "ne doit pas être vide");
+            // Récupération du user
+            if (this.book.getUser() == null
+                    || this.book.getUser().getId() == null) {
+                this.addFieldError("book.user.id", "ne doit pas être vide");
             } else {
                 try {
-                    Author vAuthor
-                            = managerFactory.getAuthorManager()
-                            .getAuthor(this.book.getAuthor().getId());
-                    this.book.setAuthor(vAuthor);
+                    User vUser
+                            = managerFactory.getUserManager()
+                            .getUser(this.book.getUser().getId());
+                    this.book.setUser(vUser);
                 } catch (NotFoundException pEx) {
-                    this.addFieldError("book.author.id", pEx.getMessage());
+                    this.addFieldError("book.user.id", pEx.getMessage());
                 }
             }
             // Date de création
@@ -136,7 +136,7 @@ public class GestionBookAction extends ActionSupport {
 
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
-            this.listAuthor = managerFactory.getAuthorManager().getListAuthor();
+            this.listUser = managerFactory.getUserManager().getListUser();
         }
 
         return vResult;

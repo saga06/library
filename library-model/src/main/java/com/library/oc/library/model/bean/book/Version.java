@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 /**
  * Objet métier représentant une Version de Book
  *
- * @author lgu
+ * @author sga
  */
 public class Version {
 

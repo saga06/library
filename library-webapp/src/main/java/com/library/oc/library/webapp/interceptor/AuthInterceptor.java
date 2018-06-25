@@ -5,7 +5,7 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 /**
- * Interceptor permettant de vérifier qu'author est bien connecté et existe en session.
+ * Interceptor permettant de vérifier qu'user est bien connecté et existe en session.
  * Si c'est le cas, on laisse passer la requête, sinon, on va partir sur un result, disant que l'action est interdite,
  * cette méthode renvoi un string qui est le result à utiliser par struts
  *
@@ -21,7 +21,7 @@ public class AuthInterceptor extends AbstractInterceptor {
         // suivant dans la pile d'interceptor et renvoie son retour
         if (invocation.getInvocationContext().getSession().get("user") != null) {
             vResult = invocation.invoke();
-            // si je n'ai pas d'author en session, on retourne un result (error-forbidden)
+            // si je n'ai pas d'user en session, on retourne un result (error-forbidden)
         } else {
             vResult = "error-forbidden";
         }

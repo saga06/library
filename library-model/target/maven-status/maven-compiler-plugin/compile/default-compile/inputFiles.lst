@@ -1,9 +1,9 @@
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\exception\TechnicalException.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\ticket\HistoriqueStatut.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\book\Version.java
-C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\utilisateur\Utilisateur.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\App.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\ticket\Bug.java
+C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\utilisateur\Author.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\utilisateur\PasswordUtils.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\ticket\Ticket.java
 C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model\bean\ticket\BugNiveau.java

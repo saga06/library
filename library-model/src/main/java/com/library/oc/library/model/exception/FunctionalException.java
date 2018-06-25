@@ -3,7 +3,7 @@ package com.library.oc.library.model.exception;
 /**
  * Classe d'exception levée quand une erreur fonctionnelle survient
  *
- * @author lgu
+ * @author sga
  */
 public class FunctionalException extends Exception {
 

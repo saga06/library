@@ -3,7 +3,7 @@ package com.library.oc.library.model.exception;
 /**
  * Classe d'exception levée quand l'objet métier demandé n'a pas été trouvé
  *
- * @author lgu
+ * @author sga
  */
 public class NotFoundException extends Exception {
 

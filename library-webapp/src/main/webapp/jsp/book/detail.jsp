@@ -18,9 +18,9 @@
         <li>Date création : <s:date name="book.dateCreation" /></li>
         <li>
             Auteur :
-            <s:a action="author_detail">
-                <s:param name="id" value="book.author.id" />
-                <s:property value="book.author.prenom"/> <s:property value="book.author.nom"/>
+            <s:a action="user_detail">
+                <s:param name="id" value="book.user.id" />
+                <s:property value="book.user.prenom"/> <s:property value="book.user.nom"/>
             </s:a>
         </li>
         <li>Cloturé : <s:property value="book.cloture" /></li>

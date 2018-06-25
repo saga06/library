@@ -33,7 +33,7 @@ public class DaoFactory {
         Properties properties = new Properties();
         String url = null;
         String driver;
-        String nomAuthor = null ;
+        String nomUser = null ;
         String motDePasse = null ;
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         InputStream fichierProperties = classLoader.getResourceAsStream( FICHIER_PROPERTIES );
@@ -42,7 +42,7 @@ public class DaoFactory {
             properties.load( fichierProperties );
             url = properties.getProperty( PROPERTY_URL );
             driver = "org.postgresql.Driver";
-            nomAuthor = properties.getProperty( PROPERTY_NOM_UTILISATEUR );
+            nomUser = properties.getProperty( PROPERTY_NOM_UTILISATEUR );
             motDePasse = properties.getProperty( PROPERTY_MOT_DE_PASSE );
 
             //loading drivers for postgreSQL
@@ -52,7 +52,7 @@ public class DaoFactory {
             e.printStackTrace();
         }
 
-        DaoFactory instance = new DaoFactory (url, nomAuthor, motDePasse);
+        DaoFactory instance = new DaoFactory (url, nomUser, motDePasse);
         return instance;
     }
 

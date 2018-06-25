@@ -10,12 +10,12 @@
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
-    <h2>Détail de l'author</h2>
+    <h2>Détail de l'user</h2>
 
     <ul>
-        <li>ID : <s:property value="author.id" /></li>
-        <li>Nom : <s:property value="author.nom" /></li>
-        <li>Prénom : <s:property value="author.prenom" /></li>
+        <li>ID : <s:property value="user.id" /></li>
+        <li>Nom : <s:property value="user.nom" /></li>
+        <li>Prénom : <s:property value="user.prenom" /></li>
     </ul>
 </div>
 <%@ include file="../_include/footer.jsp" %>

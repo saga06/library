@@ -1,7 +1,7 @@
 package com.library.oc.library.webapp.action;
 
 import com.library.oc.library.business.contract.ManagerFactory;
-import com.library.oc.library.model.bean.author.Author;
+import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.webapp.WebappHelper;
 import com.opensymphony.xwork2.ActionSupport;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
- * Action de gestion de la connexion/déconnexion d'un author
+ * Action de gestion de la connexion/déconnexion d'un user
  */
 public class LoginAction extends ActionSupport implements SessionAware, ServletRequestAware {
 
@@ -49,19 +49,19 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
     // ==================== Méthodes ====================
     /**
-     * Action permettant la connexion d'un author
+     * Action permettant la connexion d'un user
      * @return input / success
      */
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
             try {
-                Author vAuthor
-                        = managerFactory.getAuthorManager()
-                        .getAuthor(login, password);
+                User vUser
+                        = managerFactory.getUserManager()
+                        .getUser(login, password);
 
-                // Ajout de l'author en session
-                this.session.put("user", vAuthor);
+                // Ajout de l'user en session
+                this.session.put("user", vUser);
 
                 vResult = ActionSupport.SUCCESS;
             } catch (NotFoundException pEx) {
@@ -73,11 +73,11 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
 
     /**
-     * Action de déconnexion d'un author
+     * Action de déconnexion d'un user
      * @return success
      */
     public String doLogout() {
-        // Suppression de l'author en session
+        // Suppression de l'user en session
         this.servletRequest.getSession().invalidate();
 
         return ActionSupport.SUCCESS;

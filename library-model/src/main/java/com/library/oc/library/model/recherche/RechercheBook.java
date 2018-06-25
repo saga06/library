@@ -4,7 +4,7 @@ public class RechercheBook {
     /**
      * Classe de critères de recherche de Ticket.
      *
-     * @author lgu
+     * @author sga
      */
         // ==================== Attributs ====================
         private Integer bookId;

@@ -9,7 +9,7 @@ import com.library.oc.library.model.bean.book.Version;
 /**
  * Bean représentant un Ticket de type "Bug".
  *
- * @author lgu
+ * @author sga
  */
 public class Bug extends Ticket {
 

@@ -19,8 +19,8 @@
 
     <!-- ===== Manager factory ==== -->
     <bean id="managerFactory" class="com.library.oc.library.business.impl.ManagerFactoryImpl" >
-    <property name="bookManager" ref="bookManager"/>
-    <property name="authorManager" ref="authorManager"/>
+        <property name="authorManager" ref="authorManager"/>
+        <property name="bookManager" ref="bookManager"/>
     </bean>
 
 

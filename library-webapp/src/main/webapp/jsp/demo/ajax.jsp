@@ -43,7 +43,7 @@
                         jQuery("<li>")
                             .append(val.nom)
                             .append(" - Auteur : ")
-                            .append(val.author.prenom)
+                            .append(val.user.prenom)
                     );
                 });
             })

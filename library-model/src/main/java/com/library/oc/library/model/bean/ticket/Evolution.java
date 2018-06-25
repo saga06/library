@@ -3,7 +3,7 @@ package com.library.oc.library.model.bean.ticket;
 /**
  * Bean représentant un Ticket de type "Évolution".
  *
- * @author lgu
+ * @author sga
  */
 public class Evolution extends Ticket {
 

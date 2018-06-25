@@ -3,7 +3,7 @@ package com.library.oc.library.model.bean.ticket;
 /**
  * Bean représentant le Niveau d'un Bug.
  *
- * @author lgu
+ * @author sga
  */
 public class BugNiveau {
 

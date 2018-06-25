@@ -3,7 +3,7 @@ package com.library.oc.library.model.bean.ticket;
 /**
  * Bean représentant le Statut d'un Ticket.
  *
- * @author lgu
+ * @author sga
  */
 public class TicketStatut {
 
