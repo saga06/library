@@ -4,8 +4,10 @@ public class User {
 
     // ==================== Attributs ====================
     private Integer id;
-    private String nom;
-    private String prenom;
+    private String surname;
+    private String lastname;
+    private String email;
+    private String pass;
 
 
     // ==================== Constructeurs ====================
@@ -34,22 +36,39 @@ public class User {
         id = pId;
     }
 
-    public String getNom() {
-        return nom;
-    }
-    public void setNom(String pNom) {
-        nom = pNom;
+    public String getSurname() {
+        return surname;
     }
 
-    public String getPrenom() {
-        return prenom;
-    }
-    public void setPrenom(String pPrenom) {
-        prenom = pPrenom;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
+    public String getLastname() {
+        return lastname;
+    }
 
-    /*// ==================== Méthodes ====================
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+/*// ==================== Méthodes ====================
     @Override
     public String toString() {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());

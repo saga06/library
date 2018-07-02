@@ -18,16 +18,15 @@ public class Book {
     private Integer id;
 
     @NotNull
-    @Size(min = 1, max = 100)
-    private String nom;
+    private Integer numberOfCopies;
+
+    private String title;
 
     @NotNull
-    private Date dateCreation;
-
-    private Boolean cloture;
+    private Integer editorId;
 
     @NotNull
-    private User user;
+    private String isbn;
 
 
     // ==================== Constructeurs ====================
@@ -54,31 +53,35 @@ public class Book {
     public void setId(Integer pId) {
         id = pId;
     }
-    public String getNom() {
-        return nom;
-    }
-    public void setNom(String pNom) {
-        nom = pNom;
-    }
-    public Date getDateCreation() {
-        return dateCreation;
-    }
-    public void setDateCreation(Date pDateCreation) {
-        dateCreation = pDateCreation;
-    }
-    public Boolean getCloture() {
-        return cloture;
-    }
-    public void setCloture(Boolean pCloture) {
-        cloture = pCloture;
-    }
-    public User getUser() {
-        return user;
-    }
-    public void setUser(User pUser) {
-        user = pUser;
+
+
+    public Integer getNumberOfCopies() {
+        return numberOfCopies;
     }
 
+    public void setNumberOfCopies(Integer numberOfCopies) {
+        this.numberOfCopies = numberOfCopies;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Integer getEditorId() {
+        return editorId;
+    }
+
+    public void setEditorId(Integer editorId) {
+        this.editorId = editorId;
+    }
+
+    public String getIsbn() { return isbn; }
+
+    public void setIsbn(String isbn) { this.isbn = isbn; }
 
     // ==================== Méthodes ====================
     public String toString() {
@@ -86,9 +89,9 @@ public class Book {
         final String vSEP = ", ";
         vStB.append(" {")
                 .append("id=").append(id)
-                .append(vSEP).append("nom=\"").append(nom).append('"')
-                .append(vSEP).append("dateCreation=").append(dateCreation)
-                .append(vSEP).append("cloture=").append(cloture)
+                .append(vSEP).append("titre=\"").append(title).append('"')
+                .append(vSEP).append("dateCreation=").append(numberOfCopies)
+                .append(vSEP).append("cloture=").append(editorId)
                 .append("}");
         return vStB.toString();
     }

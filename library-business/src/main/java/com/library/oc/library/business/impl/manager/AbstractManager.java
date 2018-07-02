@@ -1,7 +1,7 @@
 package com.library.oc.library.business.impl.manager;
 
 
-import com.library.oc.consumer.contract.dao.DaoFactory;
+import com.library.oc.consumer.contract.DaoFactory;
 
 import javax.validation.Configuration;
 import javax.validation.Validation;
@@ -26,12 +26,12 @@ public abstract class AbstractManager {
      *
      * @return Validator
      */
-   /* protected Validator getConstraintValidator() {
+    protected Validator getConstraintValidator() {
         Configuration<?> vConfiguration = Validation.byDefaultProvider().configure();
         ValidatorFactory vFactory = vConfiguration.buildValidatorFactory();
         Validator vValidator = vFactory.getValidator();
         return vValidator;
-    }*/
+    }
 
 
 

@@ -1,8 +1,6 @@
-/*
 package com.library.oc.library.business.impl.manager;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import javax.annotation.PostConstruct;
@@ -15,6 +13,7 @@ import com.library.oc.library.business.contract.manager.BookManager;
 import com.library.oc.library.business.contract.manager.UserManager;
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.library.model.bean.book.Version;
+import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 
@@ -42,33 +41,30 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
 
     @Override
-    public List<Book> getListBook() {
-        // Je n'ai pas codé la DAO, je mets juste un code pour le cours...
+    public List<User> getListBook()
+    /*{
         return this.listBook;
+    }*/
+    {
+        return getDaoFactory().getBookDao().readAll();
     }
 
 
-    */
-/**
-     * Initialise et peuple la liste de {@link Book}
-     *//*
 
     @PostConstruct
-    private void initListBook() {
+    /*private void initListBook() {
         for (int vId = 0; vId < 9; vId++) {
             Book vBook = new Book(vId);
-            vBook.setNom("Ouvrage n°" + vId);
-            vBook.setCloture(false);
-            vBook.setDateCreation(new Date());
+            vBook.setTitle("Ouvrage n°" + vId);
             try {
-                vBook.setUser(userManager.getUser(vId % 4));
+                vBook.set(userManager.getUser(vId % 4));
             } catch (NotFoundException vEx) {
                 vBook.setUser(null);
             }
 
             this.listBook.add(vBook);
         }
-    }
+    }*/
 
 
     @Override
@@ -120,4 +116,3 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
     }
 
 }
-*/
