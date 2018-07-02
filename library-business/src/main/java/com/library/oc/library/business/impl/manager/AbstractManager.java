@@ -11,8 +11,9 @@ import javax.validation.ValidatorFactory;
 
 public abstract class AbstractManager {
 
-    private DaoFactory daoFactory;
-    protected DaoFactory getDaoFactory() {
+    private static DaoFactory daoFactory;
+
+    protected static DaoFactory getDaoFactory() {
         return daoFactory;
     }
 
@@ -25,12 +26,15 @@ public abstract class AbstractManager {
      *
      * @return Validator
      */
-    protected Validator getConstraintValidator() {
+   /* protected Validator getConstraintValidator() {
         Configuration<?> vConfiguration = Validation.byDefaultProvider().configure();
         ValidatorFactory vFactory = vConfiguration.buildValidatorFactory();
         Validator vValidator = vFactory.getValidator();
         return vValidator;
-    }
+    }*/
+
+
+
 
 
 }

@@ -1,3 +1,4 @@
+/*
 package com.library.oc.library.business.impl.manager;
 
 import java.util.ArrayList;
@@ -47,9 +48,11 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
     }
 
 
-    /**
+    */
+/**
      * Initialise et peuple la liste de {@link Book}
-     */
+     *//*
+
     @PostConstruct
     private void initListBook() {
         for (int vId = 0; vId < 9; vId++) {
@@ -117,3 +120,4 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
     }
 
 }
+*/

@@ -1,6 +1,5 @@
 package com.library.oc.library.webapp.action;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -12,7 +11,6 @@ import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.model.exception.TechnicalException;
-import com.library.oc.library.webapp.WebappHelper;
 import com.opensymphony.xwork2.ActionSupport;
 
 import javax.inject.Inject;
@@ -86,8 +84,9 @@ public class GestionBookAction extends ActionSupport {
     /**
      * Action permettant de créer un nouveau {@link Book}
      * @return input / success / error
+     * @param pId
      */
-    public String doCreate() {
+    public String doCreate(Object pId) {
         // Si (this.book == null) c'est que l'on entre dans l'ajout de book
         // Sinon, c'est que l'on vient de valider le formulaire d'ajout
 
@@ -136,7 +135,7 @@ public class GestionBookAction extends ActionSupport {
 
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
-            this.listUser = managerFactory.getUserManager().getListUser();
+            this.listUser = managerFactory.getUserManager().getListUser(pId);
         }
 
         return vResult;

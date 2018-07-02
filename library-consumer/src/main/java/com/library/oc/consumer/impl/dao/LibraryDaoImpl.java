@@ -1,3 +1,4 @@
+/*
 package com.library.oc.consumer.impl.dao;
 
 
@@ -7,7 +8,7 @@ import com.library.oc.library.model.recherche.RechercheBook;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @Named
-public class LibraryDaoImpl extends AbstratDaoImpl {
+public class LibraryDaoImpl extends AbstractDaoImpl {
 
     @Override
     public int getCountBook(RechercheBook pRechercheBook) {
@@ -19,3 +20,4 @@ public class LibraryDaoImpl extends AbstratDaoImpl {
         return vNbrBook;
     }
 }
+*/

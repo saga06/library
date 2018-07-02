@@ -33,6 +33,7 @@ public class User {
     public void setId(Integer pId) {
         id = pId;
     }
+
     public String getNom() {
         return nom;
     }
@@ -48,7 +49,7 @@ public class User {
     }
 
 
-    // ==================== Méthodes ====================
+    /*// ==================== Méthodes ====================
     @Override
     public String toString() {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
@@ -59,5 +60,5 @@ public class User {
             .append(vSEP).append("prenom=\"").append(prenom).append('"')
             .append("}");
         return vStB.toString();
-    }
+    }*/
 }

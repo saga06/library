@@ -15,11 +15,11 @@
     </bean>
 
     <bean id="bookManager" class="com.library.oc.library.business.impl.manager.BookManagerImpl" parent="abstractManager" />
-    <bean id="authorManager" class="com.library.oc.library.business.impl.manager.AuthorManagerImpl" parent="abstractManager" />
+    <bean id="userManager" class="com.library.oc.library.business.impl.manager.UserManagerImpl" parent="abstractManager" />
 
     <!-- ===== Manager factory ==== -->
     <bean id="managerFactory" class="com.library.oc.library.business.impl.ManagerFactoryImpl" >
-        <property name="authorManager" ref="authorManager"/>
+        <property name="userManager" ref="userManager"/>
         <property name="bookManager" ref="bookManager"/>
     </bean>
 

@@ -49,8 +49,8 @@
             <result>/jsp/book/detail.jsp</result>
         </action>
 
-        <action name="author_detail"
-                class="com.library.oc.library.webapp.action.GestionAuthorAction"
+        <action name="user_detail"
+                class="com.library.oc.library.webapp.action.GestionUserAction"
                 method="doDetail">
 
             <interceptor-ref name="store">
@@ -58,7 +58,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result>/jsp/author/detail.jsp</result>
+            <result>/jsp/user/detail.jsp</result>
         </action>
 
         <!-- Action de démonstration pour l'AJAX -->

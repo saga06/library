@@ -21,9 +21,9 @@
                </s:a>
 
                - Auteur :
-               <s:a action="author_detail">
-                   <s:param name="id" value="author.id"/>
-                   <s:property value="author.prenom" /> <s:property value="author.nom" />
+               <s:a action="user_detail">
+                   <s:param name="id" value="user.id"/>
+                   <s:property value="user.prenom" /> <s:property value="user.nom" />
                </s:a>
            </li>
        </s:iterator>

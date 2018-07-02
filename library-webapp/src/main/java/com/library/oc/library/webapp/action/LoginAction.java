@@ -1,3 +1,4 @@
+/*
 package com.library.oc.library.webapp.action;
 
 import com.library.oc.library.business.contract.ManagerFactory;
@@ -13,9 +14,11 @@ import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
+*/
 /**
  * Action de gestion de la connexion/déconnexion d'un user
- */
+ *//*
+
 public class LoginAction extends ActionSupport implements SessionAware, ServletRequestAware {
 
 
@@ -48,10 +51,12 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
 
     // ==================== Méthodes ====================
-    /**
+    */
+/**
      * Action permettant la connexion d'un user
      * @return input / success
-     */
+     *//*
+
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
@@ -72,10 +77,12 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
     }
 
 
-    /**
+    */
+/**
      * Action de déconnexion d'un user
      * @return success
-     */
+     *//*
+
     public String doLogout() {
         // Suppression de l'user en session
         this.servletRequest.getSession().invalidate();
@@ -94,4 +101,4 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
         this.servletRequest = pRequest;
     }
 
-}
+}*/
