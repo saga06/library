@@ -13,13 +13,12 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
 
     @Override
     public List<User> getListUser(Object pId) {
-        { return getDaoFactory().getUserDao().readAll(); }
-    }
+        { return getDaoFactory().getUserDao().readAll(); } }
 
 
 
 
-   /* @Override
+    @Override
     public User getUser(Integer pId) throws NotFoundException {
         return getDaoFactory().getUserDao().read(pId);
     }
@@ -27,18 +26,6 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
     @Override
     public Integer getNbUser() {
         return getDaoFactory().getUserDao().getNbUser();
-
-    */
-
-
-    @Override
-    public User getUser(Integer pId) throws NotFoundException {
-        return null;
-    }
-
-    @Override
-    public Integer getNbUser() {
-        return null;
     }
 
 

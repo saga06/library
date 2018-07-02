@@ -13,7 +13,6 @@ import com.library.oc.library.business.contract.manager.BookManager;
 import com.library.oc.library.business.contract.manager.UserManager;
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.library.model.bean.book.Version;
-import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 
@@ -41,13 +40,14 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
 
     @Override
-    public List<User> getListBook()
+    public List<Book> getListBook()
     /*{
         return this.listBook;
     }*/
     {
         return getDaoFactory().getBookDao().readAll();
     }
+
 
 
 

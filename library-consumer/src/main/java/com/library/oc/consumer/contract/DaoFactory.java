@@ -12,7 +12,7 @@ import org.example.demo.ticket.consumer.contract.dao.VersionDao;*/
 
 import com.library.oc.consumer.contract.dao.UserDao;
 import com.library.oc.consumer.contract.dao.BookDao;
-
+import com.library.oc.consumer.impl.dao.BookStatutDao;
 
 
 public interface DaoFactory {
@@ -46,15 +46,14 @@ public interface DaoFactory {
     //----- HISTORIQUESTATUT -----
     HistoriqueStatutDao getHistoriqueStatutDao();
     void setHistoriqueStatutDao(HistoriqueStatutDao pHistoriqueStatutDao);
+    */
 
-    //----- TICKET -----
-    TicketDao getTicketDao();
-    void setTicketDao(TicketDao pTicketDao);
+    BookDao getBookDao();
+    void setBookDao(BookDao pBookDao);
 
-    //----- TICKET STATUT -----
-    TicketStatutDao getTicketStatutDao();
-    void setTicketStatutDao(TicketStatutDao pTicketStatutDao);
-*/
+    BookStatutDao getBookStatutDao();
+    void setBookStatutDao(BookStatutDao pBookStatutDao);
+
 
 
     //----- UTILISATEUR -----
@@ -62,8 +61,6 @@ public interface DaoFactory {
     void setUserDao(UserDao pBookDao);
 
     //----- Book -----
-    BookDao getBookDao();
-    void setBookDao(BookDao pBookDao);
 
-    UserDao getBookDao();
+
 }

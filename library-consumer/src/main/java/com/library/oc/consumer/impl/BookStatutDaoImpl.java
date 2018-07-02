@@ -8,9 +8,9 @@ import javax.inject.Named;
 import com.library.oc.consumer.impl.dao.AbstractDao;
 import com.library.oc.consumer.impl.dao.BookStatutDao;
 import com.library.oc.library.model.bean.book.BookStatut;
-import com.library.oc.consumer.contract.dao.BookStatutDao;
-import com.library.oc.consumer.impl.rowmapper.BookStatutRM;
-import com.library.oc.model.bean.book.BookStatut;
+import com.library.oc.consumer.impl.dao.BookStatutDao;
+import com.library.oc.consumer.rowmapper.BookStatutRM;
+import com.library.oc.library.model.bean.book.BookStatut;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**

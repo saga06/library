@@ -1,3 +1,4 @@
+/*
 package com.library.oc.library.webapp.action;
 
 import java.util.Collections;
@@ -16,9 +17,11 @@ import com.opensymphony.xwork2.ActionSupport;
 import javax.inject.Inject;
 
 
+*/
 /**
  * Action de gestion des {@link Book}
- */
+ *//*
+
 public class GestionBookAction extends ActionSupport {
 
 
@@ -54,20 +57,24 @@ public class GestionBookAction extends ActionSupport {
         return listUser;
     }
     // ==================== Méthodes ====================
-    /**
+    */
+/**
      * Action listant les {@link Book}
      * @return success
-     */
+     *//*
+
     public String doList() {
         listBook = managerFactory.getBookManager().getListBook();
         return ActionSupport.SUCCESS;
     }
 
 
-    /**
+    */
+/**
      * Action affichant les détails d'un {@link Book}
      * @return success / error
-     */
+     *//*
+
     public String doDetail() {
         if (id == null) {
             this.addActionError(getText("error.book.missing.id"));
@@ -81,11 +88,13 @@ public class GestionBookAction extends ActionSupport {
 
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
-    /**
+    */
+/**
      * Action permettant de créer un nouveau {@link Book}
      * @return input / success / error
      * @param pId
-     */
+     *//*
+
     public String doCreate(Object pId) {
         // Si (this.book == null) c'est que l'on entre dans l'ajout de book
         // Sinon, c'est que l'on vient de valider le formulaire d'ajout
@@ -140,4 +149,4 @@ public class GestionBookAction extends ActionSupport {
 
         return vResult;
     }
-}
+}*/

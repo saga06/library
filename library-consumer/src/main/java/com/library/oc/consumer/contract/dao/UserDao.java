@@ -45,6 +45,6 @@ public interface UserDao {
      * @param
      * @return Le nombre de user
      */
-    List<User> getNbUser();
+    Integer getNbUser();
 }
 

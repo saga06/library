@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.library.model.bean.book.Version;
-import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.model.exception.TechnicalException;
@@ -20,7 +19,7 @@ public interface BookManager {
      *
      * @return List
      */
-    List<User> getListBook();
+    List<Book> getListBook();
 
     /**
      * Renvoie le book demandé
