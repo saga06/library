@@ -15,13 +15,6 @@ import com.library.oc.library.model.exception.TechnicalException;
 public interface BookManager {
 
     /**
-     * Renvoie la liste des {@link Book}
-     *
-     * @return List
-     */
-    List<Book> getListBook();
-
-    /**
      * Renvoie le book demandé
      *
      * @param pId l'identifiant du book
@@ -30,28 +23,20 @@ public interface BookManager {
      */
     Book getBook(Integer pId) throws NotFoundException;
 
-
     /**
-     * Ajoute un nouveau {@link Book}
-     * @param pBook -
-     * @throws FunctionalException Book invalide
-     * @throws TechnicalException Erreur technique
-     */
-    void insertBook(Book pBook) throws FunctionalException, TechnicalException;
-
-
-    /**
-     * Renvoie la liste des versions d'un book
-     * @param pBook -
+     * Renvoie la liste des {@link Book}
+     * @param pRechercheBook
      * @return List
      */
-    List<Version> getListVersion(Book pBook);
+    List<Book> getListBook();
 
 
     /**
-     * Ajoute une nouvelle {@link Version} de {@link Book}
-     * @param pVersion -
-     * @throws FunctionalException Version invalide
+     * Détermine le nombre de book en base de données.
+     *
+     * @return Le nombre de book en base de données
      */
-    void insertVersion(Version pVersion) throws FunctionalException;
+    int getNbBook();
+
+
 }

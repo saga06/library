@@ -20,99 +20,14 @@ import com.library.oc.library.model.exception.NotFoundException;
 @Named
 public class BookManagerImpl extends AbstractManager implements BookManager {
 
-    @Inject
-    private UserManager userManager;
-
-    // Je stocke les books en mémoire car je n'ai pas codé de persistance
-    private final List<Book> listBook = new ArrayList<>();
+    @Override
+    public Book getBook(Integer pId) throws NotFoundException { return getDaoFactory().getBookDao().read(pId); }
 
 
     @Override
-    public Book getBook(Integer pId) throws NotFoundException {
-        // Je n'ai pas codé la DAO, je mets juste un code pour le cours...
-        Book vBook
-                = this.listBook.stream()
-                .filter(p -> p.getId().equals(pId))
-                .findFirst()
-                .orElseThrow(() -> new NotFoundException("Ouvrage non trouvé : ID=" + pId));
-        return vBook;
-    }
-
+    public List<Book> getListBook() { return getDaoFactory().getBookDao().readAll(); }
 
     @Override
-    public List<Book> getListBook()
-    /*{
-        return this.listBook;
-    }*/
-    {
-        return getDaoFactory().getBookDao().readAll();
-    }
-
-
-
-
-    @PostConstruct
-    /*private void initListBook() {
-        for (int vId = 0; vId < 9; vId++) {
-            Book vBook = new Book(vId);
-            vBook.setTitle("Ouvrage n°" + vId);
-            try {
-                vBook.set(userManager.getUser(vId % 4));
-            } catch (NotFoundException vEx) {
-                vBook.setUser(null);
-            }
-
-            this.listBook.add(vBook);
-        }
-    }*/
-
-
-    @Override
-    public void insertBook(Book pBook) throws FunctionalException {
-        if (pBook == null) {
-            throw new FunctionalException("L'objet Ouvrage ne doit pas être null !");
-        }
-
-        Set<ConstraintViolation<Book>> vViolations = getConstraintValidator().validate(pBook);
-        if (!vViolations.isEmpty()) {
-            throw new FunctionalException("L'objet Ouvrage est invalide",
-                    new ConstraintViolationException(vViolations));
-        }
-
-        // TODO Persistance
-        pBook.setId(999);
-        this.listBook.add(pBook);
-    }
-
-
-    @Override
-    public List<Version> getListVersion(Book pBook) {
-        // Je n'ai pas codé la DAO, je mets juste un code pour le cours...
-        List<Version> vListVersion = new ArrayList<>();
-        Version vVersion;
-        for (int vI = 0; vI < 5; vI++) {
-            vVersion = new Version();
-            vVersion.setBook(pBook);
-            vVersion.setNumero("1." + pBook.getId() + '.' + vI);
-            vListVersion.add(vVersion);
-        }
-        return vListVersion;
-    }
-
-
-    @Override
-    public void insertVersion(Version pVersion) throws FunctionalException {
-        if (pVersion == null) {
-            throw new FunctionalException("L'objet Version ne doit pas être null !");
-        }
-
-        Set<ConstraintViolation<Version>> vViolations = getConstraintValidator().validate(pVersion);
-        if (!vViolations.isEmpty()) {
-            throw new FunctionalException("L'objet Version est invalide",
-                    new ConstraintViolationException(vViolations));
-        }
-
-        // TODO Persistance
-    }
+    public int getNbBook() { return getDaoFactory().getBookDao().getCountBook(); }
 
 }
