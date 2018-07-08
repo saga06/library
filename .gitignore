@@ -1,5 +1,3 @@
-library-webapp/target/*
-library-model/target/*
-library-consumer/target/*
-library-business/target/*
-library-batch/target/*
+
+target/
+.idea/

@@ -1,5 +1,0 @@
-com\library\oc\library\webapp\resource\AbstractResource.class
-com\library\oc\library\webapp\interceptor\AuthInterceptor.class
-com\library\oc\library\webapp\action\DemoAjaxAction.class
-com\library\oc\library\webapp\WebappHelper.class
-com\library\oc\library\webapp\action\GestionUserAction.class

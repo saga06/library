@@ -2,117 +2,11 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="library-webapp:war exploded" />
+      <artifact name="library-webapp:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/resource/AbstractResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/src/main/resources/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/src/main/resources/bootstrapContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/target/classes/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/target/classes/bootstrapContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/target/library-batch-1.0-SNAPSHOT-archive-deploy.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/target/library-batch-1.0-SNAPSHOT-archive-deploy.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/target/library-batch-1.0-SNAPSHOT-archive-deploy.zip" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/target/library-batch-1.0-SNAPSHOT-archive-deploy.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/target/library-batch-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/target/library-batch-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/target/surefire-reports/TEST-com.library.oc.library.webapp.batch.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/target/surefire-reports/TEST-com.library.oc.library.webapp.batch.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-batch/target/surefire-reports/com.library.oc.library.webapp.batch.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library-batch/target/surefire-reports/com.library.oc.library.webapp.batch.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/ManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/ManagerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/ManagerFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/ManagerFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/businessContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/businessContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/contract/ManagerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/contract/ManagerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/impl/manager/AbstractManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/impl/manager/AbstractManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/impl/manager/BookManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/impl/manager/BookManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/impl/manager/UserManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/classes/com/library/oc/library/business/impl/manager/UserManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/library-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/library-business-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/target/surefire-reports/com.library.oc.library.business.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/target/surefire-reports/com.library.oc.library.business.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/LibraryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/BookStatutDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookStatutDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookStatutDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookStatutDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/LibraryDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/AuthorRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookStatutRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookStatutRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/UserRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/contract/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/contract/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/contract/dao/LibraryDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/BookDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/BookStatutDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/DaoFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/DaoFactoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/dao/AuthorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/dao/AuthorDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/dao/BookStatutDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/impl/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/rowmapper/AuthorRM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/rowmapper/BookRM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/rowmapper/BookStatutRM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/classes/com/library/oc/consumer/rowmapper/UserRM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/library-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/library-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/surefire-reports/TEST-com.library.oc.library.webapp.consumer.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/surefire-reports/TEST-com.library.oc.library.webapp.consumer.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/target/surefire-reports/com.library.oc.library.webapp.consumer.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/target/surefire-reports/com.library.oc.library.webapp.consumer.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/Bug.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/BugNiveau.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/Commentaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/Evolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/HistoriqueStatut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/TicketStatut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/Bug.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/BugNiveau.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/Commentaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/Evolution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/HistoriqueStatut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/classes/com/library/oc/library/model/bean/ticket/TicketStatut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/library-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/target/library-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/surefire-reports/TEST-com.library.oc.library.model.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/target/surefire-reports/TEST-com.library.oc.library.model.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/target/surefire-reports/com.library.oc.library.model.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/target/surefire-reports/com.library.oc.library.model.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/library-webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/library-webapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/bootstrapContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/com/library/oc/library/webapp/webappContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/com/library/oc/library/webapp/webappContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/classes/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/classes/bootstrapContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/classes/com/library/oc/library/webapp/webappContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/classes/com/library/oc/library/webapp/webappContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/classes/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/classes/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/classes/bootstrapContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/classes/com/library/oc/library/webapp/webappContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/classes/com/library/oc/library/webapp/webappContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/classes/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/lib/library-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/lib/library-business-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/lib/library-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/lib/library-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/lib/library-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/WEB-INF/lib/library-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/com/library/oc/library/webapp/WebappHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/com/library/oc/library/webapp/action/DemoAjaxAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/com/library/oc/library/webapp/action/GestionUserAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/com/library/oc/library/webapp/interceptor/AuthInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/com/library/oc/library/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/jsp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/jsp/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/library-webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/library-webapp/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/library-business/target/" />
     <ignored path="$PROJECT_DIR$/library-webapp/target/" />
     <ignored path="$PROJECT_DIR$/library-consumer/target/" />
@@ -173,11 +67,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="businessContext.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="businessContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="474">
-              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="716">
+              <caret line="1191" column="10" selection-start-line="1191" selection-start-column="10" selection-end-line="1191" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -186,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="329">
-              <caret line="333" column="29" lean-forward="true" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
+              <caret line="333" column="29" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -195,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,10 +132,23 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>annota</find>
+      <find>autho</find>
+      <find>uti</find>
+      <find>version</find>
+      <find>author</find>
+      <find>login</find>
+      <find>select</find>
+      <find>spring</find>
+      <find>getdata</find>
+      <find>postgre</find>
+      <find>jdbc</find>
+      <find>abstractda</find>
+      <find>abs</find>
       <find>datasourcelib</find>
       <find>invo</find>
       <find>getuser</find>
-      <find />
+      <find>bean id</find>
       <find>TicketStatutRm</find>
       <find>Utilisateur</find>
       <find>getnbuser</find>
@@ -246,19 +162,6 @@
       <find>ticket</find>
       <find>user</find>
       <find>utilisateur</find>
-      <find>managerf</find>
-      <find>Airon</find>
-      <find>root</find>
-      <find>postgres</find>
-      <find>da</find>
-      <find>@</find>
-      <find>pplication</find>
-      <find>servlet</find>
-      <find>spring</find>
-      <find>sprin</find>
-      <find>daofa</find>
-      <find>struts</find>
-      <find>daofactor</find>
     </findStrings>
     <replaceStrings>
       <replace>Author</replace>
@@ -277,6 +180,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/library-model/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UtilisateurManager.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UtilisateurManagerImpl.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/ManagerFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml" />
+        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Version.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/AuthorManager.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AuthorManagerImpl.java" />
+        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/utilisateur/ProtectUserPassword.java" />
+        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/utilisateur/VerifyProvidedPassword.java" />
+        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/recherche/RechercherUser.java" />
+        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/recherche/RechercheUser.java" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/com/library/oc/library/webapp/webappContext.xml" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstratDaoImpl.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/LibraryDaoImpl.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDaoImpl.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/resources/com/library/oc/library/consumer/consumerContext.xml" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/DaoFactory.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookDao.java" />
@@ -290,44 +215,22 @@
         <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookStatutManager.java" />
         <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookStatut.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookStatutDao.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/AuthorDao.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/UserRM.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookStatutRM.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/BookStatutDaoImpl.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/AuthorRM.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" />
         <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Author.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookRM.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/ManagerFactory.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/ManagerFactoryImpl.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/library-batch/src/data/conf/db-library.properties" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/resources/dao.properties" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookStatutDao.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookStatutDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookStatutRM.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/resource/AbstractResource.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/com/library/oc/library/webapp/webappContext.xml" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/bootstrapContext.xml" />
-        <option value="$PROJECT_DIR$/library-batch/src/main/resources/bootstrapContext.xml" />
-        <option value="$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java" />
-        <option value="$PROJECT_DIR$/library-batch/pom.xml" />
-        <option value="$PROJECT_DIR$/library-business/pom.xml" />
-        <option value="$PROJECT_DIR$/library-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/library-model/pom.xml" />
-        <option value="$PROJECT_DIR$/library-webapp/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" />
+        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" />
       </list>
     </option>
   </component>
@@ -360,7 +263,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-135" />
     <option name="width" value="1936" />
@@ -382,7 +288,7 @@
             <path>
               <item name="library" type="b2602c69:ProjectViewProjectNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -407,9 +313,12 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.library.oc.consumer.impl.dao" />
-      <recent name="com.library.oc.consumer.contract.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-batch\src\main\resources\com\library\oc\library\batch" />
+      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\resources\com\library\oc\library\webapp" />
+      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model" />
+      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\webapp\business" />
+      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\java\com\library\oc\library\webapp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.library.oc.consumer.impl" />
@@ -423,15 +332,11 @@
       <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.library.oc.library.webapp.resource" />
       <recent name="com.library.oc.dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-batch\src\main\resources\com\library\oc\library\batch" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\resources\com\library\oc\library\webapp" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\webapp\business" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\java\com\library\oc\library\webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.library.oc.consumer.impl.dao" />
+      <recent name="com.library.oc.consumer.contract.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -489,7 +394,6 @@
       <listeners />
     </configuration>
     <configuration name="Library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="library-webapp:war">
@@ -623,7 +527,7 @@
       <method>
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="library-webapp:war exploded" />
+          <artifact name="library-webapp:war" />
         </option>
       </method>
     </configuration>
@@ -673,21 +577,17 @@
       <workItem from="1530376469622" duration="12620000" />
       <workItem from="1530495032478" duration="4769000" />
       <workItem from="1530512009930" duration="5887000" />
-      <workItem from="1530553454373" duration="11186000" />
-      <workItem from="1530635445786" duration="4661000" />
-      <workItem from="1530735938687" duration="63000" />
-      <workItem from="1530806654863" duration="1792000" />
-      <workItem from="1530808846992" duration="976000" />
-      <workItem from="1530893904632" duration="2491000" />
-      <workItem from="1530898815156" duration="1204000" />
-      <workItem from="1531012605590" duration="8160000" />
-      <workItem from="1531024229038" duration="2849000" />
-      <workItem from="1531027113267" duration="2002000" />
+      <workItem from="1530553454373" duration="11098000" />
+      <workItem from="1530732369895" duration="3729000" />
+      <workItem from="1530810369293" duration="1516000" />
+      <workItem from="1531035297412" duration="4778000" />
+      <workItem from="1531044450110" duration="11000" />
+      <workItem from="1531044536778" duration="1621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182345000" />
+    <option name="totallyTimeSpent" value="158060000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,11 +599,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-135" width="1936" height="1176" extended-state="7" />
+    <frame x="1912" y="-135" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.40724948" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.14748603" />
+      <window_info anchor="bottom" id="Application Servers" order="12" visible="true" weight="0.14679803" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -720,7 +621,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59275055" visible="true" weight="0.417734" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59275055" weight="0.417734" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.2150289" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.40197045" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21588486" />
@@ -729,12 +630,41 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" x="4" y="-1057" width="1920" height="1017" id="Run" order="2" sideWeight="0.5919463" type="WINDOWED" weight="0.9240876" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.4080537" side_tool="true" weight="0.35516092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
+      <window_info id="Learn" order="8" weight="0.3299933" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.2150289" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32947975" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.14748603" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="15" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5734104" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16201118" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49840087" weight="0.19901478" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,20 +679,142 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookStatutManager.java">
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java">
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="289">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="1191" column="10" selection-start-line="1191" selection-start-column="10" selection-end-line="1191" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionUserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/LibraryDao.java" />
+    <entry file="jar://C:/env/java/jdk1.8.0_111/src.zip!/javax/sql/DataSource.java" />
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/com/library/oc/library/webapp/webappContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-batch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/utilisateur/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/LibraryDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Borrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Theme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/Bug.java" />
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookStatutRM.java" />
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/BookStatutDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookStatut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookStatutDao.java" />
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/UserRM.java" />
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/AuthorRM.java" />
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookRM.java" />
     <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -791,305 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="151" column="3" selection-start-line="151" selection-start-column="3" selection-end-line="151" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MODULES/mdl-library-consumer">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MODULES</ID>
-          <OriginalElement>mdl-library-consumer</OriginalElement>
-          <nodes>
-            <node x="" y="">mdl-library-consumer</node>
-            <node x="" y="">mdl-library-model</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="207.0" y="87.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MODULES/mdl-library">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MODULES</ID>
-          <OriginalElement>mdl-library</OriginalElement>
-          <nodes>
-            <node x="" y="">mdl-library</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="178.0" y="129.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-batch/src/data/conf/db-library.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://821c9e87-6013-4ca2-a362-3c85b70d7e04/database/projet4/schema/public/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://821c9e87-6013-4ca2-a362-3c85b70d7e04/database/projet4/schema/public/table/book_author">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/resources/dao.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://821c9e87-6013-4ca2-a362-3c85b70d7e04/database/projet4/schema/public/table/book_theme">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/ManagerFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/LibraryDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/LibraryDao.java" />
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookStatutDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-273">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookStatutDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/WebappHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookStatutRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/ManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/resource/AbstractResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/com/library/oc/library/webapp/webappContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/ticket/Evolution.java" />
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/bootstrapContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="83" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-batch/src/main/resources/bootstrapContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE-sources.jar!/org/springframework/util/MethodInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/java/jdk1.8.0_111/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-batch/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/env/.m2/settings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="333" column="29" lean-forward="true" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1100,20 +853,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/BookDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/ManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookStatutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/ManagerFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="333" column="29" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/resources/com/library/oc/library/consumer/consumerContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library-business/src/main/resources/com/library/oc/library/business/businessContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
         </state>
       </provider>
     </entry>
