@@ -42,10 +42,10 @@ import org.springframework.jdbc.core.RowMapper;
             /*BookStatut vBookNumberOfCopies= BookStatutDaoImpl.read(pRS.getInt("book_number_of_copies"));
             book.setNumberOfCopies(vBookNumberOfCopies);*/
 
-            //-- Récupérer l'utilisateur responsable du projet
-            Author vAuthor = authorDaoImpl.read(pRS.getInt("author_name"));
+            //-- Récupérer l'auteur du book
+            /*Author vAuthor = authorDaoImpl.read(pRS.getInt("author_name"));
             vAuthor.setName(vAuthor);
-
+*/
             /*Book vBook= BookDaoImpl.read(pRS.getInt("book_id"));
             book.setId(vBook);*/
 

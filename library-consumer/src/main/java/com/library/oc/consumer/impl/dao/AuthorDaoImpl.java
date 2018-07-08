@@ -27,7 +27,7 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
 
     @Override
     public Author read(int id) {
-        String vSQL = "SELECT * FROM author WHERE id="+id;
+        String vSQL = "SELECT author_name FROM author_author_id_seq WHERE id="+id;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
         List<Author> listAuthor = jdbcTemplate.query(vSQL, authorRM);
@@ -36,11 +36,6 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
         return author;
     }
 
-    @Override
-    public Author read(String code) {
-        // TODO Auto-generated method stub
-        return null;
-    }
 
     @Override
     public List<Author> readAll() {

@@ -22,7 +22,6 @@ public interface AuthorDao {
      * @return T
      */
     Author read(int id);
-    Author read(String code);
     List<Author> readAll();
     List<Author> readAll(int id);
 

@@ -89,9 +89,9 @@ public class Book {
         final String vSEP = ", ";
         vStB.append(" {")
                 .append("id=").append(id)
-                .append(vSEP).append("titre=\"").append(title).append('"')
-                .append(vSEP).append("dateCreation=").append(numberOfCopies)
-                .append(vSEP).append("cloture=").append(editorId)
+                .append(vSEP).append("Titre=\"").append(title).append('"')
+                .append(vSEP).append("Nombre d'exemplaire=").append(numberOfCopies)
+                .append(vSEP).append("Editeur=").append(editorId)
                 .append("}");
         return vStB.toString();
     }
