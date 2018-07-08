@@ -1,4 +1,12 @@
-com\library\oc\consumer\contract\dao\LibraryDao.class
-com\library\oc\consumer\impl\dao\AbstratDaoImpl.class
-com\library\oc\consumer\impl\dao\LibraryDaoImpl.class
-com\library\oc\consumer\contract\dao\DaoFactory.class
+com\library\oc\consumer\impl\DaoFactoryImpl.class
+com\library\oc\consumer\contract\dao\UserDao.class
+com\library\oc\consumer\impl\rowmapper\UserRM.class
+com\library\oc\consumer\impl\dao\AbstractDao.class
+com\library\oc\consumer\contract\dao\AuthorDao.class
+com\library\oc\consumer\impl\dao\AuthorDaoImpl.class
+com\library\oc\consumer\contract\DaoFactory.class
+com\library\oc\consumer\impl\dao\BookDaoImpl.class
+com\library\oc\consumer\impl\dao\UserDaoImpl.class
+com\library\oc\consumer\contract\dao\BookDao.class
+com\library\oc\consumer\impl\rowmapper\AuthorRM.class
+com\library\oc\consumer\impl\rowmapper\BookRM.class

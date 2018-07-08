@@ -21,11 +21,12 @@ import com.library.oc.library.model.exception.NotFoundException;
 public class BookManagerImpl extends AbstractManager implements BookManager {
 
     @Override
-    public Book getBook(Integer pId) throws NotFoundException { return getDaoFactory().getBookDao().read(pId); }
+    public List<Book> getListBook() { return getDaoFactory().getBookDao().readAll(); }
 
 
     @Override
-    public List<Book> getListBook() { return getDaoFactory().getBookDao().readAll(); }
+    public Book getBook(Integer pId) throws NotFoundException { return getDaoFactory().getBookDao().read(pId); }
+
 
     @Override
     public int getNbBook() { return getDaoFactory().getBookDao().getCountBook(); }

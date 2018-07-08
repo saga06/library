@@ -1,8 +1,9 @@
+com\library\oc\library\business\impl\manager\UserManagerImpl.class
+com\library\oc\library\business\contract\manager\BookStatutManager.class
 com\library\oc\library\business\App.class
-com\library\oc\library\business\contract\manager\AuthorManager.class
 com\library\oc\library\business\impl\manager\AbstractManager.class
 com\library\oc\library\business\impl\ManagerFactoryImpl.class
 com\library\oc\library\business\contract\ManagerFactory.class
-com\library\oc\library\business\impl\manager\AuthorManagerImpl.class
 com\library\oc\library\business\impl\manager\BookManagerImpl.class
+com\library\oc\library\business\contract\manager\UserManager.class
 com\library\oc\library\business\contract\manager\BookManager.class

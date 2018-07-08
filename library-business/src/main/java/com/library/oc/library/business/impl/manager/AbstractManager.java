@@ -11,27 +11,29 @@ import javax.validation.ValidatorFactory;
 
 public abstract class AbstractManager {
 
+    //-- Variable d'instances
     private static DaoFactory daoFactory;
 
+    //-- GETTER
     protected static DaoFactory getDaoFactory() {
         return daoFactory;
     }
 
-    public void setDaoFactory(DaoFactory pDaoFactory) {
+    //-- SETTER
+    public static void setDaoFactory(DaoFactory pDaoFactory) {
         daoFactory = pDaoFactory;
     }
 
-    /**
+ /*   *
      * Renvoie un {@link Validator} de contraintes
      *
      * @return Validator
-     */
-    protected Validator getConstraintValidator() {
+*/ /*   protected Validator getConstraintValidator() {
         Configuration<?> vConfiguration = Validation.byDefaultProvider().configure();
         ValidatorFactory vFactory = vConfiguration.buildValidatorFactory();
         Validator vValidator = vFactory.getValidator();
         return vValidator;
-    }
+    }*/
 
 
 

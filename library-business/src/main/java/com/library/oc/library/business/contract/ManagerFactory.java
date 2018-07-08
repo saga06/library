@@ -9,7 +9,11 @@ import com.library.oc.library.business.contract.manager.UserManager;
  */
 public interface ManagerFactory {
 
-    BookManager getBookManager();
 
     UserManager getUserManager();
+    void setUserManager(UserManager pUserManager);
+
+
+    BookManager getBookManager();
+    void setBookManager(BookManager pBookManager);
 }

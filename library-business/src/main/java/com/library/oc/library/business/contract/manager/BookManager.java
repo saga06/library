@@ -3,10 +3,8 @@ package com.library.oc.library.business.contract.manager;
 import java.util.List;
 
 import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.library.model.bean.book.Version;
-import com.library.oc.library.model.exception.FunctionalException;
+
 import com.library.oc.library.model.exception.NotFoundException;
-import com.library.oc.library.model.exception.TechnicalException;
 
 
 /**
@@ -25,7 +23,6 @@ public interface BookManager {
 
     /**
      * Renvoie la liste des {@link Book}
-     * @param pRechercheBook
      * @return List
      */
     List<Book> getListBook();
