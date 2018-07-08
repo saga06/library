@@ -1,21 +1,21 @@
-package com.library.oc.consumer.impl;
+/*
+package com.library.oc.consumer.impl.dao;
 
 import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.library.oc.consumer.impl.dao.AbstractDao;
-import com.library.oc.consumer.impl.dao.BookStatutDao;
+import com.library.oc.consumer.contract.dao.BookStatutDao;
 import com.library.oc.library.model.bean.book.BookStatut;
-import com.library.oc.consumer.impl.dao.BookStatutDao;
-import com.library.oc.consumer.rowmapper.BookStatutRM;
-import com.library.oc.library.model.bean.book.BookStatut;
+import com.library.oc.consumer.impl.rowmapper.BookStatutRM;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+*/
 /**
  * Classe d'implémentation de {@link BookStatutDao}.
- */
+ *//*
+
 @Named
 public class BookStatutDaoImpl extends AbstractDao implements BookStatutDao {
 
@@ -86,4 +86,4 @@ public class BookStatutDaoImpl extends AbstractDao implements BookStatutDao {
 
         return vNbrStatus;
     }
-}
+}*/

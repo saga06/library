@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.library.oc.consumer.contract.dao.AuthorDao;
-import com.library.oc.consumer.rowmapper.AuthorRM;
+import com.library.oc.consumer.impl.rowmapper.AuthorRM;
 import com.library.oc.library.model.bean.book.Author;
 import org.springframework.jdbc.core.JdbcTemplate;
 

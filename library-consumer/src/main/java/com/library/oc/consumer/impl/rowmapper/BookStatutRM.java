@@ -1,4 +1,5 @@
-package com.library.oc.consumer.rowmapper;
+/*
+package com.library.oc.consumer.impl.rowmapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,11 +9,13 @@ import javax.inject.Named;
 import com.library.oc.library.model.bean.book.BookStatut;
 import org.springframework.jdbc.core.RowMapper;
 
+*/
 /**
  * RowMapper dédié à la table "statut"
  * @author sga
  *
- */
+ *//*
+
 @Named
 public class BookStatutRM implements RowMapper<BookStatut> {
 
@@ -26,3 +29,4 @@ public class BookStatutRM implements RowMapper<BookStatut> {
     }
 
 }
+*/

@@ -7,8 +7,9 @@
 
 
     <!-- Inclusion d'un autre fichier de contexte Spring -->
-    <import resource="classpath:/com/library/oc/library/batch/batchContext.xml" />
+    <import resource="classpath:com/library/oc/library/consumer/consumerContext.xml" />
     <import resource="classpath:com/library/oc/library/business/businessContext.xml" />
+    <import resource="classpath:com/library/oc/library/batch/batchContext.xml" />
 
 
 </beans>

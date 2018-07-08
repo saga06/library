@@ -1,4 +1,4 @@
-package com.library.oc.consumer.rowmapper;
+package com.library.oc.consumer.impl.rowmapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

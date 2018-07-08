@@ -19,7 +19,7 @@ public class ManagerFactoryImpl implements ManagerFactory {
     private BookManager bookManager;
     @Override
     public BookManager getBookManager() {
-        return this.bookManager;
+        return bookManager;
     }
     public void setBookManager(BookManager pBookManager) {
         bookManager = pBookManager;
@@ -30,7 +30,7 @@ public class ManagerFactoryImpl implements ManagerFactory {
     private UserManager userManager;
     @Override
     public UserManager getUserManager() {
-        return this.userManager;
+        return userManager;
     }
     public void setUserManager(UserManager pUserManager) {
         userManager = pUserManager;

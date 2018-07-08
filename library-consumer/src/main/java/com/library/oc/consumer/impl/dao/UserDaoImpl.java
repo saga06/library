@@ -7,7 +7,7 @@ package com.library.oc.consumer.impl.dao;
         import javax.inject.Named;
 
         import com.library.oc.consumer.contract.dao.UserDao;
-        import com.library.oc.consumer.rowmapper.UserRM;
+        import com.library.oc.consumer.impl.rowmapper.UserRM;
         import com.library.oc.library.model.bean.user.User;
         import org.springframework.jdbc.core.JdbcTemplate;
 

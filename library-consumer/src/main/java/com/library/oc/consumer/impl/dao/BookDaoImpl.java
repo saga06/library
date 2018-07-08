@@ -1,4 +1,4 @@
-package com.library.oc.consumer.impl;
+package com.library.oc.consumer.impl.dao;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -6,11 +6,11 @@ import javax.inject.Named;
 
 import com.library.oc.consumer.contract.dao.BookDao;
 import com.library.oc.consumer.contract.dao.UserDao;
-import com.library.oc.consumer.impl.dao.AbstractDao;
-import com.library.oc.consumer.impl.dao.BookStatutDao;
+/*
+import com.library.oc.consumer.contract.dao.BookStatutDao;
+*/
 import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.consumer.rowmapper.BookRM;
-import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.consumer.impl.rowmapper.BookRM;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
@@ -20,8 +20,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class BookDaoImpl extends AbstractDao implements BookDao {
 
     //----- INJECTION DES DEPENDANCES -----
-    @Inject
-    BookStatutDao bookStatutDaoImpl;
+/*    @Inject
+    BookStatutDao bookStatutDaoImpl;*/
     @Inject
     UserDao userDaoImpl;
     @Inject

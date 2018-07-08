@@ -1,4 +1,4 @@
-package com.library.oc.consumer.rowmapper;
+package com.library.oc.consumer.impl.rowmapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,12 +8,11 @@ import javax.inject.Named;
 
 import com.library.oc.consumer.contract.dao.UserDao;
 import com.library.oc.consumer.contract.dao.AuthorDao;
-import com.library.oc.consumer.impl.BookStatutDaoImpl;
-import com.library.oc.consumer.impl.BookDaoImpl;
-import com.library.oc.consumer.impl.dao.BookStatutDao;
+/*
+import com.library.oc.consumer.contract.dao.BookStatutDao;
+*/
 import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.library.model.bean.book.BookStatut;
 
 
 import org.springframework.jdbc.core.RowMapper;
@@ -21,8 +20,8 @@ import org.springframework.jdbc.core.RowMapper;
     @Named
     public class BookRM implements RowMapper<Book> {
 
-        @Inject
-        BookStatutDao bookStatutDaoImpl;
+    /*    @Inject
+        BookStatutDao bookStatutDaoImpl;*/
 
         @Inject
         AuthorDao authorDaoImpl;

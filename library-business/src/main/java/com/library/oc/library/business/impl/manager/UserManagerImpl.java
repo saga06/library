@@ -17,7 +17,6 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
 
 
 
-
     @Override
     public User getUser(Integer pId) throws NotFoundException {
         return getDaoFactory().getUserDao().read(pId);

@@ -1,4 +1,4 @@
-package com.library.oc.consumer.rowmapper;
+package com.library.oc.consumer.impl.rowmapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -6,7 +6,6 @@ import java.sql.SQLException;
 import javax.inject.Named;
 
 import com.library.oc.library.model.bean.book.Author;
-import com.library.oc.library.model.bean.user.User;
 import org.springframework.jdbc.core.RowMapper;
 
 
