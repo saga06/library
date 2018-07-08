@@ -15,7 +15,7 @@
     <ul>
         <li>ID : <s:property value="book.id" /></li>
         <li>Nom : <s:property value="book.nom" /></li>
-        <li>Date création : <s:date name="book.dateCreation" /></li>
+        <li>ISBN : <s:date name="book.ISBN" /></li>
         <li>
             Auteur :
             <s:a action="user_detail">

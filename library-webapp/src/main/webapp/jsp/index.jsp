@@ -19,6 +19,7 @@
     <s:a action="book_list">
         <s:text name="nav.listBook" />
     </s:a>
+
 </div>
 <%@ include file="_include/footer.jsp" %>
 </body>

@@ -4,8 +4,10 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.library.oc.library.business.contract.ManagerFactory;
+import com.library.oc.library.business.contract.manager.AuthorManager;
 import com.library.oc.library.business.contract.manager.BookManager;
 import com.library.oc.library.business.contract.manager.UserManager;
+import com.library.oc.library.business.contract.manager.AuthorManager;
 
 
 /**
@@ -25,7 +27,6 @@ public class ManagerFactoryImpl implements ManagerFactory {
         bookManager = pBookManager;
     }
 
-
     @Inject
     private UserManager userManager;
     @Override
@@ -35,4 +36,13 @@ public class ManagerFactoryImpl implements ManagerFactory {
     public void setUserManager(UserManager pUserManager) {
         userManager = pUserManager;
     }
+
+    @Inject
+    private AuthorManager authorManager;
+    @Override
+    public AuthorManager getAuthorManager() { return authorManager; }
+    @Override
+    public void setAuthorManager(AuthorManager pAuthorManager) { authorManager = pAuthorManager;}
+
+
 }

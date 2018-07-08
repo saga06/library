@@ -7,14 +7,19 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.library.oc.consumer.contract.dao.AuthorDao;
+import com.library.oc.consumer.contract.dao.UserDao;
 import com.library.oc.consumer.impl.rowmapper.AuthorRM;
+import com.library.oc.consumer.impl.rowmapper.BookRM;
 import com.library.oc.library.model.bean.book.Author;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @Named
 public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
 
+    //----- INJECTION DES DEPENDANCES -----
 
+    @Inject
+    BookRM bookRM;
     @Inject
     AuthorRM authorRM;
 
@@ -27,13 +32,13 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
 
     @Override
     public Author read(int id) {
-        String vSQL = "SELECT author_name FROM author_author_id_seq WHERE id="+id;
+        String vSQL = "SELECT author_name FROM author WHERE author_id="+id;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
         List<Author> listAuthor = jdbcTemplate.query(vSQL, authorRM);
-        Author author = listAuthor.get(0);
+        Author vAuthor = listAuthor.get(0);
 
-        return author;
+        return vAuthor;
     }
 
 
@@ -47,11 +52,12 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
         return listAuthor;
     }
 
+
     @Override
     public List<Author> readAll(int id) {
-        // TODO Auto-generated method stub
         return null;
     }
+
 
     @Override
     public boolean update(Author obj) {
@@ -71,5 +77,8 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
         int vNbrAuthor = vJdbcTemplate.queryForObject( "SELECT COUNT(*) FROM author", Integer.class);
         return vNbrAuthor;
     }
+
+
+
 
 }

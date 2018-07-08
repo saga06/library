@@ -17,13 +17,22 @@
            <li>
                <s:a action="book_detail">
                    <s:param name="id" value="id" />
-                   <s:property value="nom"/>
+                   Id :
+                   <s:property value="id"/>
+                   Nombre d'exemplaire:
+                   <s:property value="numberOfCopies"/>
+                   Titre:
+                   <s:property value="title"/>
+                   Editor Id:
+                   <s:property value="editorId"/>
+                   ISBN:
+                   <s:property value="isbn"/>
                </s:a>
 
                - Auteur :
-               <s:a action="user_detail">
-                   <s:param name="id" value="user.id"/>
-                   <s:property value="user.prenom" /> <s:property value="user.nom" />
+               <s:a action="author_detail">
+                   <s:param name="id" value="author.id"/>
+                   <s:property value="numberOfCopies" /> <s:property value="user.nom" />
                </s:a>
            </li>
        </s:iterator>

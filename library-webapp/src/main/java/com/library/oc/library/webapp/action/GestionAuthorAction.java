@@ -7,17 +7,16 @@ import java.util.List;
 
 import com.library.oc.library.business.contract.ManagerFactory;
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
 import com.library.oc.library.model.exception.TechnicalException;
 import com.opensymphony.xwork2.ActionSupport;
-
-
 import javax.inject.Inject;
 
 
-public class GestionBookAction extends ActionSupport {
+public class GestionAuthorAction extends ActionSupport {
 
 
     // ==================== Attributs ====================
@@ -25,9 +24,8 @@ public class GestionBookAction extends ActionSupport {
     private Integer id;
 
     // ----- Eléments en sortie
-    private List<Book> listBook;
-    private Book book;
-    private List<User> listUser;
+    private List<Author> listAuthor;
+    private Author author;
 
     @Inject
     private ManagerFactory managerFactory;
@@ -40,32 +38,37 @@ public class GestionBookAction extends ActionSupport {
     public void setId(Integer pId) {
         id = pId;
     }
-    public List<Book> getListBook() {
-        return listBook;
-    }
-    public Book getBook() {
-        return book;
-    }
-    public void setBook(Book pBook) {book=pBook;}
 
-    public List<User> getListUser() {
-        return listUser;
+    public List<Author> getListAuthor() {
+        return listAuthor;
     }
+
+    public Author getAuthor() {
+        return author;
+    }
+    public void setAuthor(Author pAuthor) {
+        author = pAuthor;
+    }
+
+
     // ==================== Méthodes ====================
+
     /**
-     * Action listant les {@link Book}
+     * Action listant les {@link Author}
+     *
      * @return success
      */
 
 
     public String doList() {
-        listBook = managerFactory.getBookManager().getListBook();
+        listAuthor = managerFactory.getAuthorManager().getListAuthor();
         return ActionSupport.SUCCESS;
     }
 
 
     /**
-     * Action affichant les détails d'un {@link Book}
+     * Action affichant les détails d'un {@link Author}
+     *
      * @return success / error
      */
     public String doDetail() {
@@ -73,9 +76,9 @@ public class GestionBookAction extends ActionSupport {
             this.addActionError(getText("error.book.missing.id"));
         } else {
             try {
-                book = managerFactory.getBookManager().getBook(id);
+                author = managerFactory.getAuthorManager().getAuthor(id);
             } catch (NotFoundException pE) {
-                //                this.addActionError("Projet non trouvé. ID = " + id);
+                //                this.addActionError("Auteur non trouvé. ID = " + id);
                 this.addActionError(getText("error.book.notfound", Collections.singletonList(id)));
             }
         }
@@ -83,7 +86,7 @@ public class GestionBookAction extends ActionSupport {
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
     /**
-     * Action permettant de créer un nouveau {@link Book}
+     * Action permettant de créer un nouveau {@link Author}
      * @return input / success / error
      */
 
@@ -141,4 +144,5 @@ public class GestionBookAction extends ActionSupport {
 
         return vResult;
     }*/
+
 }

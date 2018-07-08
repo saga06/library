@@ -5,6 +5,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.library.oc.consumer.contract.DaoFactory;
+import com.library.oc.consumer.contract.dao.AuthorDao;
 import com.library.oc.consumer.contract.dao.BookDao;
 import com.library.oc.consumer.contract.dao.UserDao;
 /*
@@ -20,6 +21,8 @@ public class DaoFactoryImpl implements DaoFactory {
     BookDao bookDaoImpl;
     @Inject
     UserDao userDaoImpl;
+    @Inject
+    AuthorDao authorDaoImpl;
 
 
     //----- UTLISATEUR -----
@@ -35,6 +38,13 @@ public class DaoFactoryImpl implements DaoFactory {
     public BookDao getBookDao() { return bookDaoImpl; }
     @Override
     public void setBookDao(BookDao pBookDao) { this.bookDaoImpl = pBookDao; }
+
+    //----- Author -----
+
+    @Override
+    public AuthorDao getAuthorDao() { return authorDaoImpl; }
+    @Override
+    public void setAuthorDao(AuthorDao pAuthorDao) { this.authorDaoImpl = pAuthorDao; }
 
 
 
