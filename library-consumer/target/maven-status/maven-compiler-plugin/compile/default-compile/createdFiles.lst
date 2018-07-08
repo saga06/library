@@ -1,4 +1,0 @@
-com\library\oc\consumer\contract\dao\LibraryDao.class
-com\library\oc\consumer\impl\dao\AbstratDaoImpl.class
-com\library\oc\consumer\impl\dao\LibraryDaoImpl.class
-com\library\oc\consumer\contract\dao\DaoFactory.class
