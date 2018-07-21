@@ -16,7 +16,7 @@ import org.springframework.jdbc.core.RowMapper;
         public Author mapRow(ResultSet pRS, int pRowNum) throws SQLException {
 
             Author vAuthor = new Author(pRS.getInt("id"));
-            vAuthor.setName(pRS.getString("author_name"));
+            vAuthor.setName(pRS.getString("name"));
 
             return vAuthor;
         }

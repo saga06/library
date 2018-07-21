@@ -6,7 +6,9 @@ import java.util.List;
 
 
 import com.library.oc.library.business.contract.ManagerFactory;
+import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.book.Editor;
 import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
@@ -28,6 +30,9 @@ public class GestionBookAction extends ActionSupport {
     private List<Book> listBook;
     private Book book;
     private List<User> listUser;
+    private List<Author> listAuthor;
+    private Author author;
+    private Editor editor;
 
     @Inject
     private ManagerFactory managerFactory;
@@ -40,13 +45,21 @@ public class GestionBookAction extends ActionSupport {
     public void setId(Integer pId) {
         id = pId;
     }
+
     public List<Book> getListBook() {
         return listBook;
     }
+
     public Book getBook() {
         return book;
     }
     public void setBook(Book pBook) {book=pBook;}
+
+    public Author getAuthor() {return author;}
+    public void setAuthor(Author pAuthor) {author=pAuthor;}
+
+    public Editor getEditor() {return editor;}
+    public void setEditor(Editor pEditor) {editor=pEditor;}
 
     public List<User> getListUser() {
         return listUser;
@@ -60,6 +73,7 @@ public class GestionBookAction extends ActionSupport {
 
     public String doList() {
         listBook = managerFactory.getBookManager().getListBook();
+        listAuthor = managerFactory.getAuthorManager().getListAuthor();
         return ActionSupport.SUCCESS;
     }
 
@@ -82,6 +96,7 @@ public class GestionBookAction extends ActionSupport {
 
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
+
     /**
      * Action permettant de créer un nouveau {@link Book}
      * @return input / success / error

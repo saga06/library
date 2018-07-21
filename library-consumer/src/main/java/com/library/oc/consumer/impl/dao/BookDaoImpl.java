@@ -37,7 +37,7 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
     @Override
     public Book read(int numero) {
-        String vSQL = "SELECT * FROM book WHERE book_id="+numero;
+        String vSQL = "SELECT * FROM book WHERE id="+numero;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
         List<Book> listBook = jdbcTemplate.query(vSQL, bookRM);

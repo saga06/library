@@ -15,8 +15,8 @@ import org.springframework.jdbc.core.RowMapper;
         public User mapRow(ResultSet pRS, int pRowNum) throws SQLException {
 
             User vUser = new User(pRS.getInt("id"));
-            vUser.setLastname(pRS.getString("nom"));
-            vUser.setSurname(pRS.getString("prenom"));
+            vUser.setLastname(pRS.getString("lastname"));
+            vUser.setSurname(pRS.getString("surname"));
 
             return vUser;
         }

@@ -16,9 +16,7 @@
         <li>Version : ${project.version}</li>
         <li>Date du build : ${timestamp}</li>
     </ul>
-    <s:a action="book_list">
-        <s:text name="nav.listBook" />
-    </s:a>
+<p>page d'accueil: Bienvenue sur le site de la bibliothèque, etc, etc ... </p>
 
 </div>
 <%@ include file="_include/footer.jsp" %>

@@ -21,8 +21,12 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="..">Accueil</a></li>
+                <li class="active"><a href="library-webapp">Accueil</a></li>
+                <li><s:a action="book_list">
+                    <s:text name="nav.listBook" />
+                </s:a></li>
                 <li><a href="../jsp/about.jsp">A propos</a></li>
+
                 <s:if test="#session.user">
                     User connecté :
                     <s:property value="#session.user.prenom" />
