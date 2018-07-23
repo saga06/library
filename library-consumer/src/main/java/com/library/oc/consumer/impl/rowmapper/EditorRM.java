@@ -1,17 +1,23 @@
 package com.library.oc.consumer.impl.rowmapper;
 
-import com.library.oc.consumer.contract.dao.AuthorDao;
-import com.library.oc.consumer.contract.dao.UserDao;
-import com.library.oc.library.model.bean.book.Editor;
-
-import javax.inject.Inject;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class EditorRM {
+import javax.inject.Inject;
+import javax.inject.Named;
 
-    /*    @Inject
-        BookStatutDao bookStatutDaoImpl;*/
+import com.library.oc.consumer.contract.dao.AuthorDao;
+import com.library.oc.consumer.contract.dao.UserDao;
+
+
+import com.library.oc.library.model.bean.book.Editor;
+
+import org.springframework.jdbc.core.RowMapper;
+
+
+@Named
+public class EditorRM implements RowMapper<Editor> {
+
 
     @Inject
     AuthorDao authorDaoImpl;
@@ -38,5 +44,6 @@ public class EditorRM {
             /*Book vBook= BookDaoImpl.read(pRS.getInt("book_id"));
             book.setId(vBook);*/
 
-        return book;
+        return editor;
+    }
 }

@@ -28,6 +28,15 @@ public interface UserManager {
     User getUser(Integer pId) throws NotFoundException;
 
     /**
+     * Renvoie  l'objet User ciblé.
+     * @param login l'identifiant de l'User
+     * @param password le mot de passe de l'User
+     * @return Un objet User.
+     * @throws NotFoundException
+     */
+    User getUser(String login,String password) throws NotFoundException;
+
+    /**
      * Retourne le nombre de User dans la base de données.
      * @return Le nombre de user en base de données
 	 */

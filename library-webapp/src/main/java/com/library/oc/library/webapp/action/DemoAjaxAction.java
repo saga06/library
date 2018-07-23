@@ -34,12 +34,12 @@ public class DemoAjaxAction extends ActionSupport {
     }
 
 
-    /**
+/*    *//**
      * Action "AJAX" renvoyant la liste des books
      * @return success
-     */
+     *//*
     public String doAjaxGetListBook() {
-        listBook = managerFactory.getBookManager().getListBook();
+        listBook = managerFactory.getBookManager().getListBook(int id);
         return ActionSupport.SUCCESS;
-    }
+    }*/
 }

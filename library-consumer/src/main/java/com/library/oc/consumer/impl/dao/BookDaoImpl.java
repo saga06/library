@@ -20,8 +20,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class BookDaoImpl extends AbstractDao implements BookDao {
 
     //----- INJECTION DES DEPENDANCES -----
-/*    @Inject
-    BookStatutDao bookStatutDaoImpl;*/
+
     @Inject
     UserDao userDaoImpl;
     @Inject
@@ -29,11 +28,6 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
     //----- IMPLEMENTATION DES METHODES -----
 
-    @Override
-    public boolean create(Book obj) {
-        // TODO Auto-generated method stub
-        return false;
-    }
 
     @Override
     public Book read(int numero) {
@@ -46,15 +40,27 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
         return vBook;
     }
 
-    @Override
-    public Book read(String code) {
-        // TODO Auto-generated method stub
-        return null;
+  /*  @Override
+    public List<Book> getEditorBook(int idEditor) {
+        String vSQL = "SELECT editor.id, editor.name FROM book INNER JOIN editor ON book.editor_id = editor.id WHERE book.id ="+idEditor;
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Book> listBook = jdbcTemplate.query(vSQL, bookRM);
+        Book eBook = listBook.get(0);
+
+        return eBook;
     }
+*/
+
 
     @Override
     public List<Book> readAll() {
-        String vSQL = "SELECT * FROM book";
+        //String vSQL = "SELECT * FROM book INNER JOIN editor ON book.editor_id = editor.id";
+        String vSQL = "SELECT * FROM book " +
+                "INNER JOIN editor ON book.book_editor_id = editor.editor_id " +
+                "INNER JOIN book_author ON book.book_id = book_author.book_author_book_id " +
+                "INNER JOIN author ON book_author.book_author_author_id = author.author_id " +
+                "INNER JOIN book_theme ON book.book_id = book_theme.book_theme_book_id " +
+                "INNER JOIN theme ON book_theme.book_theme_theme_id = theme.theme_id";
 
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Book> vListBook = vJdbcTemplate.query(vSQL, bookRM);
@@ -62,11 +68,6 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
         return vListBook;
     }
 
-    @Override
-    public List<Book> readAll(int id) {
-        // TODO Auto-generated method stub
-        return null;
-    }
 
     @Override
     public boolean update(Book obj) {

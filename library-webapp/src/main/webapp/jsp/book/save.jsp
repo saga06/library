@@ -11,10 +11,10 @@
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
     <h2>Liste des ouvrages</h2>
-<%--
-    <s:a action="book_new">Ajouter un nouveau livre</s:a>
---%>
-    <table id="table" class="display" class="table table-striped">
+    <%--
+        <s:a action="book_new">Ajouter un nouveau livre</s:a>
+    --%>
+    <table id="table_id" class="display" class="table table-striped">
         <thead>
         <tr>
             <th>Titre</th>
@@ -29,32 +29,32 @@
         <tbody>
         <s:iterator value="listBook">
             <tr>
-<%--
-                //<s:a action="book_detail">
-                    <s:param name="book.id" value="book.id" />
-                    --%>
-                    <td><s:property value="title"/></td>
-                    <td>
-                      <%--  <s:a action="author_detail">
-                            <s:param name="id" value="author.id"/> --%>
+                    <%--
+                                    //<s:a action="book_detail">
+                                        <s:param name="book.id" value="book.id" />
+                                        --%>
+                <td><s:property value="title"/></td>
+                <td>
+                        <%--  <s:a action="author_detail">
+                              <s:param name="id" value="author.id"/> --%>
                     <s:property value="authorName" />
-                              <%--<s:property value="user.nom" />
-                                  </s:a>--%>
-                    </td>
-                    <td>
-                        <s:property value="editorName"/>
-                    </td>
-                    <td>
-                        <s:property value="themeName"/>
-                    </td>
-                    <td> Nombre d'exemplaire: <s:property value="numberOfCopies"/></td>
-                    <td>
-                        <s:property value="isbn"/>
-                    </td>
-                    <td> <button>Réserver</button></td>
-<%--
-                </s:a>
---%>
+                        <%--<s:property value="user.nom" />
+                            </s:a>--%>
+                </td>
+                <td>
+                    <s:property value="editorName"/>
+                </td>
+                <td>
+                    <s:property value="themeName"/>
+                </td>
+                <td> Nombre d'exemplaire: <s:property value="numberOfCopies"/></td>
+                <td>
+                    <s:property value="isbn"/>
+                </td>
+                <td> <button>Réserver</button></td>
+                    <%--
+                                    </s:a>
+                    --%>
             </tr>
         </s:iterator>
         <%--<s:iterator value="listBook">

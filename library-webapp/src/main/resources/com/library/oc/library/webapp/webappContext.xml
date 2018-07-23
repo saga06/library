@@ -5,12 +5,6 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- ==== Resources JNDI  ==== -->
-    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
-        <property name="targetClass" value="com.library.oc.library.webapp.resource.AbstractResource" />
-        <property name="targetMethod" value="setManagerFactory" />
-        <property name="arguments" ref="managerFactory" />
-    </bean>
 
     <bean id="dataSourceLibrary" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:comp/env/jdbc/DB_LIBRARY"/>

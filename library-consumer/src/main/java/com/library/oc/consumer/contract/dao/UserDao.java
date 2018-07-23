@@ -41,10 +41,19 @@ public interface UserDao {
     boolean delete(User obj);
 
     /**
-     * Retourne le nombre de user
+     * Retourne le nombre d'user
      * @param
-     * @return Le nombre de user
+     * @return Le nombre d'user
      */
     Integer getNbUser();
+
+    /**
+     * Méthode pour effacer
+     * @param login
+     * @param password
+     * @return boolean
+     */
+    User login(String login, String password);
+
 }
 

@@ -1,4 +1,4 @@
-/*
+package com.library.oc.library.webapp.action;/*
 package com.library.oc.library.webapp.action;
 
 import com.library.oc.library.business.contract.ManagerFactory;
@@ -15,9 +15,22 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 */
+
+import com.library.oc.library.business.contract.ManagerFactory;
+import com.library.oc.library.model.bean.user.User;
+import com.library.oc.library.model.exception.NotFoundException;
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.struts2.interceptor.ServletRequestAware;
+import org.apache.struts2.interceptor.SessionAware;
+
+import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+
 /**
  * Action de gestion de la connexion/déconnexion d'un user
- *//*
+ */
 
 public class LoginAction extends ActionSupport implements SessionAware, ServletRequestAware {
 
@@ -51,19 +64,17 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
 
     // ==================== Méthodes ====================
-    */
-/**
-     * Action permettant la connexion d'un user
-     * @return input / success
-     *//*
+
+ /**
+ * Action permettant la connexion d'un user
+ * @return input / success
+ */
 
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
             try {
-                User vUser
-                        = managerFactory.getUserManager()
-                        .getUser(login, password);
+                User vUser = managerFactory.getUserManager().getUser(login, password);
 
                 // Ajout de l'user en session
                 this.session.put("user", vUser);
@@ -77,16 +88,15 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
     }
 
 
-    */
-/**
-     * Action de déconnexion d'un user
+     /** Action de déconnexion d'un user
      * @return success
-     *//*
+     */
+
 
     public String doLogout() {
         // Suppression de l'user en session
         this.servletRequest.getSession().invalidate();
-
+        //this.session.remove("user");
         return ActionSupport.SUCCESS;
     }
 
@@ -101,4 +111,4 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
         this.servletRequest = pRequest;
     }
 
-}*/
+}

@@ -29,6 +29,25 @@ public interface BookManager {
 
 
     /**
+     * Renvoie l'auteur du book
+     *
+     * @param pId l'identifiant du book
+     * @return Le {@link Book}
+     * @throws NotFoundException Si le book n'est pas trouvé
+     */
+  /*  AuthorBook getAuthorBook(Integer pId) throws  NotFoundException;
+     */
+    /**
+     * Renvoie l'editeur du book
+     *
+     * @param idEditor l'identifiant du book
+     * @return Le {@link Book}
+     * @throws NotFoundException Si le book n'est pas trouvé
+     */
+/*    List<Book> getEditorBook(int idEditor) throws  NotFoundException;*/
+
+
+    /**
      * Détermine le nombre de book en base de données.
      *
      * @return Le nombre de book en base de données

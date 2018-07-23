@@ -28,6 +28,15 @@ public class Book {
     @NotNull
     private String isbn;
 
+    @NotNull
+    private String editorName;
+
+    @NotNull
+    private String authorName;
+
+    @NotNull
+    private String themeName;
+
 
     // ==================== Constructeurs ====================
     /**
@@ -83,6 +92,18 @@ public class Book {
 
     public void setIsbn(String isbn) { this.isbn = isbn; }
 
+    public String getEditorName() { return editorName; }
+
+    public void setEditorName(String editorName) { this.editorName = editorName; }
+
+    public String getAuthorName() { return authorName; }
+
+    public void setAuthorName(String authorName) { this.authorName = authorName; }
+
+    public String getThemeName() { return themeName; }
+
+    public void setThemeName(String themeName) { this.themeName = themeName; }
+
     // ==================== Méthodes ====================
     public String toString() {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
@@ -95,4 +116,6 @@ public class Book {
                 .append("}");
         return vStB.toString();
     }
+
+
 }

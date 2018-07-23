@@ -25,12 +25,13 @@ public class GestionBookAction extends ActionSupport {
     // ==================== Attributs ====================
     // ----- Paramètres en entrée
     private Integer id;
+    private Integer idEditor;
 
     // ----- Eléments en sortie
     private List<Book> listBook;
     private Book book;
     private List<User> listUser;
-    private List<Author> listAuthor;
+    private List<Book> listEditor;
     private Author author;
     private Editor editor;
 
@@ -71,9 +72,11 @@ public class GestionBookAction extends ActionSupport {
      */
 
 
-    public String doList() {
+    public String doList() throws NotFoundException {
         listBook = managerFactory.getBookManager().getListBook();
-        listAuthor = managerFactory.getAuthorManager().getListAuthor();
+/*
+        listEditor = managerFactory.getBookManager().getEditorBook(idEditor);
+*/
         return ActionSupport.SUCCESS;
     }
 
@@ -96,6 +99,8 @@ public class GestionBookAction extends ActionSupport {
 
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
+
+
 
     /**
      * Action permettant de créer un nouveau {@link Book}

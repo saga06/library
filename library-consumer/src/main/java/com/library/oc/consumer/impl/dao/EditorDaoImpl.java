@@ -1,3 +1,4 @@
+/*
 package com.library.oc.consumer.impl.dao;
 
 import com.library.oc.consumer.contract.dao.EditorDao;
@@ -10,8 +11,10 @@ import java.util.List;
 public class EditorDaoImpl  extends AbstractDao implements EditorDao {
 
     //----- INJECTION DES DEPENDANCES -----
+*/
 /*    @Inject
-    EditorStatutDao editorStatutDaoImpl;*/
+    EditorStatutDao editorStatutDaoImpl;*//*
+
     @Inject
     EditorDao userDaoImpl;
     @Inject
@@ -25,16 +28,18 @@ public class EditorDaoImpl  extends AbstractDao implements EditorDao {
         return false;
     }
 
-    @Override
+    */
+/*@Override
     public Editor read(int numero) {
         String vSQL = "SELECT * FROM editor WHERE id="+numero;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
-        List<Editor> listEditor = jdbcTemplate.query(vSQL, editorRM);
-        Editor vEditor = listEditor.get(0);
+        //List<Editor> listEditor = jdbcTemplate.query(vSQL, editorRM);
+        //Editor vEditor = listEditor.get(0);
 
-        return vEditor;
-    }
+        //return vEditor;
+    }*//*
+
 
     @Override
     public Editor read(String code) {
@@ -47,9 +52,9 @@ public class EditorDaoImpl  extends AbstractDao implements EditorDao {
         String vSQL = "SELECT * FROM editor";
 
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        List<Editor> vListEditor = vJdbcTemplate.query(vSQL, editorRM);
+        //List<Editor> vListEditor = vJdbcTemplate.query(vSQL, editorRM);
 
-        return vListEditor;
+        //return vListEditor;
     }
 
     @Override
@@ -75,9 +80,11 @@ public class EditorDaoImpl  extends AbstractDao implements EditorDao {
     @Override
     public int getCountEditor() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        int vNbrEditor = vJdbcTemplate.queryForObject( "SELECT COUNT(*) FROM editor", Integer.class);
+        int vNbrEditor = vJdbcTemplate.queryForObject("SELECT COUNT(*) FROM editor", Integer.class);
 
         return vNbrEditor;
+    }
 
 
 }
+*/

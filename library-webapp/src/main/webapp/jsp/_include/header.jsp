@@ -21,10 +21,15 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="library-webapp">Accueil</a></li>
+                <li class="active"><a href="library-webapp"><s:text name="nav.homepage" /></a></li>
                 <li><s:a action="book_list">
                     <s:text name="nav.listBook" />
-                </s:a></li>
+                    </s:a>
+                </li>
+                <li><s:a action="book_search">
+                    <s:text name="nav.searchBook" />
+                </s:a>
+                </li>
                 <li><a href="../jsp/about.jsp">A propos</a></li>
 
                 <s:if test="#session.user">

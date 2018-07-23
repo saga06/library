@@ -14,12 +14,12 @@ public interface BookDao {
 
     //-- CRUD : Les méthodes nécessaires
 
-    /**
+/*    *//**
      * Méthode de création
      * @param obj
      * @return boolean
-     */
-    boolean create(Book obj);
+     *//*
+    boolean create(Book obj);*/
 
     /**
      * Méthode de recherche des informations
@@ -27,10 +27,11 @@ public interface BookDao {
      * @return T
      */
     Book read(int id);
-    Book read(String code);
     List<Book> readAll();
-    List<Book> readAll(int id);
+/*
+    List<Book> getEditorBook(int idEditor);
 
+*/
     /**
      * Méthode de mise à jour
      * @param obj

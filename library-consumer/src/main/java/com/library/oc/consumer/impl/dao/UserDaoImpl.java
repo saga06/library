@@ -53,6 +53,11 @@ public class UserDaoImpl extends AbstractDao implements UserDao {
     }
 
     @Override
+    public User login(String login, String password) {
+        return null;
+    }
+
+    @Override
     public List<User> readAll(int id) {
         // TODO Auto-generated method stub
         return null;
