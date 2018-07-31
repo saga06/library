@@ -9,21 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/library-webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/library-webapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionUserAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/messages_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/library-business/target/" />
     <ignored path="$PROJECT_DIR$/library-webapp/target/" />
@@ -84,66 +71,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5190184">
+    <splitter split-orientation="horizontal" split-proportion="0.8490797">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/LoginAction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-                  <folding>
-                    <element signature="e#1763#1764#0" expanded="true" />
-                    <element signature="e#1793#1794#0" expanded="true" />
-                    <element signature="e#3273#3274#0" expanded="true" />
-                    <element signature="e#3319#3320#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/user/User.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="643">
-                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/struts.xml">
-              <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="95" selection-start-line="95" selection-end-line="95" />
+                <state relative-caret-position="161">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -151,25 +86,47 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
+          <file leaf-file-name="OgnlRuntime.java" pinned="false" current-in-tab="false">
+            <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/OgnlRuntime.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="91">
+                  <caret line="1543" column="37" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
-                  <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+                  <folding>
+                    <element signature="e#286#287#0" expanded="true" />
+                    <element signature="e#319#320#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp">
+          <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+                <state relative-caret-position="68">
+                  <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UserRM.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
@@ -178,11 +135,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserManagerImpl.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="UserManagerImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="33" selection-start-line="33" selection-end-line="33" />
+                <state relative-caret-position="143">
+                  <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -197,8 +154,8 @@
           <file leaf-file-name="UserManagerImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="269">
-                  <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+                <state relative-caret-position="170">
+                  <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -222,7 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>servlet.jsp</find>
       <find>tagli</find>
       <find>common</find>
       <find>mysq</find>
@@ -250,8 +206,9 @@
       <find>findby</find>
       <find>dologin</find>
       <find>login</find>
-      <find>login.jsp</find>
       <find>valida</find>
+      <find>login.jsp</find>
+      <find>le hash</find>
     </findStrings>
     <replaceStrings>
       <replace>Author</replace>
@@ -270,7 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Author.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/rowmapper/BookRM.java" />
         <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/AuthorManager.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" />
@@ -282,7 +238,6 @@
         <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionAuthorAction.java" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/utilisateur/detail.jsp" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/detail.jsp" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/author/detail.jsp" />
@@ -316,11 +271,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/library-business/pom.xml" />
         <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/LoginAction.java" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" />
       </list>
     </option>
   </component>
@@ -836,12 +793,12 @@
       <workItem from="1532711977009" duration="1457000" />
       <workItem from="1532964799734" duration="1558000" />
       <workItem from="1533035069484" duration="266000" />
-      <workItem from="1533051628818" duration="5204000" />
+      <workItem from="1533051628818" duration="10051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239034000" />
+    <option name="totallyTimeSpent" value="243881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -864,11 +821,11 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="1" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.32960895" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Structure" order="10" side_tool="true" weight="0.10021322" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3765363" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32402235" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32906404" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49840087" weight="0.196868" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -876,7 +833,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" weight="0.4670391" />
+      <window_info active="true" anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" visible="true" weight="0.4670391" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.21452513" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.38659218" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13113007" />
@@ -970,66 +927,10 @@
           <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="77" />
+      <option name="time" value="79" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="67" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/java/jdk1.8.0_111/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/AuthorManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Editor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/author/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1247,13 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1296,30 +1190,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/accessor/XWorkMethodAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ASTMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/interceptor/I18nInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/DefaultActionInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/OgnlRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="1543" column="37" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="161">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="143">
+          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

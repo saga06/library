@@ -14,9 +14,9 @@ import org.springframework.jdbc.core.RowMapper;
         @Override
         public User mapRow(ResultSet pRS, int pRowNum) throws SQLException {
 
-            User vUser = new User(pRS.getInt("id"));
-            vUser.setLastname(pRS.getString("lastname"));
-            vUser.setSurname(pRS.getString("surname"));
+            User vUser = new User(pRS.getInt("user_id"));
+            vUser.setLastname(pRS.getString("user_lastname"));
+            vUser.setSurname(pRS.getString("user_surname"));
 
             return vUser;
         }
