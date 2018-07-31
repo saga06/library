@@ -35,6 +35,9 @@ import java.util.Map;
 public class LoginAction extends ActionSupport implements SessionAware, ServletRequestAware {
 
 
+    private User user;
+    private String email;
+
     // ==================== Attributs ====================
     // ----- Paramètres en entrée
     private String login;
@@ -49,11 +52,11 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
 
     // ==================== Getters/Setters ====================
-    public String getLogin() {
-        return login;
+    public String getEmail() {
+        return email;
     }
-    public void setLogin(String pLogin) {
-        login = pLogin;
+    public void setEmail(String pEmail) {
+        email = pEmail;
     }
     public String getPassword() {
         return password;
@@ -61,6 +64,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
     public void setPassword(String pPassword) {
         password = pPassword;
     }
+    public User getUser() { return user; }
 
 
     // ==================== Méthodes ====================
@@ -72,18 +76,16 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
 
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
-        if (!StringUtils.isAllEmpty(login, password)) {
-            try {
-                User vUser = managerFactory.getUserManager().getUser(login, password);
+        if (!StringUtils.isAllEmpty(login, password))
+            {
+                user = managerFactory.getUserManager().getEmailUser(this.email);
+                if(user!=null && managerFactory.getUserManager().validateCredentials(user,this.password)) {
 
-                // Ajout de l'user en session
-                this.session.put("user", vUser);
-
-                vResult = ActionSupport.SUCCESS;
-            } catch (NotFoundException pEx) {
-                this.addActionError("Identifiant ou mot de passe invalide !");
+                    // Ajout de l'user en session
+                    this.session.put("user", getUser());
+                    vResult = ActionSupport.SUCCESS;
+                }
             }
-        }
         return vResult;
     }
 

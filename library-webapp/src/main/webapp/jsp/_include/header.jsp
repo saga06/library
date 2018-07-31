@@ -30,6 +30,10 @@
                     <s:text name="nav.searchBook" />
                 </s:a>
                 </li>
+                <li><s:a action="profil">
+                    <s:text name="nav.profil" />
+                </s:a>
+                </li>
                 <li><a href="../jsp/about.jsp">A propos</a></li>
 
                 <s:if test="#session.user">

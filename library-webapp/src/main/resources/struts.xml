@@ -52,6 +52,13 @@
             <result>/jsp/book/search.jsp</result>
         </action>
 
+        <!-- Action d'accès au profil -->
+        <action name="profil"
+                class="com.library.oc.library.webapp.action.GestionProfilAction"
+                method="doListProfil">
+            <result>/jsp/profil.jsp</result>
+        </action>
+
         <!-- Action affichant le détail d'un ouvrage -->
         <action name="book_detail"
                 class="com.library.oc.library.webapp.action.GestionBookAction"

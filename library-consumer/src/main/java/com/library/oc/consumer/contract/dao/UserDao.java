@@ -16,6 +16,8 @@ public interface UserDao {
      */
     boolean create(User obj);
 
+
+
     /**
      * Méthode de recherche des informations
      * @param id
@@ -48,12 +50,14 @@ public interface UserDao {
     Integer getNbUser();
 
     /**
-     * Méthode pour effacer
-     * @param login
-     * @param password
-     * @return boolean
+     * Recherche par email de l'user
+     * @param
+     * @return user
      */
-    User login(String login, String password);
+    User findByEmail(String email);
+
+
+
 
 }
 

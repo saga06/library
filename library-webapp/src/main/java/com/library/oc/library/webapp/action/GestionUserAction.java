@@ -37,12 +37,10 @@ public class GestionUserAction extends ActionSupport {
     public User getUser() {
         return user;
     }
-
-
     // ==================== Méthodes ====================
     /**
      * Action affichant les détails d'un {@link User}
-     * @return success / error
+     * @return success / erreur
      */
     public String doDetail() {
         if (id == null) {

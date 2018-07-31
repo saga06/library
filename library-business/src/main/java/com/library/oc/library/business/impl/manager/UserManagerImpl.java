@@ -6,6 +6,9 @@ import javax.inject.Named;
 import com.library.oc.library.business.contract.manager.UserManager;
 import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.NotFoundException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+
 
 
 @Named
@@ -24,8 +27,36 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
 
 
     @Override
-    public User getUser(String login, String password) throws NotFoundException {
-        return getDaoFactory().getUserDao().login(login,password);
+    public User getEmailUser(String email)
+    {
+        User user = new User();
+        try{
+            user = getDaoFactory().getUserDao().findByEmail(email);
+        }catch(EmptyResultDataAccessException e){
+            e.printStackTrace();
+        }
+        return user;
+    }
+
+    @Override
+    public String hashPassword(String password)
+    {
+        String salt = BCrypt.gensalt();
+        String passwordHash = BCrypt.hashpw(password, salt);
+        return passwordHash;
+    }
+
+    @Override
+    public boolean validateCredentials(User user, String password)
+    {
+        boolean passwordChecked = false;
+        if(user.getPass() == null || !user.getPass().startsWith("$2a$")){
+            throw new IllegalArgumentException("Le hash n'est pas valide");
+        }
+
+        passwordChecked = BCrypt.checkpw(password, user.getPass());
+
+        return passwordChecked;
     }
 
     @Override
