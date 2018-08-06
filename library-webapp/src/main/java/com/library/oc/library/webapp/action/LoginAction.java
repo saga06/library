@@ -74,18 +74,20 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
  * @return input / success
  */
 
-    public String doLogin() {
+    public String doLogin() throws NotFoundException {
         String vResult = ActionSupport.INPUT;
-        if (!StringUtils.isAllEmpty(login, password))
+        if (!StringUtils.isAllEmpty(email,password)) {
+            user = managerFactory.getUserManager().getEmailUser(this.email);
+            if (user != null && managerFactory.getUserManager().validateLogin(user, this.password))
             {
-                user = managerFactory.getUserManager().getEmailUser(this.email);
-                if(user!=null && managerFactory.getUserManager().validateCredentials(user,this.password)) {
-
-                    // Ajout de l'user en session
-                    this.session.put("user", getUser());
-                    vResult = ActionSupport.SUCCESS;
-                }
+                // Ajout de l'user en session
+                this.session.put("user", getUser());
+                vResult = ActionSupport.SUCCESS;
             }
+            else {
+                this.addActionError("Identifiant ou mot de passe invalide !");
+            }
+        }
         return vResult;
     }
 

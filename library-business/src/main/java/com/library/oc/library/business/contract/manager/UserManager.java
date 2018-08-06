@@ -36,5 +36,5 @@ public interface UserManager {
 
     String hashPassword(String password);
     User getEmailUser(String username);
-    boolean validateCredentials(User user, String password);
+    boolean validateLogin(User user, String password);
 }

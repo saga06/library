@@ -47,14 +47,11 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
     }
 
     @Override
-    public boolean validateCredentials(User user, String password)
+    public boolean validateLogin(User user, String password)
     {
         boolean passwordChecked = false;
-        if(user.getPass() == null || !user.getPass().startsWith("$2a$")){
-            throw new IllegalArgumentException("Le hash n'est pas valide");
-        }
 
-        passwordChecked = BCrypt.checkpw(password, user.getPass());
+        passwordChecked = BCrypt.checkpw(password, user.getPassword());
 
         return passwordChecked;
     }

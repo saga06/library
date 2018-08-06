@@ -7,15 +7,15 @@ public class User {
     private String surname;
     private String lastname;
     private String email;
-    private String pass;
+    private String password;
 
 
-    // ==================== Constructeurs ====================
-    /**
+   /* // ==================== Constructeurs ====================
+    *//**
      * Constructeur.
-     */
+     *//*
     public User() {
-    }
+    }*/
 
 
     /**
@@ -23,9 +23,9 @@ public class User {
      *
      * @param pId -
      */
-    public User(Integer pId) {
+/*    public User(Integer pId) {
         id = pId;
-    }
+    }*/
 
 
     // ==================== Getters/Setters ====================
@@ -60,12 +60,12 @@ public class User {
         this.email = email;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 /*// ==================== Méthodes ====================

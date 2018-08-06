@@ -93,13 +93,20 @@ public class UserDaoImpl extends AbstractDao implements UserDao {
 
     @Override
     public User findByEmail(String email) {
-        String vSQL = "SELECT * FROM users WHERE user_email='" + email + "'";
+        try {
+            String vSQL = "SELECT * FROM users WHERE user_email='" + email + "'";
 
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
-        List<User> listUser = jdbcTemplate.query(vSQL, userRM);
-        User user = listUser.get(0);
-
-        return user;
+            JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
+            List<User> listUser = jdbcTemplate.query(vSQL, userRM);
+            if (!listUser.isEmpty()){
+            User user = listUser.get(0);
+            return user;}
+            else {
+                return null;
+            }
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
     }
 
 

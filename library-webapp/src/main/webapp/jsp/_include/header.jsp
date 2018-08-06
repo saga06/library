@@ -32,7 +32,7 @@
                 </li>
                 <li><s:a action="profil">
                     <s:text name="nav.profil" />
-                </s:a>
+                </s:a>²
                 </li>
                 <li><a href="../jsp/about.jsp">A propos</a></li>
 
@@ -41,10 +41,10 @@
                     <s:property value="#session.user.prenom" />
                     <s:property value="#session.user.nom" />
 
-                    <s:a action="logout">Déconnexion</s:a>
+                    <s:a action="logout">Se déconnecter</s:a>
                 </s:if>
                 <s:else>
-                    <s:a action="login">Connexion</s:a>
+                    <s:a action="login">Se connecter</s:a>
                 </s:else>
             </ul>
         </div><!--/.nav-collapse -->
