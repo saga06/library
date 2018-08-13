@@ -10,7 +10,7 @@
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
-    <h2>Liste des ouvrages</h2>
+    <h2><s:text name="listBook"/></h2>
 <%--
     <s:a action="book_new">Ajouter un nouveau livre</s:a>
 --%>
@@ -51,10 +51,14 @@
                     <td>
                         <s:property value="isbn"/>
                     </td>
-                    <td> <button>Réserver</button></td>
-<%--
-                </s:a>
---%>
+                    <td>
+                        <s:if test="#session.user">
+                            <button>Réserver</button>
+                        </s:if>
+                        <s:else>
+                            <button type="button" disabled>Vous devez vous identifiez d'abord !</button>
+                        </s:else>
+                    </td>
             </tr>
         </s:iterator>
         <%--<s:iterator value="listBook">

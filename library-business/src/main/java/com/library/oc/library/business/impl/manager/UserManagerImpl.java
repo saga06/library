@@ -50,6 +50,9 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
     public boolean validateLogin(User user, String password)
     {
         boolean passwordChecked = false;
+        if(user.getPassword() == null || !user.getPassword().startsWith("$2a$")){
+            throw new IllegalArgumentException("Le hash n'est pas valide");
+        }
 
         passwordChecked = BCrypt.checkpw(password, user.getPassword());
 

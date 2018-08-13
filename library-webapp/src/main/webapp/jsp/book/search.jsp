@@ -22,13 +22,14 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous" />
-    <link rel="stylesheet" href="../style/style.css" />
     <%--Datatables --%>
     <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
 
-</head><body>
+</head>
+<body>
 <%@ include file="../_include/header.jsp" %>
 <script>
     $(document).ready( function () {

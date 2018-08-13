@@ -7,23 +7,23 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <footer class="footer">
-    <s:a action="index">
-        <s:param name="request_locale">en</s:param>
-        [English]
-    </s:a><s:a action="index">
-        <s:param name="request_locale">fr</s:param>
-        [Français]
-    </s:a>
-    <s:debug/>
     <div class="container">
         <p>
             ${application.name} - version ${project.version}
             &copy; <a href="${organization.url}">${organization.name}</a>
         </p>
+        <%--Décommenter la partie en dessous si vous voulez afficher l'aide au debug de struts--%>
+
+    <%--
+        <s:debug/>
+--%>
     </div>
 </footer>
 
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>

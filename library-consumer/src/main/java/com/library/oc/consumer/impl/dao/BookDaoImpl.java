@@ -68,6 +68,15 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
         return vListBook;
     }
 
+   /* @Override
+    public void BookDependencies(Book book)
+    {book.setAuthor(getDaoFactory().getAuthorDao().findAllByBook(book));
+        book.setTheme(getDaoFactory().getThemeDao().findAllByBook(book));
+        book.setEditor(getDaoFactory().getEditorDao().findAllByBook(book));
+        for(Author author : book.getAuthors())
+        {author.setId(getDaoFactory().getWayDao().findAllByAuthor(sector));
+
+        */
 
     @Override
     public boolean update(Book obj) {

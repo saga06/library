@@ -10,7 +10,7 @@
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
-    <h2>Liste des ouvrages</h2>
+    <h2><s:text name="listBook" /></h2>
     <%--
         <s:a action="book_new">Ajouter un nouveau livre</s:a>
     --%>

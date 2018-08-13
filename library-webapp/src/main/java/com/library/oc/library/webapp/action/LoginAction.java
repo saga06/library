@@ -85,7 +85,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ServletR
                 vResult = ActionSupport.SUCCESS;
             }
             else {
-                this.addActionError("Identifiant ou mot de passe invalide !");
+                this.addFieldError("login.name","Identifiant ou mot de passe invalide !");
             }
         }
         return vResult;

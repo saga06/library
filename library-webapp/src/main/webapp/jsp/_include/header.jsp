@@ -17,34 +17,100 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="..">${application.name}</a>
+            <a class="navbar-brand" href="library-webapp">${application.name}</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="library-webapp"><s:text name="nav.homepage" /></a></li>
-                <li><s:a action="book_list">
-                    <s:text name="nav.listBook" />
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        if(window.location.href.indexOf("book_list") > -1) {
+                            $('ul li:nth-child(3)').addClass('active');
+                            $('ul li:nth-child(2)').removeClass('active');
+                        }
+                        if(window.location.href.indexOf("book_search") > -1) {
+                            $('ul li:nth-child(4)').addClass('active');
+                            $('ul li:nth-child(2)').removeClass('active');
+                        }
+                        if(window.location.href.indexOf("about") > -1) {
+                            $('ul li:nth-child(5)').addClass('active');
+                            $('ul li:nth-child(2)').removeClass('active');
+                        }
+                    });
+                </script>
+                <li class="active">
+                    <s:a href="library-webapp">
+                        <s:text name="nav.homepage" />
                     </s:a>
                 </li>
-                <li><s:a action="book_search">
-                    <s:text name="nav.searchBook" />
-                </s:a>
+                <li>
+                    <s:a action="book_list">
+                        <s:text name="nav.listBook" />
+                    </s:a>
                 </li>
-                <li><s:a action="profil">
-                    <s:text name="nav.profil" />
-                </s:a>²
+                <li>
+                    <s:a action="book_search">
+                        <s:text name="nav.searchBook" />
+                    </s:a>
                 </li>
-                <li><a href="../jsp/about.jsp">A propos</a></li>
-
+                <li>
+                    <s:a action="about">
+                        <s:text name="nav.about" />
+                    </s:a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-selector">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                        <span class="glyphicon glyphicon-globe"></span>  <s:text name="nav.language" />
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <s:a action="index">
+                                <img src="img/ico/en.ico" class="limit-width" />
+                                <s:param name="request_locale">en</s:param>
+                                <span><s:text name="lang.en" /></span>
+                            </s:a>
+                        </li>
+                        <li>
+                            <s:a action="index">
+                                <img src="img/ico/fr.ico" class="limit-width" />
+                                <s:param name="request_locale">fr</s:param>
+                                <span><s:text name="lang.fr" /></span>
+                            </s:a>
+                        </li>
+                        <li>
+                            <s:a action="index">
+                                <img src="img/ico/sp.ico" class="limit-width" />
+                                <s:param name="request_locale">fr</s:param>
+                                <span><s:text name="lang.sp" /></span>
+                            </s:a>
+                        </li>
+                    </ul>
+                </li>
                 <s:if test="#session.user">
-                    User connecté :
-                    <s:property value="#session.user.prenom" />
-                    <s:property value="#session.user.nom" />
-
-                    <s:a action="logout">Se déconnecter</s:a>
+                    <li class ="my-profil dropdown white">
+                        <s:a action="profil" class="dropdown-toogle"
+                            data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <s:property value="#session.user.surname"  /> <span class="caret"></span>
+                        </s:a>
+                        <ul class="dropdown-menu black" role="menu">
+                            <li>
+                                <s:a action="profil">
+                                    <s:text name="nav.profil" />
+                                </s:a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <s:a action="logout"><s:text name="nav.logout" /></s:a>
+                            </li>
+                        </ul>
+                    </li>
                 </s:if>
                 <s:else>
-                    <s:a action="login">Se connecter</s:a>
+                    <li class ="my-profil white">
+                        <s:a action="login">
+                             <span class="glyphicon glyphicon-user"></span> <s:text name="nav.login" />
+                        </s:a>
+                    </li>
                 </s:else>
             </ul>
         </div><!--/.nav-collapse -->
