@@ -39,9 +39,9 @@ import org.springframework.jdbc.core.RowMapper;
             book.setTitle(pRS.getString("book_title"));
             book.setEditorId(pRS.getInt("book_editor_id"));
             book.setIsbn(pRS.getString("book_isbn"));
-            book.setEditorName(pRS.getString("editor_name"));
+          /*  book.setEditorName(pRS.getString("editor_name"));
             book.setAuthorName(pRS.getString("author_name"));
-            book.setThemeName(pRS.getString("theme_name"));
+            book.setThemeName(pRS.getString("theme_name"));*/
 
 
             /*BookStatut vBookNumberOfCopies= BookStatutDaoImpl.read(pRS.getInt("book_number_of_copies"));

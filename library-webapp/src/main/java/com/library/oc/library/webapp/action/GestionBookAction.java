@@ -47,7 +47,7 @@ public class GestionBookAction extends ActionSupport {
         id = pId;
     }
 
-    public List<Book> getListBook() {
+    public List<Book> findAllBooks() {
         return listBook;
     }
 
@@ -73,7 +73,7 @@ public class GestionBookAction extends ActionSupport {
 
 
     public String doList() throws NotFoundException {
-        listBook = managerFactory.getBookManager().getListBook();
+        listBook = managerFactory.getBookManager().displayAllBooks();
 /*
         listEditor = managerFactory.getBookManager().getEditorBook(idEditor);
 */

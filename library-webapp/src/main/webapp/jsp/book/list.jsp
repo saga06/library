@@ -14,17 +14,17 @@
 <%--
     <s:a action="book_new">Ajouter un nouveau livre</s:a>
 --%>
-    <table id="table" class="display" class="table table-striped">
+    <table id="table" class="table table-striped table-dark">
         <thead>
-        <tr>
-            <th>Titre</th>
-            <th>Auteur</th>
-            <th>Editeur</th>
-            <th>Thème</th>
-            <th>Nombre d'exemplaire</th>
-            <th>ISBN</th>
-            <th>Réserver</th>
-        </tr>
+            <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Auteur</th>
+                <th scope="col">Editeur</th>
+                <th scope="col">Thème</th>
+                <th scope="col">Nombre d'exemplaire</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Réserver</th>
+            </tr>
         </thead>
         <tbody>
         <s:iterator value="listBook">

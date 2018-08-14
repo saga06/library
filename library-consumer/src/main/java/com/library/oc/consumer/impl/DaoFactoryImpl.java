@@ -7,7 +7,9 @@ import javax.inject.Named;
 import com.library.oc.consumer.contract.DaoFactory;
 import com.library.oc.consumer.contract.dao.AuthorDao;
 import com.library.oc.consumer.contract.dao.BookDao;
+import com.library.oc.consumer.contract.dao.ThemeDao;
 import com.library.oc.consumer.contract.dao.UserDao;
+import com.library.oc.consumer.impl.dao.ThemeDaoImpl;
 /*
 import com.library.oc.consumer.contract.dao.BookStatutDao;
 */
@@ -23,6 +25,8 @@ public class DaoFactoryImpl implements DaoFactory {
     UserDao userDaoImpl;
     @Inject
     AuthorDao authorDaoImpl;
+    @Inject
+    ThemeDao themeDaoImpl;
 
 
     //----- UTLISATEUR -----
@@ -45,6 +49,13 @@ public class DaoFactoryImpl implements DaoFactory {
     public AuthorDao getAuthorDao() { return authorDaoImpl; }
     @Override
     public void setAuthorDao(AuthorDao pAuthorDao) { this.authorDaoImpl = pAuthorDao; }
+
+    //----- Theme -----
+
+    @Override
+    public ThemeDao getThemeDao() { return themeDaoImpl; }
+    @Override
+    public void setThemeDao(ThemeDaoImpl pThemeDao) { this.themeDaoImpl = pThemeDao; }
 
 
 

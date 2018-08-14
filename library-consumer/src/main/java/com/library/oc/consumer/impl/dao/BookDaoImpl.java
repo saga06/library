@@ -40,6 +40,8 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
         return vBook;
     }
 
+
+
   /*  @Override
     public List<Book> getEditorBook(int idEditor) {
         String vSQL = "SELECT editor.id, editor.name FROM book INNER JOIN editor ON book.editor_id = editor.id WHERE book.id ="+idEditor;
@@ -53,20 +55,23 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
 
     @Override
-    public List<Book> readAll() {
+    public List<Book> findAllBooks() {
         //String vSQL = "SELECT * FROM book INNER JOIN editor ON book.editor_id = editor.id";
         String vSQL = "SELECT * FROM book " +
-                "INNER JOIN editor ON book.book_editor_id = editor.editor_id " +
-                "INNER JOIN book_author ON book.book_id = book_author.book_author_book_id " +
-                "INNER JOIN author ON book_author.book_author_author_id = author.author_id " +
-                "INNER JOIN book_theme ON book.book_id = book_theme.book_theme_book_id " +
-                "INNER JOIN theme ON book_theme.book_theme_theme_id = theme.theme_id";
+                "LEFT JOIN editor ON book.book_editor_id = editor.editor_id ";
+
+        /*" old code +
+                "LEFT JOIN book_author ON book.book_id = book_author.book_author_book_id " +
+                "LEFT JOIN author ON book_author.book_author_author_id = author.author_id " +
+                "LEFT JOIN book_theme ON book.book_id = book_theme.book_theme_book_id " +
+                "LEFT JOIN theme ON book_theme.book_theme_theme_id = theme.theme_id*/
 
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Book> vListBook = vJdbcTemplate.query(vSQL, bookRM);
 
         return vListBook;
     }
+
 
    /* @Override
     public void BookDependencies(Book book)

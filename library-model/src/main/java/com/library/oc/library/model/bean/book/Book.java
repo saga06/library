@@ -1,6 +1,8 @@
 package com.library.oc.library.model.bean.book;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -31,11 +33,12 @@ public class Book {
     @NotNull
     private String editorName;
 
-    @NotNull
-    private String authorName;
 
-    @NotNull
-    private String themeName;
+
+
+    private List<Author> authors = new ArrayList<Author>();
+
+    private List<Theme> themes = new ArrayList<Theme>();
 
 
     // ==================== Constructeurs ====================
@@ -92,17 +95,23 @@ public class Book {
 
     public void setIsbn(String isbn) { this.isbn = isbn; }
 
-    public String getEditorName() { return editorName; }
 
-    public void setEditorName(String editorName) { this.editorName = editorName; }
+    public List<Author> getAuthors() {
+        return authors;
+    }
 
-    public String getAuthorName() { return authorName; }
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
+    }
 
-    public void setAuthorName(String authorName) { this.authorName = authorName; }
+    public List<Theme> getThemes() {
+        return themes;
+    }
 
-    public String getThemeName() { return themeName; }
+    public void setThemes(List<Theme> themes) {
+        this.themes = themes;
+    }
 
-    public void setThemeName(String themeName) { this.themeName = themeName; }
 
     // ==================== Méthodes ====================
     public String toString() {

@@ -25,7 +25,13 @@ public interface BookManager {
      * Renvoie la liste des {@link Book}
      * @return List
      */
-    List<Book> getListBook();
+   /* List<Book> getListBook();*/
+
+    List<Book> displayAllBooks();
+
+
+    void buildBookDependencies(Book book);
+
 
 
     /**

@@ -1,6 +1,7 @@
 package com.library.oc.consumer.contract.dao;
 
 import com.library.oc.library.model.bean.book.Author;
+import com.library.oc.library.model.bean.book.Book;
 
 import java.util.List;
 
@@ -24,6 +25,8 @@ public interface AuthorDao {
     Author read(int id);
     List<Author> readAll();
     List<Author> readAll(int id);
+    List<Author> findAuthorsByBook(Book book);
+
 
     /**
      * Méthode de mise à jour
