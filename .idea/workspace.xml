@@ -7,13 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/library-business/target/" />
     <ignored path="$PROJECT_DIR$/library-webapp/target/" />
     <ignored path="$PROJECT_DIR$/library-consumer/target/" />
@@ -74,78 +68,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="61" column="59" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/struts.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionBookAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="75" column="16" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OgnlRuntime.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/OgnlRuntime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="901" selection-start-line="901" selection-end-line="901" />
+            <state relative-caret-position="145">
+              <caret line="1619" selection-start-line="1619" selection-end-line="1619" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java">
+      <file leaf-file-name="ASTMethod.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ASTMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="298">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleNode.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/SimpleNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="260" selection-start-line="260" selection-end-line="260" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ognl.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/Ognl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="433" selection-start-line="433" selection-end-line="433" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OgnlUtil.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/OgnlUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="371" selection-start-line="371" selection-end-line="371" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#14943#15120#0" expanded="true" />
+                <element signature="e#15119#15120#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java">
+      <file leaf-file-name="DefaultActionInvocation.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/DefaultActionInvocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="162">
+              <caret line="278" selection-start-line="278" selection-end-line="278" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectMethodAccessor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ObjectMethodAccessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XWorkMethodAccessor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/accessor/XWorkMethodAccessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectArrayPool.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ObjectArrayPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
             </state>
           </provider>
         </entry>
@@ -181,7 +193,7 @@
       <find>dep</find>
       <find>getlistboo</find>
       <find>findauthor</find>
-      <find />
+      <find>select * from</find>
       <find>abstractda</find>
       <find>book</find>
       <find>getauthordao</find>
@@ -305,8 +317,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1933" />
-    <option name="y" value="-1353" />
+    <option name="x" value="1937" />
+    <option name="y" value="-150" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -677,12 +689,12 @@
       <workItem from="1533655678837" duration="9598000" />
       <workItem from="1533901141821" duration="21311000" />
       <workItem from="1534153480229" duration="35175000" />
-      <workItem from="1534339738647" duration="7041000" />
+      <workItem from="1534339738647" duration="7937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340472000" />
+    <option name="totallyTimeSpent" value="341368000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,8 +706,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1901" y="-1335" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-135" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4080537" side_tool="true" weight="0.35516092" />
@@ -708,7 +719,7 @@
       <window_info anchor="right" id="Structure" order="10" side_tool="true" weight="0.10021322" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3033597" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.52366865" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32906404" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49840087" weight="0.19106145" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -716,7 +727,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" visible="true" weight="0.25494072" />
+      <window_info anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" weight="0.2541872" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.21452513" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.38657406" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
@@ -853,13 +864,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionSynchronizationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/env/maven/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -1098,59 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ObjectMethodAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/accessor/XWorkMethodAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ASTMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/SimpleNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="260" selection-start-line="260" selection-end-line="260" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/Ognl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="433" selection-start-line="433" selection-end-line="433" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/OgnlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="371" selection-start-line="371" selection-end-line="371" />
-          <folding>
-            <element signature="e#14943#15120#0" expanded="true" />
-            <element signature="e#15119#15120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/DefaultActionInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="278" selection-start-line="278" selection-end-line="278" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -1179,34 +1130,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/OgnlRuntime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="901" selection-start-line="901" selection-end-line="901" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1214,14 +1141,7 @@
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="75" column="16" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="16" />
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1232,10 +1152,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ObjectArrayPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ObjectMethodAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/accessor/XWorkMethodAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/OgnlRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="1619" selection-start-line="1619" selection-end-line="1619" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ASTMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/SimpleNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/Ognl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="433" selection-start-line="433" selection-end-line="433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/OgnlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="371" selection-start-line="371" selection-end-line="371" />
+          <folding>
+            <element signature="e#14943#15120#0" expanded="true" />
+            <element signature="e#15119#15120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/DefaultActionInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="61" column="59" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
+        <state relative-caret-position="220">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
