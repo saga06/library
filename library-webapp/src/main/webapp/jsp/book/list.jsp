@@ -29,25 +29,28 @@
         <tbody>
         <s:iterator value="listBook">
             <tr>
-<%--
-                //<s:a action="book_detail">
-                    <s:param name="book.id" value="book.id" />
-                    --%>
-                    <td><s:property value="title"/></td>
+<%--<s:a action="book_detail"> <s:param name="book.id" value="book.id" />--%>
+                    <td>
+                        <s:property value="title"/>
+                    </td>
                     <td>
                       <%--  <s:a action="author_detail">
                             <s:param name="id" value="author.id"/> --%>
-                    <s:property value="authorName" />
-                              <%--<s:property value="user.nom" />
-                                  </s:a>--%>
+                        <s:iterator value="authors" >
+                            <p><s:property value="name"/></p>
+                        </s:iterator>
                     </td>
                     <td>
                         <s:property value="editorName"/>
                     </td>
                     <td>
-                        <s:property value="themeName"/>
+                        <s:iterator value="themes">
+                        <p><s:property value="name"/></p>
+                        </s:iterator>
                     </td>
-                    <td> Nombre d'exemplaire: <s:property value="numberOfCopies"/></td>
+                    <td>
+                         <s:property value="numberOfCopies"/>
+                    </td>
                     <td>
                         <s:property value="isbn"/>
                     </td>

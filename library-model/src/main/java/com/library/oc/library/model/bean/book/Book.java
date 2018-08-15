@@ -34,8 +34,6 @@ public class Book {
     private String editorName;
 
 
-
-
     private List<Author> authors = new ArrayList<Author>();
 
     private List<Theme> themes = new ArrayList<Theme>();
