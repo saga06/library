@@ -8,30 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/about.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/EditorDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/EditorDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/ThemeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/ThemeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/AuthorRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/ThemeRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/ThemeRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/UserRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/img/3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/img/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/img/5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/save.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" afterDir="false" />
     </list>
@@ -98,8 +75,11 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+            <state relative-caret-position="633">
+              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,19 +98,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>listBook</find>
-      <find>findautho</find>
-      <find>daofac</find>
-      <find>postgres</find>
-      <find>jpg</find>
-      <find>findauth</find>
-      <find>dolist</find>
-      <find>header</find>
-      <find>user_em</find>
-      <find>pass</find>
-      <find />
+      <find>book.book_editor_id = editor.editor_id</find>
       <find>book_author.book_author_author_id</find>
-      <find />
+      <find>INNER JOIN book_theme ON book_theme.boo</find>
       <find>list.js</find>
       <find>title</find>
       <find>listbook</find>
@@ -148,6 +118,16 @@
       <find>navbar-collapse</find>
       <find>foo</find>
       <find>video</find>
+      <find>css</find>
+      <find>test</find>
+      <find>js</find>
+      <find>limi</find>
+      <find>container-login100</find>
+      <find>script sr</find>
+      <find>inpu</find>
+      <find>input</find>
+      <find>main</find>
+      <find>font</find>
     </findStrings>
     <replaceStrings>
       <replace>Author</replace>
@@ -166,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library-webapp/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/library-business/pom.xml" />
         <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" />
         <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/user/User.java" />
@@ -213,9 +191,11 @@
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/footer.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/about.css" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/about.jsp" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/index.css" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/main.css" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp" />
       </list>
     </option>
@@ -259,9 +239,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-131" />
+    <option name="y" value="-12" />
+    <option name="width" value="1694" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -641,12 +622,12 @@
       <workItem from="1534153480229" duration="35175000" />
       <workItem from="1534339738647" duration="18615000" />
       <workItem from="1534427811264" duration="15004000" />
-      <workItem from="1534512412169" duration="5169000" />
+      <workItem from="1534512412169" duration="13550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372219000" />
+    <option name="totallyTimeSpent" value="380600000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,7 +639,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -668,13 +649,14 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="1" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32960895" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Structure" order="10" side_tool="true" weight="0.10021322" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27426636" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.273743" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32906404" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49840087" weight="0.21452513" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49840087" weight="0.21452513" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
@@ -683,7 +665,7 @@
       <window_info anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" weight="0.2541872" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.21452513" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.38657406" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40262583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
@@ -692,50 +674,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="15" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Learn" order="7" weight="0.3299933" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32960895" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.14679803" />
-      <window_info id="Designer" order="1" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.21452513" />
       <window_info anchor="bottom" id="Database Console" order="16" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" weight="0.46699506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.38657406" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32960895" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4080537" side_tool="true" weight="0.35516092" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49840087" weight="0.19306359" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32906404" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36901763" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Learn" order="7" weight="0.3299933" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Structure" order="10" side_tool="true" weight="0.10021322" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3202312" />
-    </layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -775,41 +718,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/datasource/DataSourceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="314" selection-start-line="314" selection-end-line="314" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/util/profiling/UtilTimerStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="352" selection-start-line="352" selection-end-line="352" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/DefaultActionProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/env/maven/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0-sources.jar!/org/apache/logging/log4j/spi/AbstractLogger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -962,6 +870,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,20 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/about.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1103,10 +1000,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/about.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="315" column="2" selection-start-line="315" selection-start-column="2" selection-end-line="315" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/util.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="204" column="10" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+        <state relative-caret-position="633">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
