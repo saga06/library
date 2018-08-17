@@ -30,7 +30,7 @@ public class UserDaoImpl extends AbstractDao implements UserDao {
 
     @Override
     public User read(int id) {
-        String vSQL = "SELECT * FROM users WHERE user_id="+id;
+        String vSQL = "SELECT * FROM users WHERE id="+id;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
         List<User> listUser = jdbcTemplate.query(vSQL, userRM);
@@ -94,7 +94,7 @@ public class UserDaoImpl extends AbstractDao implements UserDao {
     @Override
     public User findByEmail(String email) {
         try {
-            String vSQL = "SELECT * FROM users WHERE user_email='" + email + "'";
+            String vSQL = "SELECT * FROM users WHERE email='" + email + "'";
 
             JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
             List<User> listUser = jdbcTemplate.query(vSQL, userRM);

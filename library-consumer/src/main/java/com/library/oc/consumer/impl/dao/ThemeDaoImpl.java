@@ -25,10 +25,10 @@ public class ThemeDaoImpl extends AbstractDao implements ThemeDao {
         try
         {
             String vSQL =
-                    "SELECT theme_name, theme_id FROM theme \n" +
-                     "INNER JOIN book_theme ON book_theme.book_theme_theme_id = theme.theme_id \n" +
-                            "INNER JOIN book ON book.book_id = book_theme.book_theme_book_id \n" +
-                            " WHERE book.book_id ="+book.getId();
+                    "SELECT theme.name, theme.id FROM theme \n" +
+                     "INNER JOIN book_theme ON book_theme.theme_id = theme.id \n" +
+                            "INNER JOIN book ON book.id = book_theme.book_id \n" +
+                            " WHERE book.id ="+book.getId();
             JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
             List<Theme> listTheme = jdbcTemplate.query(vSQL, themeRM);
 

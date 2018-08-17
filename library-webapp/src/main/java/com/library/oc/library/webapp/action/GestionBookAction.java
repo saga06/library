@@ -9,6 +9,7 @@ import com.library.oc.library.business.contract.ManagerFactory;
 import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.library.model.bean.book.Editor;
+import com.library.oc.library.model.bean.book.Theme;
 import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.FunctionalException;
 import com.library.oc.library.model.exception.NotFoundException;
@@ -32,39 +33,48 @@ public class GestionBookAction extends ActionSupport {
     private Book book;
     private List<User> listUser;
     private List<Book> listEditor;
-    private Author author;
+    private List<Author> authors;
+    private List<Theme> themes;
     private Editor editor;
 
     @Inject
     private ManagerFactory managerFactory;
 
 
+
     // ==================== Getters/Setters ====================
-    public Integer getId() {
-        return id;
-    }
-    public void setId(Integer pId) {
-        id = pId;
+    public Integer getId() { return id; }
+    public void setId(Integer pId) { id = pId; }
+
+    public Integer getIdEditor() { return idEditor; }
+    public void setIdEditor(Integer idEditor) { this.idEditor = idEditor; }
+
+    public List<Book> getListBook() { return listBook; }
+    public void setListBook(List<Book> listBook) { this.listBook = listBook; }
+
+    public Book getBook() { return book; }
+    public void setBook(Book book) { this.book = book; }
+
+    public void setListUser(List<User> listUser) { this.listUser = listUser; }
+    public List<User> getListUser() { return listUser; }
+
+    public List<Book> getListEditor() { return listEditor; }
+    public void setListEditor(List<Book> listEditor) { this.listEditor = listEditor; }
+
+    public List<Author> getAuthors() { return authors; }
+
+    public void setAuthors(List<Author> authors) { this.authors = authors; }
+
+    public List<Theme> getThemes() {
+        return themes;
     }
 
-    public List<Book> findAllBooks() {
-        return listBook;
+    public void setThemes(List<Theme> themes) {
+        this.themes = themes;
     }
-
-    public Book getBook() {
-        return book;
-    }
-    public void setBook(Book pBook) {book=pBook;}
-
-    public Author getAuthor() {return author;}
-    public void setAuthor(Author pAuthor) {author=pAuthor;}
 
     public Editor getEditor() {return editor;}
     public void setEditor(Editor pEditor) {editor=pEditor;}
-
-    public List<User> getListUser() {
-        return listUser;
-    }
     // ==================== Méthodes ====================
     /**
      * Action listant les {@link Book}
@@ -92,7 +102,7 @@ public class GestionBookAction extends ActionSupport {
             try {
                 book = managerFactory.getBookManager().getBook(id);
             } catch (NotFoundException pE) {
-                //                this.addActionError("Projet non trouvé. ID = " + id);
+                //                this.addActionError("Ouvrage non trouvé. ID = " + id);
                 this.addActionError(getText("error.book.notfound", Collections.singletonList(id)));
             }
         }

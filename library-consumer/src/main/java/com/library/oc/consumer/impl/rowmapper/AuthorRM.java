@@ -27,8 +27,8 @@ import org.springframework.jdbc.core.RowMapper;
         @Override
         public Author mapRow(ResultSet pRS, int pRowNum) throws SQLException {
 
-            Author vAuthor = new Author(pRS.getInt("author_id"));
-            vAuthor.setName(pRS.getString("author_name"));
+            Author vAuthor = new Author(pRS.getInt("id"));
+            vAuthor.setName(pRS.getString("name"));
 
             return vAuthor;
         }

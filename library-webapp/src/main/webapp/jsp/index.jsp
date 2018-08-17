@@ -9,14 +9,14 @@
 <%@ include file="_include/head.jsp"%>
 <body>
 <%@ include file="_include/header.jsp" %>
-<div class="container" id="main-content">
+<div class="container" id="main-content" style="text-align: center">
+
     <h2><s:text name="home.welcome" /></h2>
-    <ul>
-        <li>Application : ${application.name}</li>
-        <li>Version : ${project.version}</li>
-        <li>Date du build : ${timestamp}</li>
-    </ul>
-<p>page d'accueil: Bienvenue sur le site de la bibliothèque, etc, etc ... </p>
+    <h2>Bienvenue sur le site de la bibliothèque OpenClassrooms !</h2>
+    <p>Vous trouverez sur ce site l'ensemble des informations utiles (horaires, liste des ouvrages disponibles, boîte "retour livres"
+        divers informations, etc.) sur l'onglet "A propos". Vous pouvez effectuer des recherches, réserver un document, ...
+        N'hésitez pas à nous faire part de vos remarques lors de votre passage à la bibliothèque ou par email bibliotheque@OC.fr</p
+    <div><img src="img/accueil.jpg" alt="homePicture" style="width: 50vw"></div>
 
 </div>
 <%@ include file="_include/footer.jsp" %>

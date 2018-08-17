@@ -58,7 +58,7 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
     public List<Book> findAllBooks() {
         //String vSQL = "SELECT * FROM book INNER JOIN editor ON book.editor_id = editor.id";
         String vSQL = "SELECT * FROM book " +
-                "LEFT JOIN editor ON book.book_editor_id = editor.editor_id ";
+                "LEFT JOIN editor ON book.editor_id = editor.id ";
 
         /*" old code +
                 "LEFT JOIN book_author ON book.book_id = book_author.book_author_book_id " +

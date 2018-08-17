@@ -17,22 +17,29 @@ import com.library.oc.library.model.bean.user.User;
 public class Book {
 
     // ==================== Attributs ====================
+    @NotNull
     private Integer id;
 
     @NotNull
     private Integer numberOfCopies;
 
+    @NotNull
     private String title;
-
-    @NotNull
-    private Integer editorId;
-
-    @NotNull
-    private String isbn;
 
     @NotNull
     private String editorName;
 
+    @NotNull
+    private String isbn;
+
+    private String resume;
+
+    public Integer getEditorId() { return editorId; }
+
+    public void setEditorId(Integer editorId) { this.editorId = editorId; }
+
+    @NotNull
+    private Integer editorId;
 
     private List<Author> authors = new ArrayList<Author>();
 
@@ -55,7 +62,6 @@ public class Book {
         id = pId;
     }
 
-
     // ==================== Getters/Setters ====================
     public Integer getId() {
         return id;
@@ -64,55 +70,41 @@ public class Book {
         id = pId;
     }
 
-
     public Integer getNumberOfCopies() {
         return numberOfCopies;
     }
-
     public void setNumberOfCopies(Integer numberOfCopies) {
         this.numberOfCopies = numberOfCopies;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() { return title; }
+    public void setTitle(String title) { this.title = title; }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Integer getEditorId() {
-        return editorId;
-    }
-
-    public void setEditorId(Integer editorId) {
-        this.editorId = editorId;
-    }
+    public String getEditorName() { return editorName; }
+    public void setEditorName(String editorName) { this.editorName = editorName; }
 
     public String getIsbn() { return isbn; }
-
     public void setIsbn(String isbn) { this.isbn = isbn; }
 
+    public String getResume() { return resume; }
+
+    public void setResume(String resume) { this.resume = resume; }
 
     public List<Author> getAuthors() {
         return authors;
     }
-
-    public void setAuthors(List<Author> authors) {
-        this.authors = authors;
-    }
+    public void setAuthors(List<Author> authors) { this.authors = authors; }
 
     public List<Theme> getThemes() {
         return themes;
     }
-
     public void setThemes(List<Theme> themes) {
         this.themes = themes;
     }
 
 
     // ==================== Méthodes ====================
-    public String toString() {
+    /*public String toString() {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
@@ -122,7 +114,7 @@ public class Book {
                 .append(vSEP).append("Editeur=").append(editorId)
                 .append("}");
         return vStB.toString();
-    }
+    }*/
 
 
 }

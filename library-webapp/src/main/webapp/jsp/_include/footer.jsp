@@ -6,19 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<footer class="footer">
+<nav class="navbar navbar-inverse navbar-fixed-bottom footer">
     <div class="container">
         <p>
             ${application.name} - version ${project.version}
             &copy; <a href="${organization.url}">${organization.name}</a>
+            Date du build : ${timestamp}
         </p>
         <%--Décommenter la partie en dessous si vous voulez afficher l'aide au debug de struts--%>
-
-    <%--
-        <s:debug/>
---%>
+        <%--<s:debug/>--%>
     </div>
-</footer>
+</nav>
 
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

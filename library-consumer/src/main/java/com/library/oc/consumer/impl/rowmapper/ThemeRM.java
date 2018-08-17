@@ -15,8 +15,8 @@ public class ThemeRM implements RowMapper<Theme> {
     @Override
     public Theme mapRow(ResultSet pRS, int pRowNum) throws SQLException {
 
-        Theme vTheme = new Theme(pRS.getInt("theme_id"));
-        vTheme.setName(pRS.getString("theme_name"));
+        Theme vTheme = new Theme(pRS.getInt("id"));
+        vTheme.setName(pRS.getString("name"));
 
         return vTheme;
     }

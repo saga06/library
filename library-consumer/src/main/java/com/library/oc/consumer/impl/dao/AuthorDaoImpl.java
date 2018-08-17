@@ -34,7 +34,7 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
 
     @Override
     public Author read(int id) {
-        String vSQL = "SELECT author_name FROM author WHERE author_id="+id;
+        String vSQL = "SELECT name FROM author WHERE id="+id;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
         List<Author> listAuthor = jdbcTemplate.query(vSQL, authorRM);
@@ -59,10 +59,10 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
         try
         {
             String vSQL =
-                    "SELECT author_name, author_id  FROM author \n" +
-                    "INNER JOIN book_author ON book_author.book_author_author_id = author.author_id \n" +
-                    "INNER JOIN book ON book.book_id = book_author.book_author_book_id \n" +
-                    "WHERE book.book_id ="+book.getId();
+                    "SELECT author.name, author.id  FROM author \n" +
+                    "INNER JOIN book_author ON book_author.author_id = author.id \n" +
+                    "INNER JOIN book ON book.id = book_author.book_id \n" +
+                    "WHERE book.id ="+book.getId();
             JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
             List<Author> listAuthor = jdbcTemplate.query(vSQL, authorRM);
             return listAuthor;

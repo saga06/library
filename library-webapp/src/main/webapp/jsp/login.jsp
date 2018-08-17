@@ -16,8 +16,6 @@
         <s:textfield name="email" label="Identifiant" requiredLabel="true" />
         <s:password name="password" label="Mot de passe" requiredLabel="true" />
         <s:fielderror fieldName="login.name" cssClass="col-xs-12 errorMessage"/>
-
-
         <s:submit value="Connexion"/>
     </s:form>
 </div>

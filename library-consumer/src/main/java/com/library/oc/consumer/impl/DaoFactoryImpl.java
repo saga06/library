@@ -5,14 +5,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.library.oc.consumer.contract.DaoFactory;
-import com.library.oc.consumer.contract.dao.AuthorDao;
-import com.library.oc.consumer.contract.dao.BookDao;
-import com.library.oc.consumer.contract.dao.ThemeDao;
-import com.library.oc.consumer.contract.dao.UserDao;
-import com.library.oc.consumer.impl.dao.ThemeDaoImpl;
-/*
-import com.library.oc.consumer.contract.dao.BookStatutDao;
-*/
+import com.library.oc.consumer.contract.dao.*;
 
 
 @Named("daoFactory")
@@ -29,6 +22,7 @@ public class DaoFactoryImpl implements DaoFactory {
     ThemeDao themeDaoImpl;
 
 
+
     //----- UTLISATEUR -----
     @Override
     public UserDao getUserDao() { return userDaoImpl; }
@@ -43,19 +37,19 @@ public class DaoFactoryImpl implements DaoFactory {
     @Override
     public void setBookDao(BookDao pBookDao) { this.bookDaoImpl = pBookDao; }
 
-    //----- Author -----
 
+    //----- Author -----
     @Override
     public AuthorDao getAuthorDao() { return authorDaoImpl; }
     @Override
     public void setAuthorDao(AuthorDao pAuthorDao) { this.authorDaoImpl = pAuthorDao; }
 
     //----- Theme -----
-
     @Override
     public ThemeDao getThemeDao() { return themeDaoImpl; }
     @Override
-    public void setThemeDao(ThemeDaoImpl pThemeDao) { this.themeDaoImpl = pThemeDao; }
+    public void setThemeDao(ThemeDao pThemeDao) { this.themeDaoImpl = pThemeDao; }
+
 
 
 

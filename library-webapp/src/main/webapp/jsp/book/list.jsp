@@ -18,11 +18,12 @@
         <thead>
             <tr>
                 <th scope="col">Titre</th>
-                <th scope="col">Auteur</th>
+                <th scope="col">Auteur(s)</th>
                 <th scope="col">Editeur</th>
-                <th scope="col">Thème</th>
+                <th scope="col">Thème(s)</th>
                 <th scope="col">Nombre d'exemplaire</th>
                 <th scope="col">ISBN</th>
+                <%--<th scope="col">Résumé</th>--%>
                 <th scope="col">Réserver</th>
             </tr>
         </thead>
@@ -36,16 +37,26 @@
                     <td>
                       <%--  <s:a action="author_detail">
                             <s:param name="id" value="author.id"/> --%>
-                        <s:iterator value="authors" >
-                            <p><s:property value="name"/></p>
-                        </s:iterator>
+                          <s:iterator value="authors" status="loop">
+                              <s:if test="#loop.last == true ">
+                                  <s:property value="name" />
+                              </s:if>
+                              <s:else>
+                                  <s:property value="name" />,
+                              </s:else>
+                          </s:iterator>
                     </td>
                     <td>
                         <s:property value="editorName"/>
                     </td>
                     <td>
-                        <s:iterator value="themes">
-                        <p><s:property value="name"/></p>
+                        <s:iterator value="themes" status="loop">
+                            <s:if test="#loop.last == true ">
+                                <s:property value="name" />
+                            </s:if>
+                            <s:else>
+                                <s:property value="name" />,
+                            </s:else>
                         </s:iterator>
                     </td>
                     <td>
@@ -54,6 +65,9 @@
                     <td>
                         <s:property value="isbn"/>
                     </td>
+                    <%--<td>
+                        <s:property value="resume"/>
+                    </td>--%>
                     <td>
                         <s:if test="#session.user">
                             <button>Réserver</button>

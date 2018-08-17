@@ -1,10 +1,6 @@
 package com.library.oc.consumer.contract;
 
-import com.library.oc.consumer.contract.dao.AuthorDao;
-import com.library.oc.consumer.contract.dao.UserDao;
-import com.library.oc.consumer.contract.dao.ThemeDao;
-import com.library.oc.consumer.contract.dao.BookDao;
-import com.library.oc.consumer.impl.dao.ThemeDaoImpl;
+import com.library.oc.consumer.contract.dao.*;
 /*
 import com.library.oc.consumer.contract.dao.BookStatutDao;
 */
@@ -20,13 +16,16 @@ public interface DaoFactory {
     BookDao getBookDao();
     void setBookDao(BookDao pBookDao);
 
-    //----- Auteur -----
+
+    //------Author ------
     AuthorDao getAuthorDao();
     void setAuthorDao(AuthorDao pAuthorDao);
 
-    //----- Theme -----
+    //------Theme -----
     ThemeDao getThemeDao();
-    void setThemeDao(ThemeDaoImpl pThemeDao);
+    void setThemeDao (ThemeDao pThemeDao);
+
+
 
     //----- Statut BOOK -----
  /*   BookStatutDao getBookStatutDao();
