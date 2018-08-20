@@ -14,8 +14,8 @@
 <%--
     <s:a action="book_new">Ajouter un nouveau livre</s:a>
 --%>
-    <table id="table" class="table table-striped table-dark">
-        <thead>
+    <table id="table" class="table table-dark">
+        <thead class="thead-dark">
             <tr>
                 <th scope="col">Titre</th>
                 <th scope="col">Auteur(s)</th>
@@ -29,7 +29,7 @@
         </thead>
         <tbody>
         <s:iterator value="listBook">
-            <tr>
+            <tr class="table-primary">
 <%--<s:a action="book_detail"> <s:param name="book.id" value="book.id" />--%>
                     <td>
                         <s:property value="title"/>

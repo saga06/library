@@ -7,6 +7,7 @@ import com.library.oc.library.business.contract.manager.BookManager;
 import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Theme;
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.NotFoundException;
 
 
@@ -25,6 +26,19 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
         }
         return books;
     }
+
+
+
+    @Override
+    public List<Book> getListBookBorrowedByUser(Integer id) {
+        List<Book> books = getDaoFactory().getBookDao().findAllBooksBorrowed(id);
+        for(Book book : books)
+        {
+            buildBookDependencies(book);
+        }
+        return books;
+    }
+
 
     @Override
     public void buildBookDependencies(Book book)
@@ -48,6 +62,7 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
     @Override
     public int getNbBook() { return getDaoFactory().getBookDao().getCountBook(); }
+
 
 
 

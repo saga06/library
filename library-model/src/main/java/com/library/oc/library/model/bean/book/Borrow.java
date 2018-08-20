@@ -1,6 +1,10 @@
 package com.library.oc.library.model.bean.book;
 
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
+
 
 /**
  * Objet métier représentant un emprunt
@@ -12,15 +16,18 @@ public class Borrow {
 // ==================== Attributs ====================
     private Integer id;
 
-    private Calendar dateStart;
+    private Date dateStart;
 
-    private Calendar dateEnd;
+    private Date dateEnd;
 
     private boolean alreadyExtended;
 
     private Integer idBorrower;
 
     private Integer idBook;
+
+    private List<Book> books = new ArrayList<Book>();
+
 
     // ==================== Constructeurs ====================
     /**
@@ -49,19 +56,19 @@ public class Borrow {
         this.id = id;
     }
 
-    public Calendar getDateStart() {
+    public Date getDateStart() {
         return dateStart;
     }
 
-    public void setDateStart(Calendar dateStart) {
+    public void setDateStart(Date dateStart) {
         this.dateStart = dateStart;
     }
 
-    public Calendar getDateEnd() {
+    public Date getDateEnd() {
         return dateEnd;
     }
 
-    public void setDateEnd(Calendar dateEnd) {
+    public void setDateEnd(Date dateEnd) {
         this.dateEnd = dateEnd;
     }
 

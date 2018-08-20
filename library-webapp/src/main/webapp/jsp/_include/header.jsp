@@ -23,17 +23,17 @@
             <ul class="nav navbar-nav">
                 <script type="text/javascript">
                     $(document).ready(function () {
+                        if(window.location.href.indexOf("library-webapp/library-webapp") > -1) {
+                            $('ul li:not(:nth-child(2))').removeClass('active');
+                        }
                         if(window.location.href.indexOf("book_list") > -1) {
-                            $('ul li:nth-child(3)').addClass('active');
-                            $('ul li:nth-child(2)').removeClass('active');
+                            $('ul li:not(:nth-child(3))').removeClass('active');
                         }
                         if(window.location.href.indexOf("book_search") > -1) {
-                            $('ul li:nth-child(4)').addClass('active');
-                            $('ul li:nth-child(2)').removeClass('active');
+                            $('ul li:not(:nth-child(4))').removeClass('active');
                         }
                         if(window.location.href.indexOf("about") > -1) {
-                            $('ul li:nth-child(5)').addClass('active');
-                            $('ul li:nth-child(2)').removeClass('active');
+                            $('ul li:not(:nth-child(5))').removeClass('active');
                         }
                     });
                 </script>
@@ -41,18 +41,19 @@
                     <s:a href="library-webapp">
                         <s:text name="nav.homepage" />
                     </s:a>
+
                 </li>
-                <li>
+                <li class="active">
                     <s:a action="book_list">
                         <s:text name="nav.listBook" />
                     </s:a>
                 </li>
-                <li>
+                <li class="active">
                     <s:a action="book_search">
                         <s:text name="nav.searchBook" />
                     </s:a>
                 </li>
-                <li>
+                <li class="active">
                     <s:a action="about">
                         <s:text name="nav.about" />
                     </s:a>
@@ -89,12 +90,15 @@
                 </li>
                 <s:if test="#session.user">
                     <li class ="my-profil dropdown white">
-                        <s:a action="profil" class="dropdown-toogle"
-                            data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <s:property value="#session.user.surname"  /> <span class="caret"></span>
+                        <s:a action="profil" class="dropdown-toogle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <s:property value="#session.user.surname"  />
+                            <span class="caret"></span>
                         </s:a>
                         <ul class="dropdown-menu black" role="menu">
                             <li>
                                 <s:a action="profil">
+                                    <s:param name="id" value="#session.user.id"/>
                                     <s:text name="nav.profil" />
                                 </s:a>
                             </li>

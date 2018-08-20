@@ -54,9 +54,9 @@
 
         <!-- Action d'accès au profil -->
         <action name="profil"
-                class="com.library.oc.library.webapp.action.GestionProfilAction"
-                method="doListProfil">
-            <result>/jsp/profil.jsp</result>
+                class="com.library.oc.library.webapp.action.GestionUserAction"
+                method="doListBookBorrowedByUser">
+            <result>/jsp/user/profil.jsp</result>
         </action>
 
         <!-- Action d'accès à about -->

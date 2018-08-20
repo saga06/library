@@ -11,6 +11,9 @@ import com.library.oc.consumer.contract.dao.BookStatutDao;
 */
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.consumer.impl.rowmapper.BookRM;
+import com.library.oc.consumer.impl.rowmapper.BorrowRM;
+import com.library.oc.library.model.bean.user.User;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
@@ -25,6 +28,8 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
     UserDao userDaoImpl;
     @Inject
     BookRM bookRM;
+    @Inject
+    BorrowRM borrowRM;
 
     //----- IMPLEMENTATION DES METHODES -----
 
@@ -42,34 +47,35 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
 
 
-  /*  @Override
-    public List<Book> getEditorBook(int idEditor) {
-        String vSQL = "SELECT editor.id, editor.name FROM book INNER JOIN editor ON book.editor_id = editor.id WHERE book.id ="+idEditor;
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
-        List<Book> listBook = jdbcTemplate.query(vSQL, bookRM);
-        Book eBook = listBook.get(0);
-
-        return eBook;
-    }
-*/
-
-
     @Override
     public List<Book> findAllBooks() {
         //String vSQL = "SELECT * FROM book INNER JOIN editor ON book.editor_id = editor.id";
         String vSQL = "SELECT * FROM book " +
                 "LEFT JOIN editor ON book.editor_id = editor.id ";
 
-        /*" old code +
-                "LEFT JOIN book_author ON book.book_id = book_author.book_author_book_id " +
-                "LEFT JOIN author ON book_author.book_author_author_id = author.author_id " +
-                "LEFT JOIN book_theme ON book.book_id = book_theme.book_theme_book_id " +
-                "LEFT JOIN theme ON book_theme.book_theme_theme_id = theme.theme_id*/
-
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Book> vListBook = vJdbcTemplate.query(vSQL, bookRM);
 
         return vListBook;
+    }
+
+    @Override
+    public  List<Book> findAllBooksBorrowed(int id) {
+        try
+        {
+            String vSQL =
+                    "SELECT * FROM book " +
+                    "INNER JOIN borrow ON borrow.id_book = book.id \n " +
+                    "LEFT JOIN editor ON book.editor_id = editor.id \n " +
+                    "WHERE id_borrower = "+id;
+
+            JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
+            List<Book> vListBook = jdbcTemplate.query(vSQL, bookRM);
+            return vListBook;
+
+        }catch(EmptyResultDataAccessException e){
+            return null;
+        }
     }
 
 

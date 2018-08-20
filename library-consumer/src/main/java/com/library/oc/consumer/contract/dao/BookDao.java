@@ -2,6 +2,7 @@ package com.library.oc.consumer.contract.dao;
 import java.util.List;
 
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.user.User;
 
 /**
  * Les méthodes CRUD nécessaires pour manipuler le bean "Book" / La table "book"
@@ -53,6 +54,8 @@ public interface BookDao {
      * @return Le nombre de Book
      */
     int getCountBook();
+
+    List<Book> findAllBooksBorrowed(int id);
 
 }
 
