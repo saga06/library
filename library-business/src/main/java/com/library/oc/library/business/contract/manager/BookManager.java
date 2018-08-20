@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.library.oc.library.model.bean.book.Book;
 
-import com.library.oc.library.model.bean.user.User;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 import com.library.oc.library.model.exception.NotFoundException;
 
 
@@ -29,10 +29,12 @@ public interface BookManager {
    /* List<Book> getListBook();*/
 
     List<Book> displayAllBooks();
-    List<Book> getListBookBorrowedByUser(Integer pid);
+    List<BookBorrowed> getListBookBorrowedByUser(Integer pid);
 
 
     void buildBookDependencies(Book book);
+    void buildBookBorrowedDependencies(BookBorrowed bookBorrowed);
+
 
 
 

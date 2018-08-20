@@ -1,15 +1,10 @@
 package com.library.oc.library.webapp.action;
 
 import com.library.oc.library.business.contract.ManagerFactory;
-import com.library.oc.library.model.bean.book.Author;
-import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.library.model.bean.book.Editor;
-import com.library.oc.library.model.bean.book.Theme;
+import com.library.oc.library.model.bean.book.*;
 import com.opensymphony.xwork2.ActionSupport;
 
 import com.library.oc.library.model.bean.user.User;
-import com.library.oc.library.model.exception.NotFoundException;
-import com.library.oc.library.webapp.WebappHelper;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -36,7 +31,7 @@ public class GestionUserAction extends ActionSupport {
     private List<Theme> themes;
     private Editor editor;
 
-    private List<Book> listBookBorrowedByUser;
+    private List<BookBorrowed> listBookBorrowedByUser;
 
 
 
@@ -78,8 +73,8 @@ public class GestionUserAction extends ActionSupport {
     public Editor getEditor() { return editor; }
     public void setEditor(Editor editor) { this.editor = editor; }
 
-    public List<Book> getListBookBorrowedByUser() { return listBookBorrowedByUser; }
-    public void setListBookBorrowedByUser(List<Book> listBookBorrowedByUser) { this.listBookBorrowedByUser = listBookBorrowedByUser; }
+    public List<BookBorrowed> getListBookBorrowedByUser() { return listBookBorrowedByUser; }
+    public void setListBookBorrowedByUser(List<BookBorrowed> listBookBorrowedByUser) { this.listBookBorrowedByUser = listBookBorrowedByUser; }
 
 
     // ==================== Méthodes ====================

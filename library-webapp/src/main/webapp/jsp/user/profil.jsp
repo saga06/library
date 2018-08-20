@@ -21,9 +21,10 @@
             <th scope="col">Auteur(s)</th>
             <th scope="col">Editeur</th>
             <th scope="col">Thème(s)</th>
-            <th scope="col">ISBN</th>
-            <%--<th scope="col">Résumé</th>--%>
-            <th scope="col">Prolonger</th>
+            <th scope="col" style="text-align: center">Date début d'emprunt</th>
+            <th scope="col" style="text-align: center">Date limite de retour</th>
+        <%--<th scope="col">Résumé</th>--%>
+            <th scope="col" style="text-align: center">Prolonger</th>
         </tr>
         </thead>
         <tbody>
@@ -58,19 +59,22 @@
                         </s:else>
                     </s:iterator>
                 </td>
-                <td>
-                    <s:property value="isbn"/>
+                <td style="text-align: center">
+                    <s:date name="dateStart" format="dd/MM/yyyy" />
+                </td>
+                <td style="text-align: center">
+                    <s:date name="dateEnd" format="dd/MM/yyyy" />
                 </td>
                 <%--<td>
                     <s:property value="resume"/>
                 </td>--%>
-                <td>
-                    <%--TO DO : test à modifier--%>
-                    <s:if test="#session.user">
+                <td style="text-align: center">
+                    <%--TO DO : implémenter méthode prolongation--%>
+                    <s:if test="%{alreadyExtended==false}">
                         <button>Prolonger</button>
                     </s:if>
                     <s:else>
-                        <button type="button" disabled>Déjà prolongé</button>
+                        <p>Emprunt déjà prolongé</p>
                     </s:else>
                 </td>
             </tr>

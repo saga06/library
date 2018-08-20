@@ -21,10 +21,10 @@
                 <th scope="col">Auteur(s)</th>
                 <th scope="col">Editeur</th>
                 <th scope="col">Thème(s)</th>
-                <th scope="col">Nombre d'exemplaire</th>
+                <th scope="col">Nombre d'exemplaire(s) disponible(s)</th>
                 <th scope="col">ISBN</th>
                 <%--<th scope="col">Résumé</th>--%>
-                <th scope="col">Réserver</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
@@ -59,7 +59,7 @@
                             </s:else>
                         </s:iterator>
                     </td>
-                    <td>
+                    <td style="text-align: center">
                          <s:property value="numberOfCopies"/>
                     </td>
                     <td>
@@ -68,12 +68,17 @@
                     <%--<td>
                         <s:property value="resume"/>
                     </td>--%>
-                    <td>
+                    <td style="text-align: center">
                         <s:if test="#session.user">
-                            <button>Réserver</button>
+                            <s:if test="%{numberOfCopies!=0}">
+                                <button>Emprunter</button>
+                            </s:if>
+                            <s:else>
+                                <p>Plus aucun exemplaire disponible</p>
+                            </s:else>
                         </s:if>
                         <s:else>
-                            <button type="button" disabled>Vous devez vous identifiez d'abord !</button>
+                            <p>Vous devez vous identifiez d'abord !</p>
                         </s:else>
                     </td>
             </tr>

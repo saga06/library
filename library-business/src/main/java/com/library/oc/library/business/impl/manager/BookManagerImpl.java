@@ -4,10 +4,8 @@ import java.util.List;
 import javax.inject.Named;
 
 import com.library.oc.library.business.contract.manager.BookManager;
-import com.library.oc.library.model.bean.book.Author;
-import com.library.oc.library.model.bean.book.Theme;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 import com.library.oc.library.model.bean.book.Book;
-import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.NotFoundException;
 
 
@@ -30,22 +28,29 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
 
     @Override
-    public List<Book> getListBookBorrowedByUser(Integer id) {
-        List<Book> books = getDaoFactory().getBookDao().findAllBooksBorrowed(id);
-        for(Book book : books)
+    public List<BookBorrowed> getListBookBorrowedByUser(Integer id) {
+        List<BookBorrowed> booksBorrowed = getDaoFactory().getBookBorrowedDao().findAllBooksBorrowed(id);
+        for(BookBorrowed bookBorrowed : booksBorrowed)
         {
-            buildBookDependencies(book);
+            buildBookBorrowedDependencies(bookBorrowed);
         }
-        return books;
+        return booksBorrowed;
+    }
+
+    @Override
+    public void buildBookDependencies(Book book) {
+
+        book.setAuthors(getDaoFactory().getAuthorDao().findAuthorsByBook(book));
+        book.setThemes(getDaoFactory().getThemeDao().findThemesByBook(book));
     }
 
 
     @Override
-    public void buildBookDependencies(Book book)
+    public void buildBookBorrowedDependencies(BookBorrowed bookBorrowed)
 
     {
-        book.setAuthors(getDaoFactory().getAuthorDao().findAuthorsByBook(book));
-        book.setThemes(getDaoFactory().getThemeDao().findThemesByBook(book));
+        bookBorrowed.setAuthors(getDaoFactory().getAuthorDao().findAuthorsByBook(bookBorrowed));
+        bookBorrowed.setThemes(getDaoFactory().getThemeDao().findThemesByBook(bookBorrowed));
 
     }
 

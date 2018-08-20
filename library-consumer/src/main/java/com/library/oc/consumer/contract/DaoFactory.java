@@ -1,6 +1,7 @@
 package com.library.oc.consumer.contract;
 
 import com.library.oc.consumer.contract.dao.*;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 /*
 import com.library.oc.consumer.contract.dao.BookStatutDao;
 */
@@ -15,6 +16,10 @@ public interface DaoFactory {
     //----- BOOK -----
     BookDao getBookDao();
     void setBookDao(BookDao pBookDao);
+
+    //----- BOOK -----
+    BookBorrowedDao getBookBorrowedDao();
+    void setBookBorrowedDao(BookBorrowedDao pBookBorrowedDao);
 
 
     //------Author ------

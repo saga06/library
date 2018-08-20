@@ -11,8 +11,8 @@ import com.library.oc.consumer.contract.dao.BookStatutDao;
 */
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.consumer.impl.rowmapper.BookRM;
-import com.library.oc.consumer.impl.rowmapper.BorrowRM;
-import com.library.oc.library.model.bean.user.User;
+import com.library.oc.consumer.impl.rowmapper.BookBorrowedRM;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -29,7 +29,7 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
     @Inject
     BookRM bookRM;
     @Inject
-    BorrowRM borrowRM;
+    BookBorrowedRM bookBorrowedRM;
 
     //----- IMPLEMENTATION DES METHODES -----
 
@@ -49,9 +49,8 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
     @Override
     public List<Book> findAllBooks() {
-        //String vSQL = "SELECT * FROM book INNER JOIN editor ON book.editor_id = editor.id";
         String vSQL = "SELECT * FROM book " +
-                "LEFT JOIN editor ON book.editor_id = editor.id ";
+                "LEFT JOIN editor ON book.editor_id = editor.id ORDER By book.title";
 
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Book> vListBook = vJdbcTemplate.query(vSQL, bookRM);
@@ -60,17 +59,18 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
     }
 
     @Override
-    public  List<Book> findAllBooksBorrowed(int id) {
+    public  List<BookBorrowed> findAllBooksBorrowed(int id) {
         try
         {
             String vSQL =
                     "SELECT * FROM book " +
                     "INNER JOIN borrow ON borrow.id_book = book.id \n " +
                     "LEFT JOIN editor ON book.editor_id = editor.id \n " +
-                    "WHERE id_borrower = "+id;
+                    "WHERE id_borrower = id \n" +
+                    "ORDER By book.title" ;
 
             JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
-            List<Book> vListBook = jdbcTemplate.query(vSQL, bookRM);
+            List<BookBorrowed> vListBook = jdbcTemplate.query(vSQL, bookBorrowedRM);
             return vListBook;
 
         }catch(EmptyResultDataAccessException e){

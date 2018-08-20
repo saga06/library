@@ -23,4 +23,5 @@ public interface ManagerFactory {
     void setAuthorManager(AuthorManager pAuthorManager);
 
 
+
 }

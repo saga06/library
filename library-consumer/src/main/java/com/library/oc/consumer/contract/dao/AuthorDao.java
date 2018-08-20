@@ -2,6 +2,7 @@ package com.library.oc.consumer.contract.dao;
 
 import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 
 import java.util.List;
 
@@ -26,6 +27,8 @@ public interface AuthorDao {
     List<Author> readAll();
     List<Author> readAll(int id);
     List<Author> findAuthorsByBook(Book book);
+    List<Author> findAuthorsByBook(BookBorrowed bookBorrowed);
+
 
 
     /**

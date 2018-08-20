@@ -2,6 +2,7 @@ package com.library.oc.consumer.contract.dao;
 import java.util.List;
 
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 import com.library.oc.library.model.bean.user.User;
 
 /**
@@ -29,6 +30,7 @@ public interface BookDao {
      */
     Book read(int id);
     List<Book> findAllBooks();
+    List<BookBorrowed> findAllBooksBorrowed(int id);
 
 /*
     List<Book> getEditorBook(int idEditor);
@@ -55,7 +57,6 @@ public interface BookDao {
      */
     int getCountBook();
 
-    List<Book> findAllBooksBorrowed(int id);
 
 }
 

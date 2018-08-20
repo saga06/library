@@ -12,6 +12,7 @@ import com.library.oc.consumer.impl.rowmapper.AuthorRM;
 import com.library.oc.consumer.impl.rowmapper.BookRM;
 import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -63,6 +64,24 @@ public class AuthorDaoImpl  extends AbstractDao implements AuthorDao {
                     "INNER JOIN book_author ON book_author.author_id = author.id \n" +
                     "INNER JOIN book ON book.id = book_author.book_id \n" +
                     "WHERE book.id ="+book.getId();
+            JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
+            List<Author> listAuthor = jdbcTemplate.query(vSQL, authorRM);
+            return listAuthor;
+
+        }catch(EmptyResultDataAccessException e){
+            return null;
+        }
+    }
+
+    @Override
+    public List<Author> findAuthorsByBook(BookBorrowed bookBorrowed) {
+        try
+        {
+            String vSQL =
+                    "SELECT author.name, author.id  FROM author \n" +
+                            "INNER JOIN book_author ON book_author.author_id = author.id \n" +
+                            "INNER JOIN book ON book.id = book_author.book_id \n" +
+                            "WHERE book.id ="+bookBorrowed.getId();
             JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
             List<Author> listAuthor = jdbcTemplate.query(vSQL, authorRM);
             return listAuthor;

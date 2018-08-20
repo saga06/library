@@ -6,6 +6,7 @@ import javax.inject.Named;
 
 import com.library.oc.consumer.contract.DaoFactory;
 import com.library.oc.consumer.contract.dao.*;
+import com.library.oc.library.model.bean.book.BookBorrowed;
 
 
 @Named("daoFactory")
@@ -20,6 +21,8 @@ public class DaoFactoryImpl implements DaoFactory {
     AuthorDao authorDaoImpl;
     @Inject
     ThemeDao themeDaoImpl;
+    @Inject
+    BookBorrowedDao bookBorrowedDaoImpl;
 
 
 
@@ -36,6 +39,12 @@ public class DaoFactoryImpl implements DaoFactory {
     public BookDao getBookDao() { return bookDaoImpl; }
     @Override
     public void setBookDao(BookDao pBookDao) { this.bookDaoImpl = pBookDao; }
+
+    //----- BOOK Borrowed-----
+    @Override
+    public BookBorrowedDao getBookBorrowedDao() { return bookBorrowedDaoImpl; }
+    @Override
+    public void setBookBorrowedDao(BookBorrowedDao pBookBorrowedDao) { this.bookBorrowedDaoImpl = pBookBorrowedDao; }
 
 
     //----- Author -----

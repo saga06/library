@@ -35,13 +35,15 @@
                         if(window.location.href.indexOf("about") > -1) {
                             $('ul li:not(:nth-child(5))').removeClass('active');
                         }
+                        if(window.location.href.indexOf("profil") > -1) {
+                            $('ul li:not(:nth-child(99))').removeClass('active');
+                        }
                     });
                 </script>
                 <li class="active">
                     <s:a href="library-webapp">
                         <s:text name="nav.homepage" />
                     </s:a>
-
                 </li>
                 <li class="active">
                     <s:a action="book_list">
