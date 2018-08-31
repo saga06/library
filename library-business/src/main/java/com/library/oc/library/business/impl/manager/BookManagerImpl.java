@@ -6,6 +6,7 @@ import javax.inject.Named;
 import com.library.oc.library.business.contract.manager.BookManager;
 import com.library.oc.library.model.bean.book.BookBorrowed;
 import com.library.oc.library.model.bean.book.Book;
+import com.library.oc.library.model.bean.user.User;
 import com.library.oc.library.model.exception.NotFoundException;
 
 
@@ -54,12 +55,11 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
     }
 
+    @Override
+    public void borrowBook (User user, Book book) { getDaoFactory().getBookBorrowedDao().borrowBook(user, book); }
 
-
-
-/*    @Override
-    public List<Book> getEditorBook(int idEditor) throws NotFoundException { return getDaoFactory().getBookDao().getEditorBook(idEditor); }*/
-
+    @Override
+    public void extendBorrow(Integer id) {getDaoFactory().getBookBorrowedDao().extendBorrow(id);}
 
     @Override
     public Book getBook(Integer pId) throws NotFoundException { return getDaoFactory().getBookDao().read(pId); }

@@ -13,6 +13,7 @@ import com.library.oc.consumer.impl.rowmapper.BookRM;
 import com.library.oc.library.model.bean.book.Author;
 import com.library.oc.library.model.bean.book.Book;
 import com.library.oc.library.model.bean.book.BookBorrowed;
+import com.library.oc.library.model.bean.user.User;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 

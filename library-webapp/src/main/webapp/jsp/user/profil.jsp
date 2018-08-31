@@ -10,6 +10,8 @@
 <body>
 <%@ include file="../_include/header.jsp" %>
 <div class="container" id="main-content">
+    <s:actionmessage />
+
     <h2><s:text name="myListBook"/></h2>
     <%--
         <s:a action="book_new">Ajouter un nouveau livre</s:a>
@@ -17,6 +19,7 @@
     <table id="table" class="table table-dark">
         <thead class="thead-dark">
         <tr>
+            <th scope="col">id</th>
             <th scope="col">Titre</th>
             <th scope="col">Auteur(s)</th>
             <th scope="col">Editeur</th>
@@ -31,6 +34,9 @@
         <s:iterator value="listBookBorrowedByUser">
             <tr class="table-primary">
                     <%--<s:a action="book_detail"> <s:param name="book.id" value="book.id" />--%>
+                <td>
+                    <s:property value="idBorrow"/>
+                </td>
                 <td>
                     <s:property value="title"/>
                 </td>
@@ -71,7 +77,10 @@
                 <td style="text-align: center">
                     <%--TO DO : implémenter méthode prolongation--%>
                     <s:if test="%{alreadyExtended==false}">
-                        <button>Prolonger</button>
+                        <s:a cssClass="btn btn-warning" action="borrow_extend">
+                            <s:param name="id" value="idBorrow" />
+                            Prolonger
+                        </s:a>
                     </s:if>
                     <s:else>
                         <p>Emprunt déjà prolongé</p>

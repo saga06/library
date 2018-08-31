@@ -71,7 +71,11 @@
                     <td style="text-align: center">
                         <s:if test="#session.user">
                             <s:if test="%{numberOfCopies!=0}">
-                                <button>Emprunter</button>
+                                <s:a cssClass="btn btn-info" action="borrow_new">
+                                    <s:param name="id" value="id" />
+                                    <s:param name="idUser" value="#session.user.id" />
+                                    Emprunter
+                                </s:a>
                             </s:if>
                             <s:else>
                                 <p>Plus aucun exemplaire disponible</p>

@@ -17,14 +17,14 @@ public abstract class AbstractDao {
         return dataSource;
     }
 
+    @Inject
+    @Named("vParams")
     private MapSqlParameterSource vParams;
+    protected MapSqlParameterSource getvParams() { return vParams; }
 
-    protected MapSqlParameterSource getvParams() {
-        return vParams;
-    }
-
+    @Inject
+    @Named("vNamedParameterJdbcTemplate")
     private NamedParameterJdbcTemplate vNamedParameterJdbcTemplate;
-
     protected NamedParameterJdbcTemplate getvNamedParameterJdbcTemplate() {
         return vNamedParameterJdbcTemplate;
     }

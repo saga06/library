@@ -52,10 +52,53 @@
             <result>/jsp/book/search.jsp</result>
         </action>
 
+
+
+
+
+        <!-- Action d'emprunt d'ouvrage -->
+        <action name="borrow_new"
+                class="com.library.oc.library.webapp.action.GestionBookAction"
+                method="doBorrow">
+
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+
+            <result name="success" type="redirectAction">
+                <param name="actionName">profil</param>
+                <param name="id">${#session.user.id}</param>
+            </result>
+        </action>
+
+        <!-- Action de prolongement d'un emprunt d'ouvrage -->
+        <action name="borrow_extend"
+                class="com.library.oc.library.webapp.action.GestionBookAction"
+                method="doExtend">
+
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+
+            <result name="success" type="redirectAction">
+                <param name="actionName">profil</param>
+                <param name="id">${#session.user.id}</param>
+            </result>
+        </action>
+
+
         <!-- Action d'accès au profil -->
         <action name="profil"
                 class="com.library.oc.library.webapp.action.GestionUserAction"
                 method="doListBookBorrowedByUser">
+
+            <interceptor-ref name="store">
+                <param name="operationMode">RETRIEVE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+
             <result>/jsp/user/profil.jsp</result>
         </action>
 
@@ -118,7 +161,7 @@
         <default-interceptor-ref name="authenticatedStack" />
 
         <!-- Actions permettant d'ajouter un livre -->
-        <action name="book_new"
+       <!-- <action name="book_new"
                 class="com.library.oc.library.webapp.action.GestionBookAction"
                 method="doCreate">
 
@@ -132,7 +175,7 @@
                 <param name="actionName">book_detail</param>
                 <param name="id">${book.id}</param>
             </result>
-        </action>
+        </action>-->
 
     </package>
 </struts>

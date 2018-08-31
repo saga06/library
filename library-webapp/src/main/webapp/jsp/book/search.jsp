@@ -23,10 +23,14 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous" />
     <%--Datatables --%>
+<%--
     <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+--%>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style2.css" />
+
 
 </head>
 <body>
@@ -53,7 +57,7 @@
     } );
 </script>
 <div class="container" id="main-content">
-    <h2>Liste des ouvrages</h2>
+    <h2><s:text name="listBook"/></h2>
     <%--
         <s:a action="book_new">Ajouter un nouveau livre</s:a>
     --%>
@@ -63,9 +67,11 @@
             <th>Titre</th>
             <th>Auteur</th>
             <th>Editeur</th>
-            <th>Thème</th>
-            <th>ISBN</th>
-            <th>Réserver</th>
+            <th scope="col">Thème(s)</th>
+            <th scope="col">Nombre d'exemplaire(s) disponible(s)</th>
+            <th scope="col">ISBN</th>
+            <%--<th scope="col">Résumé</th>--%>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
@@ -76,26 +82,57 @@
                                         <s:param name="book.id" value="book.id" />
                                         --%>
                 <td><s:property value="title"/></td>
-                <td>
-                        <%--  <s:a action="author_detail">
-                              <s:param name="id" value="author.id"/> --%>
-                    <s:property value="authorName" />
-                        <%--<s:property value="user.nom" />
-                            </s:a>--%>
-                </td>
-                <td>
-                    <s:property value="editorName"/>
-                </td>
-                <td>
-                    <s:property value="themeName"/>
-                </td>
-                <td>
-                    <s:property value="isbn"/>
-                </td>
-                <td> <button>Réserver</button></td>
-                    <%--
+                        <td>
+                                <%--  <s:a action="author_detail">
+                                      <s:param name="id" value="author.id"/> --%>
+                            <s:iterator value="authors" status="loop">
+                                <s:if test="#loop.last == true ">
+                                    <s:property value="name" />
+                                </s:if>
+                                <s:else>
+                                    <s:property value="name" />,
+                                </s:else>
+                            </s:iterator>
+                        </td>
+                        <td>
+                            <s:property value="editorName"/>
+                        </td>
+                        <td>
+                            <s:iterator value="themes" status="loop">
+                                <s:if test="#loop.last == true ">
+                                    <s:property value="name" />
+                                </s:if>
+                                <s:else>
+                                    <s:property value="name" />,
+                                </s:else>
+                            </s:iterator>
+                        </td>
+                        <td style="text-align: center">
+                            <s:property value="numberOfCopies"/>
+                        </td>
+                        <td>
+                            <s:property value="isbn"/>
+                        </td>
+                            <%--<td>
+                                <s:property value="resume"/>
+                            </td>--%>
+                        <td style="text-align: center">
+                            <s:if test="#session.user">
+                                <s:if test="%{numberOfCopies!=0}">
+                                    <s:a cssClass="btn btn-info" action="borrow_new">
+                                        <s:param name="id" value="id" />
+                                        <s:param name="idUser" value="#session.user.id" />
+                                        Emprunter
                                     </s:a>
-                    --%>
+                                </s:if>
+                                <s:else>
+                                    <p>Plus aucun exemplaire disponible</p>
+                                </s:else>
+                            </s:if>
+                            <s:else>
+                                <p>Vous devez vous identifiez d'abord !</p>
+                            </s:else>
+                        </td>
             </tr>
         </s:iterator>
         <%--<s:iterator value="listBook">

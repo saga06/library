@@ -36,7 +36,8 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
     @Override
     public Book read(int numero) {
-        String vSQL = "SELECT * FROM book WHERE id="+numero;
+        String vSQL = "SELECT * FROM book " +
+                " LEFT JOIN editor ON book.editor_id = editor.id WHERE book.id="+numero;
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
         List<Book> listBook = jdbcTemplate.query(vSQL, bookRM);
