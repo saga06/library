@@ -43,6 +43,11 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
         book.setAuthors(getDaoFactory().getAuthorDao().findAuthorsByBook(book));
         book.setThemes(getDaoFactory().getThemeDao().findThemesByBook(book));
+/*
+        book.setNumberOfCopies(getDaoFactory().getBookDao().getNbOfCopiesTotal(book));
+*/
+        book.setNbOfCopiesAlreadyBorrowed(getDaoFactory().getBookDao().getNbOfCopiesAlreadyBorrowed(book));
+        book.setNbOfCopiesAvailable(getNbOfCopiesAvailableForABook(book));
     }
 
 
@@ -52,6 +57,11 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
     {
         bookBorrowed.setAuthors(getDaoFactory().getAuthorDao().findAuthorsByBook(bookBorrowed));
         bookBorrowed.setThemes(getDaoFactory().getThemeDao().findThemesByBook(bookBorrowed));
+/*
+        bookBorrowed.setNumberOfCopies(getDaoFactory().getBookBorrowedDao().getNbOfCopiesTotal(bookBorrowed));
+*/
+        bookBorrowed.setNbOfCopiesAlreadyBorrowed(getDaoFactory().getBookBorrowedDao().getNbOfCopiesAlreadyBorrowed(bookBorrowed));
+        bookBorrowed.setNbOfCopiesAvailable(getNbOfCopiesAvailableForABookBorrowed(bookBorrowed));
 
     }
 
@@ -67,6 +77,31 @@ public class BookManagerImpl extends AbstractManager implements BookManager {
 
     @Override
     public int getNbBook() { return getDaoFactory().getBookDao().getCountBook(); }
+
+
+    @Override
+    public int getNbOfCopiesAvailableForABookBorrowed(BookBorrowed bookBorrowed) {
+        int a;
+        int b;
+        int c;
+        a = bookBorrowed.getNumberOfCopies();
+        b = bookBorrowed.getNbOfCopiesAlreadyBorrowed();
+        c = a - b;
+        return c;
+    }
+
+    @Override
+    public int getNbOfCopiesAvailableForABook(Book book) {
+        int a;
+        int b;
+        int c;
+        a = book.getNumberOfCopies();
+        b = book.getNbOfCopiesAlreadyBorrowed();
+        c = a - b;
+        return c;
+    }
+
+
 
 
 

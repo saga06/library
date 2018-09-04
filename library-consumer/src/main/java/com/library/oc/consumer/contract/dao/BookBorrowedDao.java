@@ -11,5 +11,9 @@ public interface BookBorrowedDao {
     List<BookBorrowed> findAllBooksBorrowed(int id);
     public void borrowBook(User user, Book book);
     public void extendBorrow(int id);
+/*
+    int getNbOfCopiesTotal(BookBorrowed bookBorrowed);
+*/
+    int getNbOfCopiesAlreadyBorrowed(BookBorrowed bookBorrowed);
 
 }

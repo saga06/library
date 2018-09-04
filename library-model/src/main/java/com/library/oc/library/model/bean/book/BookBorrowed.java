@@ -36,6 +36,12 @@ public class BookBorrowed {
     private Integer numberOfCopies;
 
     @NotNull
+    private Integer nbOfCopiesAlreadyBorrowed;
+
+    @NotNull
+    private Integer nbOfCopiesAvailable;
+
+    @NotNull
     private String title;
 
     @NotNull
@@ -134,6 +140,12 @@ public class BookBorrowed {
         this.numberOfCopies = numberOfCopies;
     }
 
+    public Integer getNbOfCopiesAlreadyBorrowed() { return nbOfCopiesAlreadyBorrowed; }
+    public void setNbOfCopiesAlreadyBorrowed(Integer nbOfCopiesAlreadyBorrowed) { this.nbOfCopiesAlreadyBorrowed = nbOfCopiesAlreadyBorrowed; }
+
+    public Integer getNbOfCopiesAvailable() { return nbOfCopiesAvailable; }
+    public void setNbOfCopiesAvailable(Integer nbOfCopiesAvailable) { this.nbOfCopiesAvailable = nbOfCopiesAvailable; }
+
     public String getTitle() {
         return title;
     }
@@ -175,4 +187,6 @@ public class BookBorrowed {
     public void setThemes(List<Theme> themes) {
         this.themes = themes;
     }
+
+
 }

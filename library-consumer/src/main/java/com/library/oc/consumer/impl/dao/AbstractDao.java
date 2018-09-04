@@ -1,5 +1,6 @@
 package com.library.oc.consumer.impl.dao;
 
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
@@ -12,7 +13,6 @@ public abstract class AbstractDao {
     @Inject
     @Named("dataSourceLibrary")
     private DataSource dataSource;
-
     protected DataSource getDataSource() {
         return dataSource;
     }

@@ -1,4 +1,5 @@
 package com.library.oc.consumer.impl.dao;
+import java.sql.Types;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -79,17 +80,6 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
         }
     }
 
-
-   /* @Override
-    public void BookDependencies(Book book)
-    {book.setAuthor(getDaoFactory().getAuthorDao().findAllByBook(book));
-        book.setTheme(getDaoFactory().getThemeDao().findAllByBook(book));
-        book.setEditor(getDaoFactory().getEditorDao().findAllByBook(book));
-        for(Author author : book.getAuthors())
-        {author.setId(getDaoFactory().getWayDao().findAllByAuthor(sector));
-
-        */
-
     @Override
     public boolean update(Book obj) {
         // TODO Auto-generated method stub
@@ -111,4 +101,36 @@ public class BookDaoImpl extends AbstractDao implements BookDao {
 
         return vNbrBook;
     }
+
+
+
+    /*@Override
+    public Integer getNbOfCopiesAlreadyBorrowed(Book book) {
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        Integer vNbrBook = vJdbcTemplate.queryForObject(
+                "SELECT COUNT(id_book) FROM borrow WHERE id_book =?", Integer.class, book.getId());
+        return vNbrBook;
+    }*/
+
+    @Override
+    public int getNbOfCopiesAlreadyBorrowed(Book book) {
+        String sql = "SELECT COUNT(*) FROM borrow WHERE id_book=:book";
+        getvParams().addValue("book", book.getId(), Types.INTEGER);
+        Integer vNbrBook = getvNamedParameterJdbcTemplate().queryForObject(sql,getvParams(), Integer.class);
+        return vNbrBook.intValue();
+    }
+
+
+
+    /*@Override
+    public int getNbOfCopiesTotal(Book book) {
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        int vNbrBook = vJdbcTemplate.queryForObject(
+                "SELECT id, number_of_copies FROM book WHERE id =?", Integer.class, book.getId());
+        return vNbrBook;
+
+        WHERE id_book="+book.getId()
+    }*/
+
+
 }

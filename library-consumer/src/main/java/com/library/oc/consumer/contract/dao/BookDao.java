@@ -31,6 +31,10 @@ public interface BookDao {
     Book read(int id);
     List<Book> findAllBooks();
     List<BookBorrowed> findAllBooksBorrowed(int id);
+/*
+    int getNbOfCopiesTotal(Book book);
+*/
+    int getNbOfCopiesAlreadyBorrowed(Book book);
 
 /*
     List<Book> getEditorBook(int idEditor);
@@ -56,6 +60,8 @@ public interface BookDao {
      * @return Le nombre de Book
      */
     int getCountBook();
+
+
 
 
 }

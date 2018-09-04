@@ -21,7 +21,9 @@
                 <th scope="col">Auteur(s)</th>
                 <th scope="col">Editeur</th>
                 <th scope="col">Thème(s)</th>
-                <th scope="col">Nombre d'exemplaire(s) disponible(s)</th>
+                <th scope="col">Nb d'exemplaire(s) total</th>
+                <th scope="col">Nb d'exemplaire(s) déjà emprunté(s)</th>
+                <th scope="col">Nb d'exemplaire(s) disponible(s)</th>
                 <th scope="col">ISBN</th>
                 <%--<th scope="col">Résumé</th>--%>
                 <th scope="col"></th>
@@ -62,6 +64,12 @@
                     <td style="text-align: center">
                          <s:property value="numberOfCopies"/>
                     </td>
+                    <td style="text-align: center">
+                        <s:property value="nbOfCopiesAlreadyBorrowed"/>
+                    </td>
+                    <td style="text-align: center">
+                        <s:property value="nbOfCopiesAvailable"/>
+                    </td>
                     <td>
                         <s:property value="isbn"/>
                     </td>
@@ -70,7 +78,7 @@
                     </td>--%>
                     <td style="text-align: center">
                         <s:if test="#session.user">
-                            <s:if test="%{numberOfCopies!=0}">
+                            <s:if test="%{nbOfCopiesAvailable!=0}">
                                 <s:a cssClass="btn btn-info" action="borrow_new">
                                     <s:param name="id" value="id" />
                                     <s:param name="idUser" value="#session.user.id" />

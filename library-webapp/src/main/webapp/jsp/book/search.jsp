@@ -108,7 +108,7 @@
                             </s:iterator>
                         </td>
                         <td style="text-align: center">
-                            <s:property value="numberOfCopies"/>
+                            <s:property value="nbOfCopiesAvailable"/>
                         </td>
                         <td>
                             <s:property value="isbn"/>
@@ -118,7 +118,7 @@
                             </td>--%>
                         <td style="text-align: center">
                             <s:if test="#session.user">
-                                <s:if test="%{numberOfCopies!=0}">
+                                <s:if test="%{nbOfCopiesAvailable!=0}">
                                     <s:a cssClass="btn btn-info" action="borrow_new">
                                         <s:param name="id" value="id" />
                                         <s:param name="idUser" value="#session.user.id" />

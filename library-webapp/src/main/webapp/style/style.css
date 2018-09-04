@@ -100,3 +100,7 @@ body {
 .limit-width {
     max-width: 20px;
 }
+
+#table {
+    margin: 20px 0 100px 0;
+}

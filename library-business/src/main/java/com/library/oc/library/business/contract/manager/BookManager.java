@@ -37,6 +37,8 @@ public interface BookManager {
     void buildBookBorrowedDependencies(BookBorrowed bookBorrowed);
     void borrowBook(User user, Book book);
     void extendBorrow(Integer id);
+    int getNbOfCopiesAvailableForABookBorrowed(BookBorrowed bookBorrowed);
+    int getNbOfCopiesAvailableForABook(Book book);
 
 
 
