@@ -2,185 +2,115 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="library-webapp:war" />
       <artifact name="library-webapp:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="">
+    <list default="true" id="43bc2761-c0a1-4db0-8e5b-eb5a851d5cd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/821c9e87-6013-4ca2-a362-3c85b70d7e04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/821c9e87-6013-4ca2-a362-3c85b70d7e04/storage_v2/_src_/database/projet4.6EyQ7Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/821c9e87-6013-4ca2-a362-3c85b70d7e04/storage_v2/_src_/database/projet4.6EyQ7Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd.backup" beforeDir="false" afterPath="$PROJECT_DIR$/bdd.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookBorrowedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookBorrowedDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookBorrowedDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookBorrowedDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookBorrowed.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookBorrowed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-business/library-business.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/UserManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-consumer/library-consumer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-webapp/library-webapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/library/oc/library/webapp/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/library/oc/library/webapp/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/library-business/target/" />
-    <ignored path="$PROJECT_DIR$/library-webapp/target/" />
-    <ignored path="$PROJECT_DIR$/library-consumer/target/" />
-    <ignored path="$PROJECT_DIR$/library-model/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/library-batch/target/" />
+    <ignored path="$PROJECT_DIR$/library-model/target/" />
+    <ignored path="$PROJECT_DIR$/library-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/library-webapp/target/" />
+    <ignored path="$PROJECT_DIR$/BookService/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/library$Library.ic" NAME="Library Coverage Results" MODIFIED="1535991854517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projet4@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projet4@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projet4@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="projet4: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projet4@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="projet4: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="projet4@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="projet4: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2088567487">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="java" value="1" />
+          <entry key="jsp" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JAVA" value="1" />
+          <entry key="JSP" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="jsp" value="39" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSP" value="39" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="80" column="61" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/search.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="117" column="37" lean-forward="true" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book" pinned="false" current-in-tab="false">
-        <entry file="das://821c9e87-6013-4ca2-a362-3c85b70d7e04/database/projet4/schema/public/table/book">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+            <state relative-caret-position="369">
+              <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="132" selection-start-line="17" selection-start-column="132" selection-end-line="17" selection-end-column="132" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="struts_2_5" />
-        <option value="Jsp File" />
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>driverClassName</find>
-      <find>@inj</find>
-      <find>background-c</find>
-      <find>datata</find>
-      <find>getvParams</find>
-      <find>@inject</find>
-      <find>NamedParameterJdbcTemplate</find>
-      <find>bean id</find>
-      <find>#f1f1f1</find>
-      <find>vNamedParameterJdbcTemplate</find>
-      <find>extendBorrow</find>
-      <find>listbo</find>
-      <find>getn</find>
-      <find>getNbOfCopiesAvailableForABook</find>
-      <find>b</find>
-      <find>bookda</find>
-      <find>list</find>
-      <find>getnbofcopiestotal</find>
-      <find>nbofcopiesalrea</find>
-      <find>book</find>
-      <find>findAuthorsByBook</find>
-      <find>getNbOfCopiesAvailableForABookBorrowed</find>
-      <find>doList</find>
-      <find>displayAllBooks</find>
-      <find>getCountBook</find>
-      <find>getNbOfCopiesAlreadyBorrowed</find>
-      <find>getNbOfCopiesTotal</find>
-      <find>null</find>
-      <find>nullableSingleResult</find>
-      <find>jdbc</find>
+      <find>vous trouvere</find>
+      <find>img</find>
+      <find>accueil</find>
     </findStrings>
-    <replaceStrings>
-      <replace>Author</replace>
-      <replace>author</replace>
-      <replace>sga</replace>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\sgahama\eclipse-workspace\library\library-consumer\src\main\java\com\library\oc\dao</dir>
-      <dir>C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\business\impl</dir>
-      <dir>C:\Users\sgahama\eclipse-workspace\library\library-webapp</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -188,57 +118,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/EditorDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/about.css" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/about.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/index.css" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/main.css" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/footer.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/head.jsp" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BorrowDao.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/messages_en.properties" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BorrowRM.java" />
-        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Borrow.java" />
-        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookBorrow.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookBorrowRM.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/AuthorDao.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/ThemeDao.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/ManagerFactory.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/ThemeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/_include/header.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBorrowAction.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionUserAction.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AuthorDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/user/User.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/resources/dao.properties" />
-        <option value="$PROJECT_DIR$/library-batch/src/data/conf/db-library.properties" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/user/profil.jsp" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style2.css" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/resources/com/library/oc/library/consumer/consumerContext.xml" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java" />
-        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java" />
-        <option value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookBorrowed.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java" />
-        <option value="$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookDao.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookBorrowedDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookBorrowedDao.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java" />
-        <option value="$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookBorrowedRM.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/library/oc/library/webapp/AppTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties" />
         <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css" />
-        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/search.jsp" />
+        <option value="$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp" />
       </list>
     </option>
   </component>
@@ -258,54 +142,30 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/env/maven/apache-maven-3.5.2" />
+        <option name="mavenHome" value="C:/env/maven/apache-maven-3.5.4" />
         <option name="userSettingsFile" value="C:\env\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="createModuleGroups" value="true" />
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Bibliothèque OC" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="library-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="library-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="399" />
-    <option name="y" value="-8" />
-    <option name="width" value="974" />
-    <option name="height" value="1017" />
+    <option name="x" value="-1799" />
+    <option name="y" value="17" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -318,51 +178,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15600522" />
-    <property name="project.structure.side.proportion" value="0.1761942" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.library.oc.consumer.contract" />
-      <recent name="com.library.oc.consumer.impl.dao" />
-      <recent name="com.library.oc.consumer.contract.dao" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.library.oc.consumer.impl" />
-      <recent name="com.library.oc.consumer.contract" />
-      <recent name="com.library.oc.consumer" />
-      <recent name="com.library.oc.library" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-consumer\src\main\resources\com\library\oc\library\consumer" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-batch\src\main\resources" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.library.oc.dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\webapp\jsp\book" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-batch\src\main\resources\com\library\oc\library\batch" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-webapp\src\main\resources\com\library\oc\library\webapp" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-model\src\main\java\com\library\oc\library\model" />
-      <recent name="C:\Users\sgahama\eclipse-workspace\library\library-business\src\main\java\com\library\oc\library\webapp\business" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537542604893" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -376,60 +199,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
+    <configuration name="All Features in: library" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="library" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="Library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/library/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="library-webapp:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/library-webapp" />
+            <option name="CONTEXT_PATH" value="/library" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_library_4" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_library" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -437,7 +259,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63252" />
+        <option name="DEBUG_PORT" value="65355" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -484,230 +306,84 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
-      <deployment>
-        <artifact name="library-webapp:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_library" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63252" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="Make" enabled="true" />
+      <method v="2">
         <option name="BuildArtifacts" enabled="true">
           <artifact name="library-webapp:war exploded" />
-          <artifact name="library-webapp:war" />
         </option>
       </method>
     </configuration>
-  </component>
-  <component name="SpringGeneralSettings">
-    <option name="allowAutoConfigurationMode" value="true" />
+    <list>
+      <item itemvalue="Maven.Unnamed" />
+      <item itemvalue="Tomcat Server.Tomcat" />
+      <item itemvalue="Cucumber java.All Features in: library" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber java.All Features in: library" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="af73d5b3-d752-4c45-a3cc-ba4ffb935965" name="Default" comment="" />
-      <created>1525899152236</created>
+      <changelist id="43bc2761-c0a1-4db0-8e5b-eb5a851d5cd0" name="Default Changelist" comment="" />
+      <created>1537525302892</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1525899152236</updated>
-      <workItem from="1525899159730" duration="199000" />
-      <workItem from="1525899365022" duration="2060000" />
-      <workItem from="1525901481376" duration="26000" />
-      <workItem from="1525901514962" duration="1305000" />
-      <workItem from="1525909597311" duration="9581000" />
-      <workItem from="1525972491058" duration="101000" />
-      <workItem from="1525972597227" duration="7282000" />
-      <workItem from="1525990378023" duration="38000" />
-      <workItem from="1525990426539" duration="2037000" />
-      <workItem from="1525992488803" duration="22783000" />
-      <workItem from="1526459867807" duration="1216000" />
-      <workItem from="1526655742159" duration="1709000" />
-      <workItem from="1526911287228" duration="11247000" />
-      <workItem from="1526948695328" duration="1749000" />
-      <workItem from="1527591700454" duration="1285000" />
-      <workItem from="1528106447144" duration="1274000" />
-      <workItem from="1528447508603" duration="4500000" />
-      <workItem from="1528642389229" duration="10877000" />
-      <workItem from="1528760749761" duration="5184000" />
-      <workItem from="1528824792048" duration="1967000" />
-      <workItem from="1529308256149" duration="197000" />
-      <workItem from="1529425945848" duration="9457000" />
-      <workItem from="1529863624470" duration="13122000" />
-      <workItem from="1529885920371" duration="9486000" />
-      <workItem from="1530032030234" duration="1294000" />
-      <workItem from="1530036361281" duration="30000" />
-      <workItem from="1530036610739" duration="115000" />
-      <workItem from="1530036772753" duration="2376000" />
-      <workItem from="1530210413408" duration="1188000" />
-      <workItem from="1530376469622" duration="12620000" />
-      <workItem from="1530495032478" duration="4769000" />
-      <workItem from="1530512009930" duration="5887000" />
-      <workItem from="1530553454373" duration="11098000" />
-      <workItem from="1530732369895" duration="3729000" />
-      <workItem from="1530810369293" duration="1516000" />
-      <workItem from="1531035297412" duration="4778000" />
-      <workItem from="1531044450110" duration="11000" />
-      <workItem from="1531044536778" duration="1621000" />
-      <workItem from="1531062431184" duration="16020000" />
-      <workItem from="1531242959798" duration="2066000" />
-      <workItem from="1531692897246" duration="4784000" />
-      <workItem from="1531810723301" duration="111000" />
-      <workItem from="1531811194732" duration="2417000" />
-      <workItem from="1531813919809" duration="7000" />
-      <workItem from="1531847309789" duration="6553000" />
-      <workItem from="1532212363136" duration="26025000" />
-      <workItem from="1532449282429" duration="6005000" />
-      <workItem from="1532694422799" duration="6114000" />
-      <workItem from="1532707517564" duration="2097000" />
-      <workItem from="1532711414126" duration="86000" />
-      <workItem from="1532711977009" duration="1457000" />
-      <workItem from="1532964799734" duration="1558000" />
-      <workItem from="1533035069484" duration="266000" />
-      <workItem from="1533051628818" duration="10634000" />
-      <workItem from="1533508470436" duration="2880000" />
-      <workItem from="1533512599136" duration="529000" />
-      <workItem from="1533570288369" duration="16332000" />
-      <workItem from="1533642145790" duration="3142000" />
-      <workItem from="1533655678837" duration="9598000" />
-      <workItem from="1533901141821" duration="21311000" />
-      <workItem from="1534153480229" duration="35175000" />
-      <workItem from="1534339738647" duration="18615000" />
-      <workItem from="1534427811264" duration="15004000" />
-      <workItem from="1534512412169" duration="18574000" />
-      <workItem from="1534685938680" duration="22148000" />
-      <workItem from="1534730752697" duration="2054000" />
-      <workItem from="1534775681554" duration="1853000" />
-      <workItem from="1534779439579" duration="4512000" />
-      <workItem from="1534869154450" duration="5231000" />
-      <workItem from="1535115901877" duration="6862000" />
-      <workItem from="1535402159534" duration="12770000" />
-      <workItem from="1535466369727" duration="994000" />
-      <workItem from="1535473002737" duration="10014000" />
-      <workItem from="1535560434606" duration="591000" />
-      <workItem from="1535691728329" duration="9977000" />
-      <workItem from="1535716723185" duration="5737000" />
-      <workItem from="1535909279060" duration="12142000" />
-      <workItem from="1535973610369" duration="297000" />
-      <workItem from="1535991734000" duration="3719000" />
-      <workItem from="1536004876440" duration="754000" />
-      <workItem from="1536076951767" duration="1647000" />
+      <updated>1537525302892</updated>
+      <workItem from="1537525307369" duration="737000" />
+      <workItem from="1537534046078" duration="594000" />
+      <workItem from="1537540030064" duration="2066000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="486926000" />
+  <component name="TestHistory">
+    <history-entry file="All_Features_in__library - 2018.09.21 at 16h 29m 26s.xml">
+      <configuration name="All Features in: library" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4080537" side_tool="true" weight="0.35516092" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.14679803" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3294621" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="1" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.19669509" />
-      <window_info anchor="right" id="Structure" order="10" side_tool="true" weight="0.10021322" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31560692" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32906404" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49840087" weight="0.20782124" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" x="2095" y="-972" width="1448" height="665" id="Run" order="2" sideWeight="0.5919463" weight="0.2536313" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.21452513" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.38657406" />
-      <window_info anchor="bottom" id="Database Console" order="16" visible="true" weight="0.24134079" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49854228" visible="true" weight="0.18763326" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info id="Web" order="5" sideWeight="0.50145775" side_tool="true" weight="0.1705757" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Application Servers" order="2" weight="0.22125813" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info active="true" anchor="bottom" id="Debug" order="6" visible="true" weight="0.37852496" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.22885032" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32960895" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.37836185" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Learn" order="7" weight="0.3299933" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -716,482 +392,59 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/env/maven/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCrypt.java</url>
-          <line>537</line>
-          <properties />
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/env/maven/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCrypt.java</url>
-          <line>538</line>
-          <properties />
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/env/maven/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCrypt.java</url>
-          <line>539</line>
-          <properties />
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.java</url>
-          <line>218</line>
-          <properties />
-          <option name="timeStamp" value="340" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="341" />
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="((String)((IteratorTag)_jspx_th_s_005fiterator_005f0).value).value" custom="org.apache.struts2.views.jsp.IteratorTag,java.lang.String" />
-        <watch expression="out" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/META-INF/context.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/library/oc/library/webapp/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#687#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/style2.css">
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
+        <state relative-caret-position="479">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
         </state>
       </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ObjectMethodAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/resources/com/library/oc/library/consumer/consumerContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/AuthorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/BookBorrowed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="145" column="72" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/org/apache/commons/logging/LogFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="654" selection-start-line="654" selection-end-line="654" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/support/JdbcAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/DaoFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/AbstractManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/core/RowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookBorrowedDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/contract/manager/BookManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/contract/dao/BookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-model/src/main/java/com/library/oc/library/model/bean/book/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE-sources.jar!/org/springframework/util/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE-sources.jar!/org/springframework/util/ClassUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="909" selection-start-line="909" selection-end-line="909" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/core/SingleColumnRowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="473" selection-start-line="473" selection-end-line="473" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="252" selection-start-line="252" selection-end-line="252" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/interceptor/I18nInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/interceptor/ExceptionMappingInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/factory/StrutsActionProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/dispatcher/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="584" selection-start-line="584" selection-end-line="584" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/dispatcher/ExecuteOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/org/apache/struts2/dispatcher/filter/StrutsPrepareAndExecuteFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="96" column="74" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookBorrowedDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/ognl/accessor/XWorkMethodAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/ASTMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/apache/struts/struts2-core/2.5.16/struts2-core-2.5.16-sources.jar!/com/opensymphony/xwork2/DefaultActionInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="477" selection-start-line="477" selection-end-line="477" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/5.0.2.RELEASE/spring-jdbc-5.0.2.RELEASE-sources.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="195" column="35" selection-start-line="195" selection-start-column="29" selection-end-line="195" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2390" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar!/ognl/OgnlRuntime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="898" selection-start-line="898" selection-end-line="898" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/java/com/library/oc/library/webapp/action/GestionBookAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-business/src/main/java/com/library/oc/library/business/impl/manager/BookManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE-sources.jar!/org/springframework/dao/support/DataAccessUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookBorrowedRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
+      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="222" column="24" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/env/maven/repository/org/springframework/spring-jdbc/4.3.11.RELEASE/spring-jdbc-4.3.11.RELEASE-sources.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="211" column="35" selection-start-line="211" selection-start-column="35" selection-end-line="211" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/dao/BookDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-consumer/src/main/java/com/library/oc/consumer/impl/rowmapper/BookRM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="189">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+        <state relative-caret-position="369">
+          <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="das://821c9e87-6013-4ca2-a362-3c85b70d7e04/database/projet4/schema/public/table/borrow">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://821c9e87-6013-4ca2-a362-3c85b70d7e04/database/projet4/schema/public/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/list.jsp">
+    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="80" column="61" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-webapp/src/main/webapp/jsp/book/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="117" column="37" lean-forward="true" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="37" />
+        <state relative-caret-position="289">
+          <caret line="17" column="132" selection-start-line="17" selection-start-column="132" selection-end-line="17" selection-end-column="132" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>library-webapp:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.1761942" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.1761942" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>Oracle JDK 1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring|library-consumer</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.1761942" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>Oracle JDK 1.8</last-edited>
+          <last-edited>Java 8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.1761942" />
               </list>
             </option>
           </splitter-proportions>

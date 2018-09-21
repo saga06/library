@@ -13,5 +13,8 @@
         <module name="library-webapp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BookService" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

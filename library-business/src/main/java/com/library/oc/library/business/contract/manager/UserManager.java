@@ -31,7 +31,7 @@ public interface UserManager {
     /**
      * Retourne le nombre de User dans la base de données.
      * @return Le nombre de user en base de données
-	 */
+     */
     Integer getNbUser();
 
     String hashPassword(String password);

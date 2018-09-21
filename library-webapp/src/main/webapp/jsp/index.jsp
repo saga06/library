@@ -15,8 +15,8 @@
     <h2>Bienvenue sur le site de la bibliothèque OpenClassrooms !</h2>
     <p>Vous trouverez sur ce site l'ensemble des informations utiles (horaires, liste des ouvrages disponibles, boîte "retour livres"
         divers informations, etc.) sur l'onglet "A propos". Vous pouvez effectuer des recherches, réserver un document, ...
-        N'hésitez pas à nous faire part de vos remarques lors de votre passage à la bibliothèque ou par email bibliotheque@OC.fr</p
-    <div><img src="img/accueil.jpg" alt="homePicture" style="width: 40vw"></div>
+        N'hésitez pas à nous faire part de vos remarques lors de votre passage à la bibliothèque ou par email bibliotheque@OC.fr</p>
+    <img src="img/accueil.jpg" alt="homePicture" style="width: 40vw; margin-top: 40px;">
 
 </div>
 <%@ include file="_include/footer.jsp" %>

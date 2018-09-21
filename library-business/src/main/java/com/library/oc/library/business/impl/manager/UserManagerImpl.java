@@ -2,6 +2,8 @@ package com.library.oc.library.business.impl.manager;
 
 import java.util.List;
 import javax.inject.Named;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
 
 import com.library.oc.library.business.contract.manager.UserManager;
 import com.library.oc.library.model.bean.user.User;
@@ -10,7 +12,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 
-
+@WebService(serviceName = "Login")
 @Named
 public class UserManagerImpl extends AbstractManager implements UserManager {
 
@@ -46,6 +48,7 @@ public class UserManagerImpl extends AbstractManager implements UserManager {
         return passwordHash;
     }
 
+    @WebMethod
     @Override
     public boolean validateLogin(User user, String password)
     {
