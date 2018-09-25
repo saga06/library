@@ -3,7 +3,13 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/BookService" />
+    <file type="web" url="file://$PROJECT_DIR$/library-client" />
+    <file type="web" url="file://$PROJECT_DIR$/library-consumer/src/main/java" />
+    <file type="web" url="file://$PROJECT_DIR$/library-consumer/src/main/resources" />
+    <file type="web" url="file://$PROJECT_DIR$/library-consumer/src/test/java" />
+    <file type="web" url="file://$PROJECT_DIR$/library-service" />
     <file type="web" url="file://$PROJECT_DIR$/library-webapp" />
+    <file type="web" url="file://$PROJECT_DIR$/library-webservice" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -13,7 +19,9 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/BookService/pom.xml" />
+        <option value="$PROJECT_DIR$/library-client/pom.xml" />
+        <option value="$PROJECT_DIR$/library-webservice/pom.xml" />
+        <option value="$PROJECT_DIR$/library-webservices/pom.xml" />
       </set>
     </option>
   </component>

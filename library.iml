@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/BookService/target/BookService/WEB-INF/app-context.xml</file>
+          <file>file://$MODULE_DIR$/BookService/src/main/webapp/WEB-INF/app-context.xml</file>
+          <file>file://$MODULE_DIR$/library-service/src/main/webapp/WEB-INF/app-context.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

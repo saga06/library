@@ -10,11 +10,16 @@
         <module name="library-business" />
         <module name="library-consumer" />
         <module name="library-model" />
+        <module name="library-service" />
         <module name="library-webapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BookService" target="1.7" />
+      <module name="library-client" target="1.7" />
+      <module name="library-webservices" target="1.8" />
+      <module name="librarywebservice" target="1.7" />
+      <module name="ws" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

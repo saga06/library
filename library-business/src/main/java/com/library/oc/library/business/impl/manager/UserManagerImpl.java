@@ -12,7 +12,6 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 
-@WebService(serviceName = "Login")
 @Named
 public class UserManagerImpl extends AbstractManager implements UserManager {
 
